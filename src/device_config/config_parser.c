@@ -6,6 +6,7 @@
 #include "zigbee/group_cluster.h"
 #include "zigbee/relay_cluster.h"
 #include "zigbee/switch_cluster.h"
+#include "zigbee/metering_cluster.h"
 #include "zigbee/cover_cluster.h"
 
 #include <stdint.h>
@@ -47,6 +48,10 @@ zigbee_group_cluster group_cluster = {};
 
 zigbee_switch_cluster switch_clusters[4];
 uint8_t switch_clusters_cnt = 0;
+
+metering_bl0937_t       metering;
+zigbee_metering_cluster metering_cluster;
+uint8_t                 metering_enabled = 0;
 
 zigbee_relay_cluster relay_clusters[4];
 uint8_t relay_clusters_cnt = 0;
@@ -186,7 +191,17 @@ void parse_config() {
 
             relays_cnt++;
             relay_clusters_cnt++;
+        } else if (entry[0] == 'E') {
+            // Energy metering (BL0937): E<cf><cf1><sel>[i]
+            //   cf/cf1/sel: 2-char pin names; trailing 'i' inverts SEL
+            //   (current measured while SEL is LOW instead of HIGH)
+            metering.cf_pin            = hal_gpio_parse_pin(entry + 1);
+            metering.cf1_pin           = hal_gpio_parse_pin(entry + 3);
+            metering.sel_pin           = hal_gpio_parse_pin(entry + 5);
+            metering.sel_current_level = (entry[7] == 'i') ? 0 : 1;
+            metering_enabled           = 1;
         } else if (entry[0] == 'C') {
+
             hal_gpio_pin_t open_pin  = hal_gpio_parse_pin(entry + 1);
             hal_gpio_pin_t close_pin = hal_gpio_parse_pin(entry + 3);
 
@@ -261,6 +276,11 @@ void parse_config() {
         // Group cluster is stateless, safe to add to multiple endpoints
         group_cluster_add_to_endpoint(&group_cluster,
                                       &endpoints[switch_clusters_cnt + index]);
+        if (metering_enabled && index == 0) {
+            metering_cluster.metering = &metering;
+            metering_cluster_add_to_endpoint(
+                &metering_cluster, &endpoints[switch_clusters_cnt + index]);
+        }
     }
     int cover_base = switch_clusters_cnt + relay_clusters_cnt;
     for (int index = 0; index < cover_clusters_cnt; index++) {
@@ -301,6 +321,11 @@ void periferals_init() {
     }
     for (int index = 0; index < relays_cnt; index++) {
         relay_init(&relays[index]);
+    }
+    if (metering_enabled) {
+        if (metering_bl0937_init(&metering) != 0) {
+            metering_enabled = 0;
+        }
     }
     if (hal_zigbee_get_network_status() == HAL_ZIGBEE_NETWORK_JOINED) {
         network_indicator_connected(&network_indicator);

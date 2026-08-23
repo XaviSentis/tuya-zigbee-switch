@@ -226,7 +226,7 @@ uint32_t hal_gpio_counter_read(hal_gpio_counter_t counter) {
 }
 
 void hal_gpio_counter_reset(hal_gpio_counter_t counter) {
-    if (!counter) {
+    if (counter < 0 || counter >= 2) {
       return;
     }
 
@@ -236,6 +236,15 @@ void hal_gpio_counter_reset(hal_gpio_counter_t counter) {
       break;
     }
   }
+}
+
+void hal_gpio_counter_deinit(hal_gpio_counter_t counter) {
+  if (counter < 0 || counter >= 2) {
+    return;
+  }
+  gpio_counter[counter].initialized = 0;
+  gpio_counter[counter].value = 0;
+  io_log("GPIO", "Deinitialized GPIO counter %d", counter);
 }
 
 void hal_gpio_counter_stop(hal_gpio_counter_t counter) {
