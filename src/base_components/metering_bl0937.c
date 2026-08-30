@@ -1,4 +1,5 @@
 #include "metering_bl0937.h"
+#include <stddef.h>
 
 #include "hal/printf_selector.h"
 #include "hal/timer.h"
