@@ -33,6 +33,18 @@ class SwitchType(t.enum8):
     Momentary_NC = 0x02
 
 
+class CoverSwitchType(t.enum8):
+    Toggle = 0x00
+    Momentary = 0x01
+
+
+class CoverSwitchMode(t.enum8):
+    Immediate = 0x00
+    ShortPress = 0x01
+    LongPress = 0x02
+    Hybrid = 0x03
+
+
 class CustomOnOffConfigurationCluster(CustomCluster, OnOffConfiguration):
 
     class AttributeDefs(OnOffConfiguration.AttributeDefs):
@@ -42,42 +54,42 @@ class CustomOnOffConfigurationCluster(CustomCluster, OnOffConfiguration):
             id=0xff00,
             type=SwitchType,
             access="rw",
-            is_manufacturer_specific=True,
+            is_manufacturer_specific=False,
         )
 
         relay_mode = ZCLAttributeDef(
             id=0xff01,
             type=RelayMode,
             access="rw",
-            is_manufacturer_specific=True,
+            is_manufacturer_specific=False,
         )
 
         relay_index = ZCLAttributeDef(
             id=0xff02,
             type=t.uint8_t,
             access="rw",
-            is_manufacturer_specific=True,
+            is_manufacturer_specific=False,
         )
 
         long_press_duration = ZCLAttributeDef(
             id=0xff03,
             type=t.uint16_t,
             access="rw",
-            is_manufacturer_specific=True,
+            is_manufacturer_specific=False,
         )
 
         level_move_rate = ZCLAttributeDef(
             id=0xff04,
             type=t.uint8_t,
             access="rw",
-            is_manufacturer_specific=True,
+            is_manufacturer_specific=False,
         )
 
         binded_mode = ZCLAttributeDef(
             id=0xff05,
             type=BindedMode,
             access="rw",
-            is_manufacturer_specific=True,
+            is_manufacturer_specific=False,
         )
 
 
@@ -99,7 +111,14 @@ class CustomBasicCluster(CustomCluster, Basic):
             id=0xff01,
             type=t.Bool,
             access="rw",  
-            is_manufacturer_specific=True,
+            is_manufacturer_specific=False,
+        )
+
+        multi_press_reset_count = ZCLAttributeDef(
+            id=0xff02,
+            type=t.uint8_t,
+            access="rw",
+            is_manufacturer_specific=False,
         )
 
 
@@ -116,13 +135,13 @@ class OnOffWithIndicatorCluster(CustomCluster, OnOff):
             id=0xff01,
             type=RelayIndicatorMode,
             access="rw",
-            is_manufacturer_specific=True,
+            is_manufacturer_specific=False,
         )
         led_state: Final = ZCLAttributeDef(
             id=0xff02,
             type=t.Bool,
             access="rw",
-            is_manufacturer_specific=True,
+            is_manufacturer_specific=False,
         )
 
 
@@ -132,6 +151,56 @@ class CoverMoving(t.enum8):
     Closing = 0x02
 
 
+class CustomCoverSwitchCluster(CustomCluster):
+    cluster_id = 0xFC01
+    
+    class AttributeDefs(foundation.BaseAttributeDefs):
+        switch_type = ZCLAttributeDef(
+            id=0x0000,
+            type=CoverSwitchType,
+            access="rw",
+            is_manufacturer_specific=True,
+        )
+        
+        cover_index = ZCLAttributeDef(
+            id=0x0001,
+            type=t.uint8_t,
+            access="rw",
+            is_manufacturer_specific=True,
+        )
+        
+        reversal = ZCLAttributeDef(
+            id=0x0002,
+            type=t.Bool,
+            access="rw",
+            is_manufacturer_specific=True,
+        )
+        
+        local_mode = ZCLAttributeDef(
+            id=0x0003,
+            type=CoverSwitchMode,
+            access="rw",
+            is_manufacturer_specific=True,
+        )
+        
+        binded_mode = ZCLAttributeDef(
+            id=0x0004,
+            type=CoverSwitchMode,
+            access="rw",
+            is_manufacturer_specific=True,
+        )
+        
+        long_press_duration = ZCLAttributeDef(
+            id=0x0005,
+            type=t.uint16_t,
+            access="rw",
+            is_manufacturer_specific=True,
+        )
+        
+        cluster_revision: Final = foundation.ZCL_CLUSTER_REVISION_ATTR
+        reporting_status: Final = foundation.ZCL_REPORTING_STATUS_ATTR
+
+
 class CustomWindowCoveringCluster(CustomCluster, WindowCovering):
 
     class AttributeDefs(WindowCovering.AttributeDefs):
@@ -139,14 +208,14 @@ class CustomWindowCoveringCluster(CustomCluster, WindowCovering):
             id=0xff00,
             type=CoverMoving,
             access="r",
-            is_manufacturer_specific=True,
+            is_manufacturer_specific=False,
         )
 
         motor_reversal = ZCLAttributeDef(
             id=0xff01,
             type=t.Bool,
             access="rw",
-            is_manufacturer_specific=True,
+            is_manufacturer_specific=False,
         )
 
 '''``````````````````````````````````````````````````````````````````
@@ -157,14 +226,19 @@ class CustomWindowCoveringCluster(CustomCluster, WindowCovering):
   - `switch_quirk.md.jinja`         - update the template
   - `make_zha_quirk.py`             - update generation script
 
-  Generate with: `make quirks`
+  Generate with: `make tools/update_zha_quirk`
 ``````````````````````````````````````````````````````````````````'''
 
 CONFIGS = [
     "imaccztn;TS0004-MC;LC3i;SD7u;RD4;SC0u;RA0;SB5u;RD2;SB7u;RC2;M;",
+    "imaccztn1;TS0004-MC1;LC3i;SD7u;RD4;SC0u;RA0;SB5u;RD2;SB7u;RC2;M;",
     "u3oupgdy;TS0004-MC2;LC3i;SD7u;RD4;SC0u;RA0;SB5u;RD2;SB7u;RC2;M;",
+    "imaccztn2;TS0004-MC3;LC3i;SD7u;RD4;SC0u;RA0;SB5u;RD2;SB7u;RC2;M;",
+    "g8n1n7lg;Tuya-ZG-001;LC3i;SD7u;RD4;M;",
     "nuenzetq;TS0002-SC;LC3i;SD7u;RD4;SC0u;RA0;M;",
+    "nuenzetq1;TS0002-SC;LC3i;SD7u;RD4;SC0u;RA0;M;",
     "TUYA;DEV-ZTU2;LD7;SA0u;RC1;IB6;M;",
+    "vbfp8eyv;TS011F-TD;LC4i;SC1u;RD4;IB6i;M;",
     "46t1rvdu;WHD02-Aubess;BC4u;LD2;SB4u;RB5;",
     "46t1rvdu;WHD02-Aubess-ED;BC4u;LD2;SB4u;RB5;",
     "WHD02-Aubess;WHD02-Aubess;BC4u;LD2;SB4u;RB5;",
@@ -239,15 +313,22 @@ CONFIGS = [
     "hyziup76;TS0001-GS;BA0u;LC0;SB4u;RC2;",
     "wxtmgjbd;TS0002-GS;BA0u;LC0;SB4u;RC2;SB5u;RC3;",
     "ruxexjfz;TS0002-NS;BB5u;LB4;SB7u;RC2;SB1u;RC3;",
+    "qlhs2kqr;TS0001-FL;BB7u;LB1;SC4u;RC2;",
+    "qlhs2kqr;TS0002-FL;BB7u;LB1;SC4u;RC2;",
     "odzoiovu;TS0003-GRA;BB1u;LD7;SC2u;RC0;SC3u;RB4;SD2u;RB5;",
     "odzoiovu;TS0003-GR;BB1u;LD7;SC2u;RC0;SC3u;RB4;SD2u;RB5;",
+    "9hbau615;TS0001-GRA;BD2u;LC0;SB4u;RC2;",
+    "5sssic9d;TS0012-C;BA0f;LD7;SC2f;RC0;SC3f;RB4;",
+    "tqlv4ug42;TS0001-GD;BD2u;LC0;SB4u;RC2;",
     "zw7yf6yk;TS0001-GIR;BB1u;LC3i;SB5u;RD2;",
     "zmy4lslw;TS0002-GIR;BD2u;LC2;SB5u;RC4;SB4u;RC3;",
     "zmy4lslw;TS0002-custom;BD2u;LC2;SB5u;RC4;SB4u;RC3;",
     "Tuya-TS0002-custom;TS0002-GIR;BD2u;LC2;SB5u;RC4;SB4u;RC3;",
     "Tuya-TS0002-custom;TS0002-custom;BD2u;LC2;SB5u;RC4;SB4u;RC3;",
-    "j1xl73iw;TS130F-GIR-DUAL;LC1;CC0C4;CD4D7;",
+    "dwytrmda;TS130F-GIR;BD2u;LC2;XB5B4f;CC3C4;",
+    "j1xl73iw;TS130F-GIR-DUAL;LC1;XB4D2u;CC0C4;XC3C2u;CD4D7;",
     "6axxqqi2;TS0001-GIR-1;BC2u;LB5i;SB4u;RD2;",
+    "ZG-301Z;TS0001-HOBM;BD7u;LD4i;SB6u;RA1;",
     "q6a3tepg;TS0001-HOB1;BB1u;LD4i;SB6u;RA1;",
     "ZG-301Z;TS0001-HOB;BB1u;LD4i;SB6u;RA1;",
     "tw4ztbp4;TS0011-HOMMYN;BA0u;LD7;SC2u;RB5;",
@@ -260,23 +341,33 @@ CONFIGS = [
     "TS0003-IHS;TS0003-3CH-cus;BC3u;LC2i;SD7u;RD2;SB4u;RD3;SB5u;RC0;",
     "knoj8lpk;TS0004-IHS;BC3u;LC2i;SB5u;RD2;SB4u;RD3;SD7u;RC0;SD4u;RC1;",
     "TS0004-IHS;TS0004-IHS;BC3u;LC2i;SB5u;RD2;SB4u;RD3;SD7u;RC0;SD4u;RC1;",
+    "kycczpw8;TS0001-IHA;BC3u;LC2;SB5u;RD2;",
+    "rmjr4ufz;iHSW02-MiniSmartSw;BC3u;LC2i;SB5u;RD2;",
+    "q8r0bbvy;TS0001-PWR;BB1u;LD2i;SC4u;RB5;",
     "qaa59zqd;TS0002-MSB;BB1u;LC3;SB5u;RD2;SB4u;RC2;",
     "pfc7i3kt;TS0003-custom;BD3u;SC1u;RB5;SD7u;RD4;SC3u;RB4;",
     "Tuya-TS0003-custom;TS0003-custom;BD3u;SC1u;RB5;SD7u;RD4;SC3u;RB4;",
+    "zzoangmc;TS0011-MS;LA3;SB1u;RA4;M;",
     "criiahcg;TS0002-MS;BB1u;LC3;SB5u;RD2;SB4u;RC2;",
     "mzcp0of6;TS0003-MS;BC3u;LC2i;SD4u;RD2;SC1u;RC0;SC4u;RD7;",
     "tyg4yiat;TS0004-MS;BC3u;LC2i;SD4u;RD2;SC1u;RC0;SC4u;RD7;SB7u;RD3;",
+    "ctftgjwb;TS0001-nous;BB4u;LB6i;SC2f;RD2;",
     "c8wtsv3p;MS105-ZB-CUSTOM;BC2u;LD2i;SD3u;RD7;",
     "sonoff;ZBMINIL2-custom;BA0u;LC5i;SA6u;RA5A4;",
     "npzfdcof;TS0001-TLED;BD2u;LC3i;SB5u;RB4;",
     "rfexs4vs;TS0001-C;BA0u;LC0;SB4u;RC2;",
+    "khmapq4n;TS0001-SB;BA0u;LC0;SB4u;RC2;",
     "zbfya6h0;TS0002-C;BA0u;LC0;SB4u;RC2;SB5u;RC3;",
+    "zbfya6h0;TS0002-SB;BA0u;LC0;SB4u;RC2;SB5u;RC3;",
+    "liygxtcq;TS0004-SB;BC0u;LA0;SD7u;RC4;SD2u;RD4;SC3u;RB4;SC2u;RB5;",
+    "pf7swkqp;TS0003-SB;BA0u;LD7;SC2u;RC0;SC3u;RB4;SD2u;RB5;",
     "skueekg3;WHD02-custom;BB1u;LB4i;SD2u;RD3;",
     "Tuya-WHD02-custom;WHD02-custom;BB1u;LB4i;SD2u;RD3;",
     "skueekg3;WHD02-custom;BB1u;LB4i;SD2u;RD3;",
     "Tuya-WHD02-custom;WHD02-custom;BB1u;LB4i;SD2u;RD3;",
     "skueekg3;WHD02-custom;BB4u;LD3;SB5u;RB1;",
     "Tuya-WHD02-custom;WHD02-custom;BB4u;LD3;SB5u;RB1;",
+    "skueekg3C;TS0001-CC;BD2u;LC3i;SB5u;RB4;",
     "ji4araar;TS0011-custom;BA0f;LD7;SC2f;RC0;",
     "Tuya-TS0011-custom;TS0011-custom;BA0f;LD7;SC2f;RC0;",
     "ji4araar;TS0011-CUS-2;BA0u;LD7;SC2u;RC0;",
@@ -295,12 +386,16 @@ CONFIGS = [
     "Girier-ZB08-custom;ZB08-custom-ED;BA0u;LD7;SC2u;RC0;SC3u;RB4;SD2u;RB5;",
     "Girier-ZB08-custom-ED;ZB08-custom;BA0u;LD7;SC2u;RC0;SC3u;RB4;SD2u;RB5;",
     "Girier-ZB08-custom-ED;ZB08-custom-ED;BA0u;LD7;SC2u;RC0;SC3u;RB4;SD2u;RB5;",
+    "yl3zuyaw;TS0001-QS-custom;LB4;SC3f;RC2;",
+    "qmi1cfuq;TS0011-S05;BB5f;LC3;SD2u;RD7;",
     "fisb3ajo;TS0002-QS;BC2u;LC3;SB5u;RC1;SB4u;RD4;",
+    "ly9apzky;TS0003-Avv;BC2u;LD3i;SB5u;RC1;SB4u;RD2;SC3u;RD4;",
     "hdc8bbha;NovatoZRM01;BB4u;LC2;SC4f;RD2;",
     "m8f3z8ju;NovatoZRM02;BC3u;LC4;SC2f;RB5;SB4f;RD2;",
     "30jqysvd;NovatoZNR01;BB7u;LB1;SC2u;RB5;",
     "c4muk4ys;TS0012-QS;BB4u;LC2;SD2u;RA0B6;SC3u;RC0D7;SLP;",
-    "ol1uhvza;TS130F-NOV;BC3u;LC4;SC2f;RB5;SB4f;RD2;",
+    "ol1uhvza;TS130F-NOV;BC3u;LC4;XC2B4f;CB5D2;",
+    "aksyshpw;TS0003-C;BB1u;LD7;SC2u;RC0;SC3u;RB4;SD2u;RB5;",
     "tqlv4ug4;TS0001-custom;BD2u;LC0;SB4u;RC2;",
     "Tuya-TS0001-custom;TS0001-custom;BD2u;LC0;SB4u;RC2;",
     "bvrlqyj7;TS0002-OXT-CUS;BD2u;LC0;SB4u;RC2;SB5u;RC3;",
@@ -309,12 +404,44 @@ CONFIGS = [
     "Tuya-TS0002-custom;TS0002-custom;BD2u;LC2;SB5u;RC4;SB4u;RC3;",
     "i9oy2rdq;TS011F-TUYA;BB5u;LB4;SD2u;RC3;",
     "hktqahrq;TS0001-TS;BA4u;LA3i;SB1u;RB0;",
+    "gjrubzje;TS0001-ZTU;BB5u;LB4i;SD2u;RC3;",
     "ltt60asa;TS0004-Avv;BB5u;LC1;SB4u;RC0;SD2u;RC4;SC3u;RD4;SC2u;RD7;",
     "TS0004-Avv;TS0004-Avv;BB5u;LC1;SB4u;RC0;SD2u;RC4;SC3u;RD4;SC2u;RD7;",
     "ruxexjfz;TS0002-NS1;BD2u;LD3i;SA0u;SD7u;RB5;RB4;",
+    "Zbeacon2;TS0002-ZB;BD2u;LD3i;SB4u;RA0;SB5u;RD7;",
+    "zifx0xoj;TS011F-BD-PM;LC3i;SB7u;RC2;M;",
+    "zifx0xoj;TS011F-BORUIDAPLS-PM;LC3i;SB7u;RC2;M;",
     "b28wrpvx;TS011F-BS-PM;LC3;SB5u;RD2;IB4;M;",
+    "ko6v90pg;TS011F-BS-PM-1;LC4i;SB4u;RB5;IB1i;M;",
+    "4ux0ondb;TS011F-BS-PM-2;LB4;SB5u;RD2;IC3;M;",
     "o1jzcxou;TS011F-BS;LC2;SB4u;RC3;ID2;M;",
-    "mh9px7cq;TS0044-CUS;LC0;SD2u;RD4;SC2u;RA0;SC3u;RD7;SB4u;RB5;M;",
+    "bep7ccew;TS011F-MG;LB4;SC3u;RD7;IC4;SD4u;RD2;IC0;M;",
+    "ss98ec5d;TS011F-MOES;SB7d;RD2;IB1;M;",
+    "vddauzhn;TS011F-TPM;SB4U;RB5;IC4i;M;",
+    "gvn91tmx;TS011F-AB-PM;SC4u;RB5;ID2i;M;",
+    "LELLKI;TS0001-LK;SB7u;RC2;IC3i;M;",
+    "ynmowqk2;TS011F-LIDL-PM;SB4u;RB5;IC4i;M;",
+    "bgtzm4ny;TS0044-HOB;SC4u;IC3i;SD3u;ID4i;SB5u;IB6i;SD7u;IA0i;BTC5;M;",
+    "ZG-101ZL;TS0001-HB;IC4i;SC2u;BTB5;M;",
+    "fa9mlvja;TS0041-IH;SC2u;IC4;BTB5;M;",
+    "mh9px7cq;TS0044-CUS;LC0;SD2u;SC2u;SC3u;SB4u;BTD2;M;",
+    "nrfkrgf4;TS0046-IH;SB5u;IC4;SA0u;IC4;SC2u;IC4;SD2u;IC4;BTC5;M;",
+    "rco1yzb1;TS004F-LIDL;BA0u;SB0u;ID0;BTC1;M;",
+    "axpdxqgu;TS0041-MA;SA4u;IC1i;BTA0;M;",
+    "5e235jpa;TS0042-MA;SA0u;ID0i;SA3u;IC0i;BTA0;M;",
+    "gbm10jnj;TS0043-MA;SA0u;ID0i;SA4u;IC1i;SA3u;IC0i;BTA0;M;",
+    "a4xycprs;TS0044-MA;SA0u;ID0i;SA4u;IC1i;SA3u;IC0i;SB0u;ID1i;BTA0;M;",
+    "zgyzgdua;TS0044-MOES;SD2d;IC4i;SC3d;IA0i;SC2d;ID7i;SB4d;ID4i;BTC5;M;",
+    "mrpevh8p;TS0041-TB;BB4d;SB5u;ID2;BTB5;M;",
+    "yj6k7vfo;TS0041-TB2;SC3u;IB4i;BTB5;M;",
+    "itb0omhv;TS0041-MOES;SC2u;IC4;BTC2;M;",
+    "tzvbimpq;TS0042-MOES;SD2u;ID4;SC3u;ID7;BTD2;M;",
+    "pkeqinnt;TS0043-MOES;SD2u;ID4;SC2u;IC4;SC3u;ID7;BTD4;M;",
+    "sj7jbgks;TS0043-MB;SD2u;ID4;SC2u;IC4;SC3u;ID7;BTD4;M;",
+    "wkai4ga5;TS0044-TUYA;SA0d;IC1i;SA3d;IC2i;SA4d;IC0i;SB0d;ID0i;BTA0;M;",
+    "TELINK;TLSR82xx-2G;SC0u;IB4;SD7u;IB4;BTB5;M;",
+    "ja5osu5g;TS004F-Loginovo;BB6u;SC2u;IC4i;BTB5;M;",
+    "xabckq1v;TS004F-TUYA;SA0d;IC1i;SA3d;IC2i;SA4d;IC0i;SB0d;ID0i;BTA0;M;",
     "w1tcofu8;TS0001-AVT;LB5;SD7u;RC3;M;",
     "ogpla3lh;TS0002-AVT;LB5;SD3u;RC2;SD4u;RD2;M;",
     "avky2mvc;TS0003-AVT;LB5;SD3u;RC2;SD7u;RC3;SD4u;RD2;M;",
@@ -324,8 +451,8 @@ CONFIGS = [
     "eeswvvtm;TS0004-AVT;LB5;SD3u;RC2;SD7u;RC3;SD4u;RD2;SC1u;RB4;M;",
     "blhvsaqf;TS0001-BSDB;LC4;SC1u;RC3;IC2;M;",
     "blhvsaqf;TS0001-BS-T;LC4;SC1u;RC3;IC2;M;",
-    "l9brjwau;TS0002-BSDB;LC4;SB5u;RD3;IC3;SD3u;RC2;ID7;M;",
-    "l9brjwau;TS0002-BS-1;LC4;SB5u;RD3;IC3;SD3u;RC2;ID7;M;",
+    "l9brjwau;TS0002-BSDB;LD4i;SB5u;RC3;IC1;SD3u;RC2;ID7;M;",
+    "l9brjwau;TS0002-BS-1;LD4i;SB5u;RC3;IC1;SD3u;RC2;ID7;M;",
     "qkixdnon;TS0003-BSDB;LC4i;SB5u;RC3;SC1u;RC2;SD3u;RD7;M;",
     "qkixdnon;TS0003-BSEED;LC4i;SB5u;RC3;SC1u;RC2;SD3u;RD7;M;",
     "aetquff4;BSLR1;LC3;SB4u;RC0B6;IC2;M;SLP;",
@@ -338,12 +465,15 @@ CONFIGS = [
     "kfwhmnvc;BSLR3;LC3;SB5u;RC0B6;ID2;SB4u;RA1D7;IC2;SD4u;RA0C1;ID3;M;SLP;",
     "kfwhmnvc;TS0013-2-BS;LC3;SB5u;RC0B6;ID2;SB4u;RA1D7;IC2;SD4u;RA0C1;ID3;M;SLP;",
     "ysdv91bk;TS0001-BSMN;LA0i;SC3u;RC2;M;",
+    "mklgayek;TS0002-BSMN;LA0i;SC3u;RC2;SB7u;RB4;M;",
     "7aqaupa9;TS0003-BSMN;LA0i;SC3u;RC2;SB7u;RB4;SB5u;RC0;M;",
     "7aqaupa9;TS0003-BS;LA0i;SC3u;RC2;SB7u;RB4;SB5u;RC0;M;",
     "s6ma1nh4;TS0004-BSMN;LA0i;SC3u;RC2;SB7u;RB4;SB5u;RC0;SD7u;RD2;M;",
     "s6ma1nh4;TS0004-BS;LA0i;SC3u;RC2;SB7u;RB4;SB5u;RC0;SD7u;RD2;M;",
     "9akmi5ly;TS0001-CUS-T;LB4i;SC2u;RC3;ID2i;M;",
+    "wijoqjk1;TS0001-BS12;LB4i;SC2u;RC3;ID2i;M;",
     "cauq1okq;TS0002-CUS-T;LC4;SB5u;RC2;IB4i;SD2u;RC3;M;",
+    "w5xztuy7;TS0002-BS22;LC4;SB5u;RC2;IB4i;SD2u;RC3;M;",
     "hafsqare;TS0011-BS-T;LC2;SA0u;RD3;IB4;M;",
     "f2slq5pj;Bseed-2-gang;LC3;SB6u;RD3;IC2;SA1u;RC0;IB4;M;",
     "f2slq5pj;Bseed-2-gang-ED;LC3;SB6u;RD3;IC2;SA1u;RC0;IB4;M;",
@@ -354,17 +484,32 @@ CONFIGS = [
     "jn2x20tg;TS0726-1-BS;LC4;SB1u;RC2;IC0;M;",
     "zjuvw9zf;TS0726-2-BS;LC4;SB1u;RC2;IC0;SB7u;RC3;ID7;M;",
     "iedhxgyi;TS0726-3-BS;LC4;SB1u;RC2;IC0;SB7u;RC3;ID7;SB4u;RD2;IB5;M;",
+    "pzao9ls1;BS4;LC1;SD3u;RA0;ID2;SD7u;RA1;IB4;SD4u;RC2;IB5;SB6u;RC3;IC4;M;",
+    "pzao9ls1;TS0726-4-BS;LC1;SD3u;RA0;ID2;SD7u;RA1;IB4;SD4u;RC2;IB5;SB6u;RC3;IC4;M;",
+    "xkxgfxsg;TS0726-1-BSL;LC3;SB5u;RC1;ID2;M;",
+    "tlsvxhxc;TS0726-2-BSL;LB4;SC2u;RC0;ID2;SC3u;RB6;IA1;M;",
+    "r2fgo9ks;TS0726-3-BS;LD4;SA1u;RB4;IC1;SC2u;RD2;IB5;SA0u;RC3;IB6;M;",
+    "ZG-302Z1;TS0001-HBS;IC1i;SC2u;RB5B4;M;",
     "bmqxalil;TS0001-HMT;LC2i;SA0u;RD2;M;",
     "in5qxhtt;TS0002-HMT;LC2i;SB4u;RD7;SD4u;RC3;M;",
     "pv4puuxi;TS0003-HMT;LC2i;SB4u;RD7;SA0u;RD2;SD4u;RC3;M;",
     "qq9ahj6z;TS0001-IHS-T;LC4i;SB4U;RC3;M;",
     "zxrfobzw;TS0002-IHS-T;LC4i;SC0U;RC2;SB5U;RD2;M;",
+    "ju82pu2b;TS0003-IHS-T;LC4i;SC0u;RC2;SB4u;RC3;SB5u;RD2;M;",
+    "dlp6yvs8;LerLink-2-gang;SA0u;RB4;ID7;SB7u;RB5;ID2;M;",
+    "qp7x8u3a;LerLink-3-gang;SA0u;RB4;ID7;SC2u;RC3;IB1;SB7u;RB5;ID2;M;",
+    "qa8s8vca;TS130F-LT;BD2u;LA0;XB5C3f;CC0C2;M;",
     "kea5qgnd;TS0011-MH;SC4u;RB4A0;ID2;M;",
     "toaaawnr;TS0012-MH;SC4u;RB4A0;ID2;SD7u;RD4B5;IC3;M;",
     "tqwydnqn;TS0013-MH;SC4u;RB4A0;ID2;SD7u;RD4B5;IC3;SB7u;RC0C2;IB1;M;",
     "bmzfjnbp;TS0011-MHB;SA4u;RD1D0;IA6i;M;",
     "ugaem1nb;TS0012-MHB;SA3u;RD1D0;IB1i;SB0u;RC2A0;IA5i;M;",
     "snq47izk;TS0013-MHB;SA3u;RD1D0;IB1i;SA4u;RC2A0;IA6i;SB0u;RC0C1;IA5i;M;",
+    "gsqxcwqr;TS0001-MIL;BC0u;LA0i;SC0u;RB4;IC4i;",
+    "ybjqjsuz;TS0002-YBJ;LA0i;SB6u;RB4;IA1i;SD3u;RD2;ID4i;",
+    "ybjqjsuz;TS0003-YBJ;LA0i;SB6u;RB4;IA1i;SC0u;RD2;IC4i;SD3u;RC3;ID4i;",
+    "ybjqjsuz;TS0003-YBJ;LA0i;SB6u;RB4;IA1i;SC0u;RD2;IC4i;SD3u;RC3;ID4i;",
+    "03vs3ks5;TS0004-MIL;LA0i;SB6u;RC2;IA1i;SC0u;RC3;IC4i;SD7u;RD2;IC1i;SD3u;RB4;ID4i;",
     "hhiodade;Moes-1-gang;SC1u;RB5;ID7;M;",
     "hhiodade;Moes-1-gang-ED;SC1u;RB5;ID7;M;",
     "Moes-1-gang;Moes-1-gang;SC1u;RB5;ID7;M;",
@@ -378,16 +523,30 @@ CONFIGS = [
     "Moes-3-gang;Moes-3-gang;SB6u;RB5;ID3;SC1u;RB4;ID7;SC4u;RD2;IC0;M;",
     "Moes-3-gang;Moes-3-gang-ED;SB6u;RB5;ID3;SC1u;RB4;ID7;SC4u;RD2;IC0;M;",
     "mrduubod;MS4;SB1u;RA4;ID0;SB0u;RC0;IC2;SA3u;RC1;IA5;SA0u;RD1;IA6;M;",
+    "vaq2bfcu;MS33;SB6u;RB5;ID3i;SC1u;RB4;ID7i;SC4u;RD2;IC0i;SB7u;RC3;IA0i;M;",
+    "785olaiq;ZTS-3W-CUSTOM;SB6u;RB5;ID3i;SC1u;RB4;ID7i;SC4u;RD2;IC0i;M;",
+    "l67wb0p1;TS0001-PST;LB1;SB7u;RB4;ID2;M;",
+    "cmgs1zkr;TS0002-PST;LB1;SC3u;RC2;ID7;SB5u;RC0;IC4;M;",
     "myaaknbq;TS0001-PS;LC2;SA6u;RB0;IA0;M;",
     "myaaknbq;T441;LC2;SA6u;RB0;IA0;M;",
     "mufwv0ry;TS0002-PS;LC2;SA3u;RA4;IC0;SB1u;RD1;IC1;M;",
     "mufwv0ry;T442;LC2;SA3u;RA4;IC0;SB1u;RD1;IC1;M;",
+    "lsunm46z;TS0003-PS;LC2;SA3u;RA4;IC0;SA6u;RB0;IA0;SB1u;RD1;IC1;M;",
+    "b7s7xsow;TS0001-TA;SC2u;RC3;IB1;M;",
+    "ehgouyvu;TS0001-TA1;SC2u;RC3;IB1;M;",
+    "aa5t61rh;TS0002-TA;SA0u;RB4;ID7;SB7u;RB5;ID2;M;",
+    "rhkfbfcv;TS0003-TA;SA0u;RB4;ID7;SC2u;RC3;IB1;SB7u;RB5;ID2;M;",
+    "zcbpj2t6;TS0003-TA1;SA0u;RB4;ID7;SC2u;RC3;IB1;SB7u;RB5;ID2;M;",
+    "vit9k2nb;TS0004-TA;SA0u;RB4;IB1;SC4u;RD2;IB7;SC2u;RB5;ID4;SC3u;RD7;IC0;M;",
     "u6ocpapf;TS0001-CUS;LB1;SC3u;RD2;M;",
     "gbdxbmwz;TS0004-CUS;LB1;SC3u;RD2;SD7u;RB5;SC2u;RB4;SB7u;RC0;M;",
+    "ehgouyvu;TS0001-LS;SC2u;RC3;IB1;",
     "zmlunnhy;Zemi-2-gang;SC3u;RC2D4;IB7;SD2u;RB5C4;ID7;M;",
     "zmlunnhy;Zemi-2-gang-ED;SC3u;RC2D4;IB7;SD2u;RB5C4;ID7;M;",
     "Zemi-2-gang;Zemi-2-gang;SC3u;RC2D4;IB7;SD2u;RB5C4;ID7;M;",
     "Zemi-2-gang;Zemi-2-gang-ED;SC3u;RC2D4;IB7;SD2u;RB5C4;ID7;M;",
+    "ilauzyjm;TS0011-ZS;SB0u;RD1A4;IA6;M;",
+    "rbl8c85w;TS0012-ZS;SA0u;RD1A4;IC1;SB1u;RC0C2;IA5;M;",
 ]
 
 for config in CONFIGS:
@@ -396,6 +555,7 @@ for config in CONFIGS:
     relay_cnt = 0
     switch_cnt = 0
     indicators_cnt = 0
+    cover_switch_cnt = 0
     cover_cnt = 0
     has_dedicated_net_led = False
     for peripheral in peripherals:
@@ -405,6 +565,8 @@ for config in CONFIGS:
             relay_cnt += 1
         if peripheral[0] == 'S':
             switch_cnt += 1
+        if peripheral[0] == 'X':
+            cover_switch_cnt += 1
         if peripheral[0] == 'C':
             cover_cnt += 1
         if peripheral[0] == 'I':
@@ -497,7 +659,7 @@ for config in CONFIGS:
                 attribute_converter = lambda x: {0: "released", 1: "press", 2: "long_press", 3: "position_on", 4: "position_off"}[int(x)]
             )
         )
-    for endpoint_id in range(switch_cnt + 1, switch_cnt + indicators_cnt + 1):
+    for endpoint_id in range(switch_cnt + 1, switch_cnt + min(relay_cnt, indicators_cnt) + 1):
         builder = (
             builder
             .removes(OnOff.cluster_id, cluster_type=ClusterType.Client, endpoint_id=endpoint_id)
@@ -522,7 +684,83 @@ for config in CONFIGS:
             )
         )
 
-    for endpoint_id in range(switch_cnt + indicators_cnt + 1, switch_cnt + indicators_cnt + cover_cnt + 1):
+    for endpoint_id in range(switch_cnt + relay_cnt + 1, switch_cnt + relay_cnt + cover_switch_cnt + 1):
+        builder = (
+            builder
+            .adds(CustomCoverSwitchCluster, endpoint_id=endpoint_id)
+            .removes(MultistateInput.cluster_id, cluster_type=ClusterType.Client, endpoint_id=endpoint_id)
+            .adds(CustomMultistateInputCluster, endpoint_id=endpoint_id)
+            .enum(
+                CustomCoverSwitchCluster.AttributeDefs.switch_type.name,
+                CoverSwitchType,
+                CustomCoverSwitchCluster.cluster_id,
+                translation_key="cover_switch_type_"+str(endpoint_id),
+                fallback_name="Cover switch type "+str(endpoint_id),
+                endpoint_id=endpoint_id,
+                entity_type=EntityType.CONFIG,
+            )
+            .number(
+                CustomCoverSwitchCluster.AttributeDefs.cover_index.name,
+                CustomCoverSwitchCluster.cluster_id,
+                translation_key="cover_switch_cover_index_"+str(endpoint_id),
+                fallback_name="Cover switch cover index "+str(endpoint_id),
+                min_value=0,
+                max_value=cover_cnt,
+                step=1,
+                endpoint_id=endpoint_id,
+                entity_type=EntityType.CONFIG,
+            )
+            .switch(
+                CustomCoverSwitchCluster.AttributeDefs.reversal.name,
+                CustomCoverSwitchCluster.cluster_id,
+                translation_key="cover_switch_reversal_"+str(endpoint_id),
+                fallback_name="Cover switch reversal "+str(endpoint_id),
+                endpoint_id=endpoint_id,
+                entity_type=EntityType.CONFIG,
+            )
+            .enum(
+                CustomCoverSwitchCluster.AttributeDefs.local_mode.name,
+                CoverSwitchMode,
+                CustomCoverSwitchCluster.cluster_id,
+                translation_key="cover_switch_local_mode_"+str(endpoint_id),
+                fallback_name="Cover switch local mode "+str(endpoint_id),
+                endpoint_id=endpoint_id,
+                entity_type=EntityType.CONFIG,
+            )
+            .enum(
+                CustomCoverSwitchCluster.AttributeDefs.binded_mode.name,
+                CoverSwitchMode,
+                CustomCoverSwitchCluster.cluster_id,
+                translation_key="cover_switch_binded_mode_"+str(endpoint_id),
+                fallback_name="Cover switch binded mode "+str(endpoint_id),
+                endpoint_id=endpoint_id,
+                entity_type=EntityType.CONFIG,
+            )
+            .number(
+                CustomCoverSwitchCluster.AttributeDefs.long_press_duration.name,
+                CustomCoverSwitchCluster.cluster_id,
+                translation_key="cover_switch_long_press_duration_"+str(endpoint_id),
+                fallback_name="Cover switch long press duration "+str(endpoint_id),
+                min_value=0,
+                max_value=5000,
+                step=1,
+                endpoint_id=endpoint_id,
+                entity_type=EntityType.CONFIG,
+            )
+            .sensor(
+                MultistateInput.AttributeDefs.present_value.name,
+                MultistateInput.cluster_id,
+                translation_key="cover_switch_press_action_"+str(endpoint_id),
+                fallback_name="Cover switch press action "+str(endpoint_id),
+                endpoint_id=endpoint_id,
+                reporting_config=ReportingConfig(min_interval=0, max_interval=300, reportable_change=1),
+                device_class=SensorDeviceClass.ENUM,
+                attribute_converter = lambda x: {0: "released", 1: "open", 2: "close", 3: "stop", 4: "long_open", 5: "long_close"}[int(x)],
+                entity_type=EntityType.DIAGNOSTIC,
+            )
+        )
+
+    for endpoint_id in range(switch_cnt + relay_cnt + cover_switch_cnt + 1, switch_cnt + relay_cnt + cover_switch_cnt + cover_cnt + 1):
         builder = (
             builder
             .removes(WindowCovering.cluster_id, cluster_type=ClusterType.Client, endpoint_id=endpoint_id)
@@ -548,11 +786,26 @@ for config in CONFIGS:
             )
         )
 
+    builder = (
+        builder
+        .removes(Basic.cluster_id, cluster_type=ClusterType.Client, endpoint_id=1)
+        .adds(CustomBasicCluster, endpoint_id=1)
+        .number(
+            CustomBasicCluster.AttributeDefs.multi_press_reset_count.name,
+            CustomBasicCluster.cluster_id,
+            translation_key="multi_press_reset_count",
+            fallback_name="Multi press reset count",
+            min_value=0,
+            max_value=255,
+            step=1,
+            endpoint_id=1,
+            entity_type=EntityType.CONFIG,
+        )
+    )
+
     if has_dedicated_net_led:
         builder = (
             builder
-            .removes(Basic.cluster_id, cluster_type=ClusterType.Client, endpoint_id=1)
-            .adds(CustomBasicCluster, endpoint_id=1)
             .switch(
                 CustomBasicCluster.AttributeDefs.networkIndicator.name,
                 CustomBasicCluster.cluster_id,

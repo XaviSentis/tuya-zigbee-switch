@@ -5,6 +5,8 @@
 #include "consts.h"
 #include "base_components/oem_scanner.h"
 #include "device_config/config_nv.h"
+#include "device_config/config_parser.h"
+#include "device_config/device_params_nv.h"
 #include "device_config/nvm_items.h"
 #include "device_config/reset.h"
 #include "hal/nvm.h"
@@ -20,7 +22,8 @@ const uint8_t appVersion   = 0x03;
 const uint8_t stackVersion = 0x02;
 const uint8_t hwVersion    = 0x00;
 
-const uint8_t powerSource = 0x01; // POWER_SOURCE_MAINS_1_PHASE
+// Power source - set at runtime based on battery config
+uint8_t powerSource = POWER_SOURCE_MAINS_1_PHASE; // 0x01 default
 
 const uint16_t cluster_revision = 0x01;
 DEF_STR(STRINGIFY_VALUE(VERSION_STR), swBuildId);
@@ -40,10 +43,18 @@ void basic_cluster_callback_attr_write_trampoline(uint16_t attribute_id) {
     if (attribute_id == ZCL_ATTR_BASIC_STATUS_LED_STATE) {
         network_indicator_from_manual_state(&network_indicator);
     }
+    if (attribute_id == ZCL_ATTR_BASIC_MULTI_PRESS_RESET_COUNT) {
+        device_params_set_multi_press_reset_count(g_multi_press_reset_count);
+    }
 }
 
 void basic_cluster_add_to_endpoint(zigbee_basic_cluster *cluster,
                                    hal_zigbee_endpoint *endpoint) {
+    // Set power source based on runtime battery configuration
+    if (battery.pin != HAL_INVALID_PIN) {
+        powerSource = POWER_SOURCE_BATTERY;
+    }
+
     // Initialize build date buffer
     zb_build_date_init(ZB_BUILD_DATE_YYYYMMDD);
 
@@ -74,20 +85,26 @@ void basic_cluster_add_to_endpoint(zigbee_basic_cluster *cluster,
                ATTR_READONLY, cluster_revision);
     SETUP_ATTR(11, ZCL_ATTR_BASIC_DEVICE_CONFIG, ZCL_DATA_TYPE_LONG_CHAR_STR,
                ATTR_WRITABLE, device_config_str);
-    SETUP_ATTR(12, ZCL_ATTR_BASIC_OEM_DUMP, ZCL_DATA_TYPE_LONG_CHAR_STR,
-               ATTR_READONLY, oem_dump_str);
+    SETUP_ATTR(12, ZCL_ATTR_BASIC_MULTI_PRESS_RESET_COUNT, ZCL_DATA_TYPE_UINT8,
+               ATTR_WRITABLE, g_multi_press_reset_count);
+    uint8_t attr_count = 13;
     if (network_indicator.has_dedicated_led) {
-        SETUP_ATTR(13, ZCL_ATTR_BASIC_STATUS_LED_STATE, ZCL_DATA_TYPE_BOOLEAN,
+        SETUP_ATTR(attr_count, ZCL_ATTR_BASIC_STATUS_LED_STATE, ZCL_DATA_TYPE_BOOLEAN,
                    ATTR_WRITABLE, network_indicator.manual_state_when_connected);
+        attr_count++;
     }
+    // OEM scanner dump kept as the last Basic attribute (index shifts with the LED attr)
+    SETUP_ATTR(attr_count, ZCL_ATTR_BASIC_OEM_DUMP, ZCL_DATA_TYPE_LONG_CHAR_STR,
+               ATTR_READONLY, oem_dump_str);
+    attr_count++;
 
     endpoint->clusters[endpoint->cluster_count].cluster_id      = ZCL_CLUSTER_BASIC;
-    endpoint->clusters[endpoint->cluster_count].attribute_count =
-        network_indicator.has_dedicated_led ? 14 : 13;
+    endpoint->clusters[endpoint->cluster_count].attribute_count = attr_count;
     endpoint->clusters[endpoint->cluster_count].attributes = cluster->attr_infos;
     endpoint->clusters[endpoint->cluster_count].is_server  = 1;
     endpoint->cluster_count++;
 
+    device_params_load_from_nv();
     basic_cluster_load_attrs_from_nv();
     if (hal_zigbee_get_network_status() == HAL_ZIGBEE_NETWORK_JOINED &&
         network_indicator.has_dedicated_led) {

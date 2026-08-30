@@ -13,7 +13,6 @@ girierDefinitions = girierDefinitions.definitions ?? girierDefinitions;
 lonsonhoDefinitions = lonsonhoDefinitions.definitions ?? lonsonhoDefinitions;
 
 const definitions = [];
-const multiplePinoutsDescription = "WARNING! There are multiple known pinouts for the AVATTO ZWSM16 4gang! If the device is very very old, you may need the alt_config";
 
 
 /********************************************************************
@@ -29,9 +28,12 @@ const multiplePinoutsDescription = "WARNING! There are multiple known pinouts fo
 
 const tuyaModels = [
     "FZB-1",
+    "IH-K663",
     "QS-Zigbee-SEC01-U",
     "QS-Zigbee-SEC02-U",
+    "TLSR82xx_2btn_remote",
     "TS0001",
+    "TS0001_power",
     "TS0001_switch_1_gang",
     "TS0001_switch_module",
     "TS0001_switch_module_1",
@@ -42,6 +44,7 @@ const tuyaModels = [
     "TS0003_switch_3_gang",
     "TS0003_switch_3_gang_with_backlight",
     "TS0003_switch_module_2",
+    "TS0003_switch_module_3",
     "TS0004",
     "TS0004_switch_module",
     "TS0004_switch_module_2",
@@ -52,84 +55,56 @@ const tuyaModels = [
     "TS0013",
     "TS0013_switch_module",
     "TS0014",
+    "TS0041",
+    "TS0042",
+    "TS0043",
     "TS0044",
+    "TS0046",
+    "TS004F",
+    "TS011F_din_smart_relay",
     "TS011F_plug_1",
     "TS011F_plug_2",
+    "TS0601_switch_1_gang",
     "TS0726_1_gang_scene_switch",
     "TS0726_2_gang_scene_switch",
     "TS0726_3_gang",
     "TS0726_3_gang_scene_switch",
+    "TS0726_4_gang_scene_switch",
     "TS130F",
+    "TW-03",
     "WHD02",
     "_TZ3000_pgq7ormg",
 ];
 
-const tuyaMultiplePinoutsModels = [
-    "TS0001_switch_1_gang",
-    "TS0001_switch_module",
-    "TS0001_switch_module_1",
-    "TS0002_basic",
-    "TS0002_limited",
-    "TS0003_switch_3_gang",
-    "TS0004",
-    "TS0004_switch_module_2",
-    "TS0012",
-    "TS130F",
-];
-
 for (let definition of tuyaDefinitions) {
     if (tuyaModels.includes(definition.model)) {
-        if (tuyaMultiplePinoutsModels.includes(definition.model)) {
-            definitions.push(
-                {
-                    ...definition,
-                    description: multiplePinoutsDescription,
-                    whiteLabel: definition.whiteLabel.map(entry => ({...entry, description: multiplePinoutsDescription,})),
-                    ota: true,
-                }
-            )
-        }
-        else {
-            definitions.push(
-                {
-                    ...definition,
-                    ota: true,
-                }
-            )
-        }
+        definitions.push(
+            {
+                ...definition,
+                ota: true,
+            }
+        )
     }
 }
 
 const moesModels = [
-    "ZM4LT2",
-    "ZM4LT3",
-    "ZM4LT4",
+    "ERS-10TZBVB-AA",
+    "SR-ZS",
+    "ZG-101ZL",
     "ZS-EUB_1gang",
-];
-
-const moesMultiplePinoutsModels = [
+    "ZT-B-EU1",
+    "ZT-B-EU2",
+    "ZT-B-EU3",
 ];
 
 for (let definition of moesDefinitions) {
     if (moesModels.includes(definition.model)) {
-        if (moesMultiplePinoutsModels.includes(definition.model)) {
-            definitions.push(
-                {
-                    ...definition,
-                    description: multiplePinoutsDescription,
-                    whiteLabel: definition.whiteLabel.map(entry => ({...entry, description: multiplePinoutsDescription,})),
-                    ota: true,
-                }
-            )
-        }
-        else {
-            definitions.push(
-                {
-                    ...definition,
-                    ota: true,
-                }
-            )
-        }
+        definitions.push(
+            {
+                ...definition,
+                ota: true,
+            }
+        )
     }
 }
 
@@ -137,29 +112,14 @@ const avattoModels = [
     "LZWSM16-1",
 ];
 
-const avattoMultiplePinoutsModels = [
-];
-
 for (let definition of avattoDefinitions) {
     if (avattoModels.includes(definition.model)) {
-        if (avattoMultiplePinoutsModels.includes(definition.model)) {
-            definitions.push(
-                {
-                    ...definition,
-                    description: multiplePinoutsDescription,
-                    whiteLabel: definition.whiteLabel.map(entry => ({...entry, description: multiplePinoutsDescription,})),
-                    ota: true,
-                }
-            )
-        }
-        else {
-            definitions.push(
-                {
-                    ...definition,
-                    ota: true,
-                }
-            )
-        }
+        definitions.push(
+            {
+                ...definition,
+                ota: true,
+            }
+        )
     }
 }
 
@@ -167,60 +127,30 @@ const girierModels = [
     "JR-ZDS01",
 ];
 
-const girierMultiplePinoutsModels = [
-];
-
 for (let definition of girierDefinitions) {
     if (girierModels.includes(definition.model)) {
-        if (girierMultiplePinoutsModels.includes(definition.model)) {
-            definitions.push(
-                {
-                    ...definition,
-                    description: multiplePinoutsDescription,
-                    whiteLabel: definition.whiteLabel.map(entry => ({...entry, description: multiplePinoutsDescription,})),
-                    ota: true,
-                }
-            )
-        }
-        else {
-            definitions.push(
-                {
-                    ...definition,
-                    ota: true,
-                }
-            )
-        }
+        definitions.push(
+            {
+                ...definition,
+                ota: true,
+            }
+        )
     }
 }
 
 const lonsonhoModels = [
-    "TS130F_dual",
-];
-
-const lonsonhoMultiplePinoutsModels = [
+    "TS0001",
     "TS130F_dual",
 ];
 
 for (let definition of lonsonhoDefinitions) {
     if (lonsonhoModels.includes(definition.model)) {
-        if (lonsonhoMultiplePinoutsModels.includes(definition.model)) {
-            definitions.push(
-                {
-                    ...definition,
-                    description: multiplePinoutsDescription,
-                    whiteLabel: definition.whiteLabel.map(entry => ({...entry, description: multiplePinoutsDescription,})),
-                    ota: true,
-                }
-            )
-        }
-        else {
-            definitions.push(
-                {
-                    ...definition,
-                    ota: true,
-                }
-            )
-        }
+        definitions.push(
+            {
+                ...definition,
+                ota: true,
+            }
+        )
     }
 }
 
