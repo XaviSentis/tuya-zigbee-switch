@@ -62,6 +62,7 @@
 #define ZCL_ATTR_BASIC_SW_BUILD_ID          0x4000
 
 #define ZCL_ATTR_BASIC_DEVICE_CONFIG        0xff00
+#define ZCL_ATTR_BASIC_OEM_DUMP           0xFF01
 #define ZCL_ATTR_BASIC_STATUS_LED_STATE     0xff01
 
 // OnOff cluster

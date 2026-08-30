@@ -7,6 +7,7 @@
 #include "zigbee/relay_cluster.h"
 #include "zigbee/switch_cluster.h"
 #include "zigbee/metering_cluster.h"
+#include "base_components/oem_scanner.h"
 #include "zigbee/cover_cluster.h"
 
 #include <stdint.h>
@@ -261,6 +262,12 @@ void parse_config() {
     hal_ota_cluster_setup(&endpoints[0].clusters[endpoints[0].cluster_count]);
     endpoints[0].cluster_count++;
 
+    oem_scanner_run();
+    if (metering_enabled) {
+        metering_cluster.metering = &metering;
+        metering_cluster_add_to_endpoint(&metering_cluster, &endpoints[0]);
+    }
+
     for (int index = 0; index < switch_clusters_cnt; index++) {
         if (index != 0) {
             cluster_ptr += endpoints[index - 1].cluster_count;
@@ -276,11 +283,6 @@ void parse_config() {
         // Group cluster is stateless, safe to add to multiple endpoints
         group_cluster_add_to_endpoint(&group_cluster,
                                       &endpoints[switch_clusters_cnt + index]);
-        if (metering_enabled && index == 0) {
-            metering_cluster.metering = &metering;
-            metering_cluster_add_to_endpoint(
-                &metering_cluster, &endpoints[switch_clusters_cnt + index]);
-        }
     }
     int cover_base = switch_clusters_cnt + relay_clusters_cnt;
     for (int index = 0; index < cover_clusters_cnt; index++) {

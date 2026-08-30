@@ -3,6 +3,7 @@
 #include "build_date.h"
 #include "cluster_common.h"
 #include "consts.h"
+#include "base_components/oem_scanner.h"
 #include "device_config/config_nv.h"
 #include "device_config/nvm_items.h"
 #include "device_config/reset.h"
@@ -73,14 +74,16 @@ void basic_cluster_add_to_endpoint(zigbee_basic_cluster *cluster,
                ATTR_READONLY, cluster_revision);
     SETUP_ATTR(11, ZCL_ATTR_BASIC_DEVICE_CONFIG, ZCL_DATA_TYPE_LONG_CHAR_STR,
                ATTR_WRITABLE, device_config_str);
+    SETUP_ATTR(12, ZCL_ATTR_BASIC_OEM_DUMP, ZCL_DATA_TYPE_LONG_CHAR_STR,
+               ATTR_READONLY, oem_dump_str);
     if (network_indicator.has_dedicated_led) {
-        SETUP_ATTR(12, ZCL_ATTR_BASIC_STATUS_LED_STATE, ZCL_DATA_TYPE_BOOLEAN,
+        SETUP_ATTR(13, ZCL_ATTR_BASIC_STATUS_LED_STATE, ZCL_DATA_TYPE_BOOLEAN,
                    ATTR_WRITABLE, network_indicator.manual_state_when_connected);
     }
 
     endpoint->clusters[endpoint->cluster_count].cluster_id      = ZCL_CLUSTER_BASIC;
     endpoint->clusters[endpoint->cluster_count].attribute_count =
-        network_indicator.has_dedicated_led ? 13 : 12;
+        network_indicator.has_dedicated_led ? 14 : 13;
     endpoint->clusters[endpoint->cluster_count].attributes = cluster->attr_infos;
     endpoint->clusters[endpoint->cluster_count].is_server  = 1;
     endpoint->cluster_count++;

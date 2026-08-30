@@ -130,6 +130,7 @@ TELINK_SOURCES := \
 	hal/gpio.c \
 	hal/gpio_interrupts.c \
 	hal/gpio_counter.c \
+	hal/flash.c \
 	hal/nvm.c \
 	hal/zigbee.c \
 	hal/zigbee_network.c \
@@ -148,6 +149,7 @@ COMMON_SOURCES := \
 	$(SRC_DIR)/base_components/network_indicator.c \
 	$(SRC_DIR)/base_components/relay.c \
 	$(SRC_DIR)/base_components/metering_bl0937.c \
+	$(SRC_DIR)/base_components/oem_scanner.c \
 	$(SRC_DIR)/device_config/config_nv.c \
 	$(SRC_DIR)/device_config/reset.c \
 	$(SRC_DIR)/device_config/config_parser.c \
