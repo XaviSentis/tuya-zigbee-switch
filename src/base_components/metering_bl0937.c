@@ -17,9 +17,16 @@ static uint32_t freq_mhz(uint32_t pulses, uint32_t elapsed_ms) {
     if (elapsed_ms == 0) {
         return 0;
     }
-    // pulses / (ms/1000) in mHz == pulses * 1e6 / ms
-    // Split to keep intermediates inside 32 bits for realistic inputs.
-    return (uint32_t)(((uint64_t)pulses * 1000000ULL) / elapsed_ms);
+    // 32-bit only math: the TC32 toolchain does not provide 64-bit
+    // division helpers (__udivdi3). Split the *1e6 scaling in two
+    // *1000 steps, carrying the remainder for precision.
+    if (pulses > 4000000U) {
+        pulses = 4000000U; // clamp far above any real BL0937 rate
+    }
+    uint32_t k = pulses * 1000U;
+    uint32_t q = k / elapsed_ms;
+    uint32_t r = k % elapsed_ms;
+    return q * 1000U + (r * 1000U) / elapsed_ms;
 }
 
 int8_t metering_bl0937_init(metering_bl0937_t *m) {
