@@ -3,10 +3,10 @@
 
 #include <stdint.h>
 
-/* ZCL long char string layout: uint16 length + data */
+/* ZCL char string layout: uint8 length + data (must match ZCL_DATA_TYPE_CHAR_STR) */
 typedef struct {
-    uint16_t size;
-    char     data[250];
+    uint8_t length;
+    char    data[250];
 } oem_dump_str_t;
 
 extern oem_dump_str_t oem_dump_str;

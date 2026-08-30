@@ -21,7 +21,7 @@ static void set_result(const char *s) {
     uint16_t n = (uint16_t)strlen(s);
     if (n > BLOCK_MAX) { n = BLOCK_MAX; }
     memcpy(oem_dump_str.data, s, n);
-    oem_dump_str.size = n;
+    oem_dump_str.length = (uint8_t)n;
 }
 
 static int32_t find_needle(const uint8_t *buf, uint32_t len) {
@@ -52,7 +52,7 @@ static uint8_t extract_block(uint32_t anchor_addr) {
         if (b == '}') { break; }
         addr++;
     }
-    oem_dump_str.size = n;
+    oem_dump_str.length = (uint8_t)n;
     printf("oem-scan: OEM config at 0x%x (%d bytes)\r\n",
            (unsigned int)start, (int)n);
     return 1;

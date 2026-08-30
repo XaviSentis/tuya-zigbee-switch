@@ -94,7 +94,8 @@ void basic_cluster_add_to_endpoint(zigbee_basic_cluster *cluster,
         attr_count++;
     }
     // OEM scanner dump kept as the last Basic attribute (index shifts with the LED attr)
-    SETUP_ATTR(attr_count, ZCL_ATTR_BASIC_OEM_DUMP, ZCL_DATA_TYPE_LONG_CHAR_STR,
+    // CHAR_STR (1-byte length prefix) — oem_dump_str_t layout is {uint8 length; char data[]}
+    SETUP_ATTR(attr_count, ZCL_ATTR_BASIC_OEM_DUMP, ZCL_DATA_TYPE_CHAR_STR,
                ATTR_READONLY, oem_dump_str);
     attr_count++;
 
