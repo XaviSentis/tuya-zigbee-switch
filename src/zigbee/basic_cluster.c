@@ -17,10 +17,11 @@
 #include "silabs_config.h"
 #endif
 
-/* Basic cluster registers up to 19 attributes (13 base + LED + OEM_DUMP..DUMP5). */
-_Static_assert(19 <= sizeof(((zigbee_basic_cluster *)0)->attr_infos) /
-                     sizeof(((zigbee_basic_cluster *)0)->attr_infos[0]),
-               "attr_infos overflow");
+/* Compile-time check: attr_infos must hold 19 attributes (13 base + LED + OEM_DUMP..DUMP5). */
+typedef char attr_infos_overflow_check[
+    (19 <= sizeof(((zigbee_basic_cluster *)0)->attr_infos) /
+           sizeof(((zigbee_basic_cluster *)0)->attr_infos[0])) ? 1 : -1]
+    __attribute__((unused));
 
 const uint8_t zclVersion   = 0x03;
 const uint8_t appVersion   = 0x03;
