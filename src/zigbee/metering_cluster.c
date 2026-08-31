@@ -69,6 +69,7 @@ void metering_cluster_add_to_endpoint(zigbee_metering_cluster *cluster,
 
     // --- Metering (0x0702) ---
     set_uint48(cluster->curr_summ_delivered, cluster->metering->energy_wh);
+    cluster->status               = 0;    // bitmap8, no error
     cluster->unit_of_measure      = 0;    // kWh
     cluster->multiplier           = 1;    // uint24
     cluster->divisor              = 1000; // Wh -> kWh
@@ -80,29 +81,32 @@ void metering_cluster_add_to_endpoint(zigbee_metering_cluster *cluster,
         SETUP_ATTR_FOR_TABLE(table, 0, ZCL_ATTR_METERING_CURR_SUMM_DELIVERED,
                              ZCL_DATA_TYPE_UINT48, ATTR_READONLY,
                              cluster->curr_summ_delivered);
-        SETUP_ATTR_FOR_TABLE(table, 1, ZCL_ATTR_METERING_UNIT_OF_MEASURE,
+        SETUP_ATTR_FOR_TABLE(table, 1, ZCL_ATTR_METERING_STATUS,
+                             ZCL_DATA_TYPE_BITMAP8, ATTR_READONLY,
+                             cluster->status);
+        SETUP_ATTR_FOR_TABLE(table, 2, ZCL_ATTR_METERING_UNIT_OF_MEASURE,
                              ZCL_DATA_TYPE_ENUM8, ATTR_READONLY,
                              cluster->unit_of_measure);
-        SETUP_ATTR_FOR_TABLE(table, 2, ZCL_ATTR_METERING_MULTIPLIER,
+        SETUP_ATTR_FOR_TABLE(table, 3, ZCL_ATTR_METERING_MULTIPLIER,
                              ZCL_DATA_TYPE_UINT24, ATTR_READONLY,
                              cluster->multiplier);
-        SETUP_ATTR_FOR_TABLE(table, 3, ZCL_ATTR_METERING_DIVISOR,
+        SETUP_ATTR_FOR_TABLE(table, 4, ZCL_ATTR_METERING_DIVISOR,
                              ZCL_DATA_TYPE_UINT24, ATTR_READONLY,
                              cluster->divisor);
-        SETUP_ATTR_FOR_TABLE(table, 4, ZCL_ATTR_METERING_SUMM_FORMATTING,
+        SETUP_ATTR_FOR_TABLE(table, 5, ZCL_ATTR_METERING_SUMM_FORMATTING,
                              ZCL_DATA_TYPE_BITMAP8, ATTR_READONLY,
                              cluster->summation_formatting);
-        SETUP_ATTR_FOR_TABLE(table, 5, ZCL_ATTR_METERING_DEVICE_TYPE,
+        SETUP_ATTR_FOR_TABLE(table, 6, ZCL_ATTR_METERING_DEVICE_TYPE,
                              ZCL_DATA_TYPE_BITMAP8, ATTR_READONLY,
                              cluster->metering_device_type);
     }
     // uint24 attributes: ZCL wire size is 3 bytes, storage is uint32
-    cluster->mt_attr_infos[2].size = 3;
     cluster->mt_attr_infos[3].size = 3;
+    cluster->mt_attr_infos[4].size = 3;
 
     endpoint->clusters[endpoint->cluster_count].cluster_id =
         ZCL_CLUSTER_METERING;
-    endpoint->clusters[endpoint->cluster_count].attribute_count = 6;
+    endpoint->clusters[endpoint->cluster_count].attribute_count = 7;
     endpoint->clusters[endpoint->cluster_count].attributes =
         cluster->mt_attr_infos;
     endpoint->clusters[endpoint->cluster_count].is_server    = 1;

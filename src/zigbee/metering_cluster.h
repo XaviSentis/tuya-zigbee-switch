@@ -32,12 +32,13 @@ typedef struct {
 
     // Metering cluster storage
     uint8_t              curr_summ_delivered[6]; // uint48, little endian, Wh
+    uint8_t              status;                 // bitmap8, 0 = no error
     uint8_t              unit_of_measure;        // 0 = kWh
     uint32_t             multiplier;             // uint24 (stored low 3 bytes)
     uint32_t             divisor;                // uint24 (stored low 3 bytes)
     uint8_t              summation_formatting;
     uint8_t              metering_device_type;   // 0 = electric metering
-    hal_zigbee_attribute mt_attr_infos[6];
+    hal_zigbee_attribute mt_attr_infos[7];
 
     // Last reported values (for change-only notifications)
     uint16_t             last_voltage_dv;
