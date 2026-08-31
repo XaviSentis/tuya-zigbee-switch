@@ -381,6 +381,8 @@ static int cmd_set_counter(int argc, char **argv) {
   printf("Set pulse counter on pin %ld to %ld\n", pin, value);
   io_res_ok("pin=%ld value=%ld", pin, value);
   return 0;
+}
+
 static int cmd_set_battery_voltage(int argc, char **argv) {
     if (argc != 2) {
         fprintf(stderr, "Usage: set_battery_voltage <millivolts>\n");
