@@ -427,7 +427,7 @@ const definitions = [
             romasku.deviceConfig("device_config", "{{first_endpoint}}"),
             romasku.multiPressResetCount("multi_press_reset_count", "{{first_endpoint}}"),
             {% if device.has_metering %}
-            electricityMeter(),
+            electricityMeter({ endpointNames: ["{{first_endpoint}}"] }),
             {% endif %}
             {% if device.has_dedicated_net_led %}
             romasku.networkIndicator("network_led", "{{first_endpoint}}"),
