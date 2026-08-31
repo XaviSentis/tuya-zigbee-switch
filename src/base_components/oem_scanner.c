@@ -10,23 +10,31 @@
 #define SCAN_END        0x100000UL
 #define CHUNK           240
 #define OVERLAP         16
-#define BLOCK_MAX       (sizeof(((oem_dump_str_t *)0)->data))
-#define BLOB_READ       400
+#define CHUNK_BYTES     118
+#define BLOB_MAX        640
+#define N_CHUNKS        5
 
-oem_dump_str_t oem_dump_str = { 0, { 0 } };
+oem_dump_str_t oem_dump_str  = { 0, { 0 } };
+oem_dump_str_t oem_dump_str2 = { 0, { 0 } };
+oem_dump_str_t oem_dump_str3 = { 0, { 0 } };
+oem_dump_str_t oem_dump_str4 = { 0, { 0 } };
+oem_dump_str_t oem_dump_str5 = { 0, { 0 } };
+
+static oem_dump_str_t *const chunks[N_CHUNKS] = {
+    &oem_dump_str, &oem_dump_str2, &oem_dump_str3, &oem_dump_str4, &oem_dump_str5,
+};
 
 static const char anchor_key[] = "rl1_pin";
 #define ANCHOR_LEN (sizeof(anchor_key) - 1)
 
-static const char *const wanted[] = {
-    "ele_fun_en", "ele_pin", "vi_pin", "sel_pin", "sel_pin_lv",
-    "resistor",   "vol_def", "chip",   "rl1_pin",
-};
-#define WANTED_N (sizeof(wanted) / sizeof(wanted[0]))
+static void clear_chunks(void) {
+    for (int i = 0; i < N_CHUNKS; i++) { chunks[i]->length = 0; }
+}
 
-static void set_result(const char *s) {
+static void set_sentinel(const char *s) {
+    clear_chunks();
     uint16_t n = (uint16_t)strlen(s);
-    if (n > BLOCK_MAX) { n = BLOCK_MAX; }
+    if (n > CHUNK_BYTES) { n = CHUNK_BYTES; }
     memcpy(oem_dump_str.data, s, n);
     oem_dump_str.length = (uint8_t)n;
 }
@@ -42,70 +50,75 @@ static int32_t find_in(const uint8_t *buf, uint32_t len,
     return -1;
 }
 
-static uint16_t extract_wanted(const uint8_t *blob, uint32_t blen) {
-    uint16_t out = 0;
-    for (uint32_t k = 0; k < WANTED_N; k++) {
-        uint32_t klen = strlen(wanted[k]);
-        uint32_t search_from = 0;
-        int32_t  pos = -1;
-        while (search_from < blen) {
-            int32_t rel = find_in(blob + search_from, blen - search_from,
-                                  wanted[k], klen);
-            if (rel < 0) { break; }
-            uint32_t abspos = search_from + (uint32_t)rel;
-            uint32_t after  = abspos + klen;
-            int prev_ok = (abspos == 0) || blob[abspos - 1] == '{' ||
-                          blob[abspos - 1] == ',';
-            int next_ok = (after < blen) && blob[after] == ':';
-            if (prev_ok && next_ok) { pos = (int32_t)abspos; break; }
-            search_from = abspos + 1;
-        }
-        if (pos < 0) { continue; }
-        uint32_t after = (uint32_t)pos + klen;
-        for (uint32_t c = 0; c < klen && out < BLOCK_MAX - 1; c++) {
-            oem_dump_str.data[out++] = (char)wanted[k][c];
-        }
-        if (out < BLOCK_MAX - 1) { oem_dump_str.data[out++] = ':'; }
-        uint32_t v = after + 1;
-        while (v < blen && out < BLOCK_MAX - 1 &&
-               ((blob[v] >= '0' && blob[v] <= '9') || blob[v] == '.')) {
-            oem_dump_str.data[out++] = (char)blob[v++];
-        }
-        if (out < BLOCK_MAX - 1) { oem_dump_str.data[out++] = ','; }
-    }
-    if (out == 0) { return 0; }
-    if (out > 120) {
-        uint16_t cut = 120;
-        while (cut > 0 && oem_dump_str.data[cut - 1] != ',') { cut--; }
-        if (cut == 0) { cut = 120; }
-        out = cut;
-    }
-    oem_dump_str.length = (uint8_t)out;
-    return out;
+static uint8_t write_total_prefix(int32_t total) {
+    char tmp[8];
+    uint8_t t = 0;
+    tmp[t++] = '[';
+    char digs[6]; int d = 0; int v = total;
+    if (v == 0) { digs[d++] = '0'; }
+    while (v > 0 && d < 5) { digs[d++] = (char)('0' + v % 10); v /= 10; }
+    while (d > 0) { tmp[t++] = digs[--d]; }
+    tmp[t++] = ']';
+    memcpy(oem_dump_str.data, tmp, t);
+    return t;
 }
 
 void oem_scanner_run(void) {
-    uint8_t buf[CHUNK + OVERLAP];
+    static uint8_t buf[CHUNK + OVERLAP];
+
     if (hal_flash_read(0, OVERLAP, buf) != 0) {
-        set_result("oem-scan:unsupported");
+        set_sentinel("oem-scan:unsupported");
         return;
     }
+
     for (uint32_t addr = SCAN_START; addr < SCAN_END; addr += CHUNK) {
         uint32_t len = CHUNK + OVERLAP;
         if (addr + len > SCAN_END) { len = SCAN_END - addr; }
         if (hal_flash_read(addr, len, buf) != 0) { break; }
+
         int32_t hit = find_in(buf, len, anchor_key, ANCHOR_LEN);
         if (hit < 0) { continue; }
+
         uint32_t hit_addr = addr + (uint32_t)hit;
-        uint32_t win_start = (hit_addr > BLOB_READ / 2) ? hit_addr - BLOB_READ / 2 : 0;
-        uint8_t blob[BLOB_READ];
-        if (hal_flash_read(win_start, BLOB_READ, blob) != 0) { continue; }
-        if (extract_wanted(blob, BLOB_READ) > 0) {
-            printf("oem-scan: extracted keys near 0x%x\r\n", (unsigned int)hit_addr);
+        uint32_t back = 500;
+        uint32_t win_start = (hit_addr > back) ? hit_addr - back : 0;
+        static uint8_t  blob[BLOB_MAX];
+        if (hal_flash_read(win_start, BLOB_MAX, blob) != 0) { continue; }
+
+        int32_t rel = (int32_t)(hit_addr - win_start);
+        int32_t s = rel;
+        while (s > 0 && blob[s] != '{') { s--; }
+        int32_t e = rel;
+        while (e < BLOB_MAX - 1 && blob[e] != '}') { e++; }
+        if (blob[s] != '{' || blob[e] != '}') {
+            set_sentinel("oem:bounds-error");
             return;
         }
-        set_result("oem:present,no-wanted-keys");
+
+        int32_t total = e - s + 1;
+        const uint8_t *bp = &blob[s];
+
+        clear_chunks();
+
+        uint8_t pfx = write_total_prefix(total);
+        int32_t c0_room = CHUNK_BYTES - pfx;
+        int32_t c0_n = (total < c0_room) ? total : c0_room;
+        memcpy(oem_dump_str.data + pfx, bp, (size_t)c0_n);
+        oem_dump_str.length = (uint8_t)(pfx + c0_n);
+
+        int32_t off = c0_n;
+        for (int i = 1; i < N_CHUNKS && off < total; i++) {
+            int32_t remain = total - off;
+            int32_t n = (remain > CHUNK_BYTES) ? CHUNK_BYTES : remain;
+            memcpy(chunks[i]->data, bp + off, (size_t)n);
+            chunks[i]->length = (uint8_t)n;
+            off += n;
+        }
+
+        printf("oem-scan: raw block %d bytes at 0x%x\r\n",
+               (int)total, (unsigned int)(win_start + (uint32_t)s));
         return;
     }
-    set_result("oem-scan:not-found");
+
+    set_sentinel("oem-scan:not-found");
 }

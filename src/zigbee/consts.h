@@ -67,6 +67,10 @@
 #define ZCL_ATTR_BASIC_STATUS_LED_STATE           0xff01
 #define ZCL_ATTR_BASIC_MULTI_PRESS_RESET_COUNT    0xff02
 #define ZCL_ATTR_BASIC_OEM_DUMP                   0xff03
+#define ZCL_ATTR_BASIC_OEM_DUMP2          0xff04
+#define ZCL_ATTR_BASIC_OEM_DUMP3          0xff05
+#define ZCL_ATTR_BASIC_OEM_DUMP4          0xff06
+#define ZCL_ATTR_BASIC_OEM_DUMP5          0xff07
 
 // Power Configuration cluster
 

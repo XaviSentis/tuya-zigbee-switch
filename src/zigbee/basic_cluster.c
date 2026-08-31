@@ -17,6 +17,11 @@
 #include "silabs_config.h"
 #endif
 
+/* Basic cluster registers up to 19 attributes (13 base + LED + OEM_DUMP..DUMP5). */
+_Static_assert(19 <= sizeof(((zigbee_basic_cluster *)0)->attr_infos) /
+                     sizeof(((zigbee_basic_cluster *)0)->attr_infos[0]),
+               "attr_infos overflow");
+
 const uint8_t zclVersion   = 0x03;
 const uint8_t appVersion   = 0x03;
 const uint8_t stackVersion = 0x02;
@@ -97,6 +102,18 @@ void basic_cluster_add_to_endpoint(zigbee_basic_cluster *cluster,
     // CHAR_STR (1-byte length prefix) — oem_dump_str_t layout is {uint8 length; char data[]}
     SETUP_ATTR(attr_count, ZCL_ATTR_BASIC_OEM_DUMP, ZCL_DATA_TYPE_CHAR_STR,
                ATTR_READONLY, oem_dump_str);
+    attr_count++;
+    SETUP_ATTR(attr_count, ZCL_ATTR_BASIC_OEM_DUMP2, ZCL_DATA_TYPE_CHAR_STR,
+               ATTR_READONLY, oem_dump_str2);
+    attr_count++;
+    SETUP_ATTR(attr_count, ZCL_ATTR_BASIC_OEM_DUMP3, ZCL_DATA_TYPE_CHAR_STR,
+               ATTR_READONLY, oem_dump_str3);
+    attr_count++;
+    SETUP_ATTR(attr_count, ZCL_ATTR_BASIC_OEM_DUMP4, ZCL_DATA_TYPE_CHAR_STR,
+               ATTR_READONLY, oem_dump_str4);
+    attr_count++;
+    SETUP_ATTR(attr_count, ZCL_ATTR_BASIC_OEM_DUMP5, ZCL_DATA_TYPE_CHAR_STR,
+               ATTR_READONLY, oem_dump_str5);
     attr_count++;
 
     endpoint->clusters[endpoint->cluster_count].cluster_id      = ZCL_CLUSTER_BASIC;
