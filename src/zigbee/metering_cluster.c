@@ -53,14 +53,17 @@ void metering_cluster_add_to_endpoint(zigbee_metering_cluster *cluster,
         SETUP_ATTR_FOR_TABLE(table, 7, ZCL_ATTR_EM_AC_CURRENT_DIV,
                              ZCL_DATA_TYPE_UINT16, ATTR_READONLY,
                              cluster->ac_current_div);
-        SETUP_ATTR_FOR_TABLE(table, 8, ZCL_ATTR_EM_AC_POWER_DIV,
+        SETUP_ATTR_FOR_TABLE(table, 8, ZCL_ATTR_EM_AC_POWER_MULT,
+                             ZCL_DATA_TYPE_UINT16, ATTR_READONLY,
+                             cluster->ac_power_mult);
+        SETUP_ATTR_FOR_TABLE(table, 9, ZCL_ATTR_EM_AC_POWER_DIV,
                              ZCL_DATA_TYPE_UINT16, ATTR_READONLY,
                              cluster->ac_power_div);
     }
 
     endpoint->clusters[endpoint->cluster_count].cluster_id =
         ZCL_CLUSTER_ELECTRICAL_MEASUREMENT;
-    endpoint->clusters[endpoint->cluster_count].attribute_count = 9;
+    endpoint->clusters[endpoint->cluster_count].attribute_count = 10;
     endpoint->clusters[endpoint->cluster_count].attributes =
         cluster->em_attr_infos;
     endpoint->clusters[endpoint->cluster_count].is_server    = 1;

@@ -28,7 +28,7 @@ typedef struct {
     uint16_t             ac_voltage_mult, ac_voltage_div;
     uint16_t             ac_current_mult, ac_current_div;
     uint16_t             ac_power_mult, ac_power_div;
-    hal_zigbee_attribute em_attr_infos[9];
+    hal_zigbee_attribute em_attr_infos[10];
 
     // Metering cluster storage
     uint8_t              curr_summ_delivered[6]; // uint48, little endian, Wh
