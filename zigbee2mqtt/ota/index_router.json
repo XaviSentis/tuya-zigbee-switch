@@ -1,12 +1,12 @@
 [
   {
-    "fileName": "tlc_switch-1.1.2-c1f2ce73.zigbee",
-    "fileVersion": 285356054,
+    "fileName": "tlc_switch-1.1.2-5e62a48f.zigbee",
+    "fileVersion": 285356057,
     "fileSize": 186690,
-    "url": "https://github.com/XaviSentis/tuya-zigbee-switch/raw/76e5de84e0417b1ef8604c6551599170a7fcffc5/bin/router/PLUG___AUBESS_PM_TS011F/tlc_switch-1.1.2-c1f2ce73.zigbee",
+    "url": "https://github.com/XaviSentis/tuya-zigbee-switch/raw/refs/heads/metering/bin/router/PLUG___AUBESS_PM_TS011F/tlc_switch-1.1.2-5e62a48f.zigbee",
     "imageType": 43556,
     "manufacturerCode": 4417,
-    "sha512": "42ea0b2ecbaa687fd6173658d2a59258309e1604c29699d5cbfdc2792e2820210ec7856ce6372db7550e02861fc7601d770fb64c5ed2a42b942338ea9d992af9",
+    "sha512": "78d74fd889c28845a7fbaf91345ae6c176b1b1f00e9aa2ab4661f06d8e97fbedc390f84b75c1a8b1cb262c485ae80d7082e048155ac8a05a4c0faac942300c9d",
     "otaHeaderString": "Telink OTA Image\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000",
     "manufacturerName": [
       "_TZ3000_gvn91tmx",
@@ -14,13 +14,13 @@
     ]
   },
   {
-    "fileName": "tlc_switch-1.1.2-c1f2ce73-from_tuya.zigbee",
+    "fileName": "tlc_switch-1.1.2-5e62a48f-from_tuya.zigbee",
     "fileVersion": 4294967295,
     "fileSize": 186690,
-    "url": "https://github.com/XaviSentis/tuya-zigbee-switch/raw/76e5de84e0417b1ef8604c6551599170a7fcffc5/bin/router/PLUG___AUBESS_PM_TS011F/tlc_switch-1.1.2-c1f2ce73-from_tuya.zigbee",
+    "url": "https://github.com/XaviSentis/tuya-zigbee-switch/raw/refs/heads/metering/bin/router/PLUG___AUBESS_PM_TS011F/tlc_switch-1.1.2-5e62a48f-from_tuya.zigbee",
     "imageType": 54179,
     "manufacturerCode": 4417,
-    "sha512": "66b4c7f5f9b98235a4541ed2306721b4a935a9bd3442ad7b876d8f9e67dc75e417b1c4d68f089c763b0611a086af26b568bf5a0088f2083d7f8d444fe730f168",
+    "sha512": "2384daa376933b07e4b1b4ec6ecdadc94fa95d4858bf2d3da1f7fbf980136fb276e635b02478344fd7cf3bac0bbe8edae972a0c034cfa6c1a89b58ff3750e102",
     "otaHeaderString": "Telink OTA Image\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000",
     "manufacturerName": [
       "_TZ3000_gvn91tmx",
