@@ -71,6 +71,9 @@
 #define ZCL_ATTR_BASIC_OEM_DUMP3          0xff05
 #define ZCL_ATTR_BASIC_OEM_DUMP4          0xff06
 #define ZCL_ATTR_BASIC_OEM_DUMP5          0xff07
+#define ZCL_ATTR_BASIC_OEM_DUMP6          0xff08
+#define ZCL_ATTR_BASIC_OEM_DUMP7          0xff09
+#define ZCL_ATTR_BASIC_OEM_DUMP8          0xff0a
 
 // Power Configuration cluster
 

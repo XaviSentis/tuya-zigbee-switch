@@ -13,6 +13,9 @@ extern oem_dump_str_t oem_dump_str2;
 extern oem_dump_str_t oem_dump_str3;
 extern oem_dump_str_t oem_dump_str4;
 extern oem_dump_str_t oem_dump_str5;
+extern oem_dump_str_t oem_dump_str6;
+extern oem_dump_str_t oem_dump_str7;
+extern oem_dump_str_t oem_dump_str8;
 
 void oem_scanner_run(void);
 

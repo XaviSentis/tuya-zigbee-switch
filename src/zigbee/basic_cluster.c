@@ -17,9 +17,9 @@
 #include "silabs_config.h"
 #endif
 
-/* Compile-time check: attr_infos must hold 19 attributes (13 base + LED + OEM_DUMP..DUMP5). */
+/* Compile-time check: attr_infos must hold 22 attributes (13 base + LED + OEM_DUMP..DUMP8). */
 typedef char attr_infos_overflow_check[
-    (19 <= sizeof(((zigbee_basic_cluster *)0)->attr_infos) /
+    (22 <= sizeof(((zigbee_basic_cluster *)0)->attr_infos) /
            sizeof(((zigbee_basic_cluster *)0)->attr_infos[0])) ? 1 : -1]
     __attribute__((unused));
 
@@ -115,6 +115,15 @@ void basic_cluster_add_to_endpoint(zigbee_basic_cluster *cluster,
     attr_count++;
     SETUP_ATTR(attr_count, ZCL_ATTR_BASIC_OEM_DUMP5, ZCL_DATA_TYPE_CHAR_STR,
                ATTR_READONLY, oem_dump_str5);
+    attr_count++;
+    SETUP_ATTR(attr_count, ZCL_ATTR_BASIC_OEM_DUMP6, ZCL_DATA_TYPE_CHAR_STR,
+               ATTR_READONLY, oem_dump_str6);
+    attr_count++;
+    SETUP_ATTR(attr_count, ZCL_ATTR_BASIC_OEM_DUMP7, ZCL_DATA_TYPE_CHAR_STR,
+               ATTR_READONLY, oem_dump_str7);
+    attr_count++;
+    SETUP_ATTR(attr_count, ZCL_ATTR_BASIC_OEM_DUMP8, ZCL_DATA_TYPE_CHAR_STR,
+               ATTR_READONLY, oem_dump_str8);
     attr_count++;
 
     endpoint->clusters[endpoint->cluster_count].cluster_id      = ZCL_CLUSTER_BASIC;
