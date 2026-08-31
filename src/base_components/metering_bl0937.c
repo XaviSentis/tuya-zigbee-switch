@@ -5,10 +5,13 @@
 #include "hal/timer.h"
 
 // Defaults approximating a common BL0937 plug (calibrate per board!)
+// Aubess PM calibrated 2026-08-31 (SEL EC3C2B4i), cross-validated against a
+// factory Zbeacon TS011F reference at two loads (~2 kW heating and ~146 W drum);
+// both loads yield the same coefficients. VOLTAGE ref = Zbeacon line voltage.
 #define DEFAULT_INTERVAL_MS              2000
-#define DEFAULT_COEF_POWER_MHZ_PER_DW    122   // ~1.22 Hz per W
-#define DEFAULT_COEF_VOLTAGE_MHZ_PER_DV  62    // ~1.43 kHz at 230 V
-#define DEFAULT_COEF_CURRENT_MHZ_PER_MA  30    // ~30 Hz per A
+#define DEFAULT_COEF_POWER_MHZ_PER_DW    83    // Zbeacon ref, 2 kW + drum
+#define DEFAULT_COEF_VOLTAGE_MHZ_PER_DV  842   // Zbeacon line voltage ref
+#define DEFAULT_COEF_CURRENT_MHZ_PER_MA  108   // Zbeacon ref, 2 kW + drum
 #define DEFAULT_PULSES_PER_WH            1000
 
 static void _metering_update_callback(void *arg);

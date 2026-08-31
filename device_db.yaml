@@ -3207,7 +3207,7 @@ PLUG___AUBESS_PM_TS011F:
   tuya_module: ZTU
   mcu_family: Telink
   mcu: TLSR8258
-  config_str: gvn91tmx;TS011F-AB-PM;SC4u;RB5;ID2i;EC3C2B4;M;
+  config_str: gvn91tmx;TS011F-AB-PM;SC4u;RB5;ID2i;EC3C2B4i;M;
   alt_config_str: null
   old_manufacturer_names: null
   old_zb_models: null
