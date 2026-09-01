@@ -433,6 +433,45 @@ void network_indicator_on_network_status_change(
     }
 }
 
+// --- Overcurrent (over-power) soft-limit monitor ---
+// Thermal/anomaly limit with a few-second delay -- NOT a breaker replacement.
+#define OVERCURRENT_TRIP_WINDOWS 3 // consecutive over-limit windows before trip
+static hal_task_t overcurrent_task;
+static uint8_t    overcurrent_over_count = 0;
+
+static void overcurrent_monitor_cb(void *arg) {
+    relay_t *plug_relay = (relays_cnt > 0) ? &relays[0] : NULL;
+    if (plug_relay != NULL) {
+        // Re-arm once the relay is manually switched back on
+        if (g_overcurrent_tripped && plug_relay->on) {
+            g_overcurrent_tripped  = 0;
+            overcurrent_over_count = 0;
+            hal_zigbee_notify_attribute_changed(
+                endpoints[0].endpoint, ZCL_CLUSTER_BASIC,
+                ZCL_ATTR_BASIC_OVERCURRENT_TRIPPED);
+        }
+        if (g_overcurrent_limit_w == 0) {
+            overcurrent_over_count = 0; // disabled
+        } else if (metering.power_w >= g_overcurrent_limit_w) {
+            if (overcurrent_over_count < 0xFF) {
+                overcurrent_over_count++;
+            }
+            if (overcurrent_over_count >= OVERCURRENT_TRIP_WINDOWS &&
+                !g_overcurrent_tripped) {
+                relay_off(plug_relay);
+                g_overcurrent_tripped  = 1;
+                overcurrent_over_count = 0;
+                hal_zigbee_notify_attribute_changed(
+                    endpoints[0].endpoint, ZCL_CLUSTER_BASIC,
+                    ZCL_ATTR_BASIC_OVERCURRENT_TRIPPED);
+            }
+        } else {
+            overcurrent_over_count = 0; // hysteresis: reset when back under limit
+        }
+    }
+    hal_tasks_schedule(&overcurrent_task, metering.interval_ms);
+}
+
 void peripherals_init() {
     for (int index = 0; index < buttons_cnt; index++) {
         btn_init(&buttons[index]);
@@ -446,6 +485,11 @@ void peripherals_init() {
     if (metering_enabled) {
         if (metering_bl0937_init(&metering) != 0) {
             metering_enabled = 0;
+        } else {
+            overcurrent_task.handler = overcurrent_monitor_cb;
+            overcurrent_task.arg     = NULL;
+            hal_tasks_init(&overcurrent_task);
+            hal_tasks_schedule(&overcurrent_task, metering.interval_ms);
         }
     }
     if (hal_zigbee_get_network_status() == HAL_ZIGBEE_NETWORK_JOINED) {

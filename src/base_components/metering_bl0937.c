@@ -112,6 +112,7 @@ static void _metering_update_callback(void *arg) {
     uint32_t p_mhz = freq_mhz(cf_pulses, elapsed);
     uint32_t p_dw  = p_mhz / m->coef_power_mhz_per_dw;
     m->power_dw = (p_dw > INT16_MAX) ? INT16_MAX : (int16_t)p_dw;
+    m->power_w  = p_dw / 10; // uncapped watts for overcurrent monitor
 
     m->energy_pulses   += cf_pulses;
     m->residual_pulses += cf_pulses;

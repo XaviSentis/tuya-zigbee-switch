@@ -48,7 +48,8 @@ typedef struct {
     // Outputs (engineering units, ZCL friendly)
     uint16_t voltage_dv;              // RMS voltage, 0.1 V
     uint16_t current_ma;              // RMS current, mA
-    int16_t  power_dw;                // active power, 0.1 W
+    int16_t  power_dw;                // active power, 0.1 W (ZCL, int16-capped)
+    uint32_t power_w;                 // active power, W (uncapped, for monitors)
     uint64_t energy_pulses;           // lifetime CF pulses (energy source)
     uint32_t energy_wh;               // derived accumulated energy, Wh
 

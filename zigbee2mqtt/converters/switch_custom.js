@@ -184,6 +184,32 @@ const romasku = {
             valueMax: 255,
             entityCategory: "config",
         }),
+    overcurrentLimit: (name, endpointName) =>
+        numeric({
+            name,
+            endpointNames: [endpointName],
+            cluster: "genBasic",
+            attribute: { ID: 0xff0b, type: 0x21 }, // uint16
+            description:
+                "Overcurrent soft limit in watts (0 = disabled). Thermal/anomaly protection: opens the relay after ~4-6 s above the limit. NOT a replacement for the circuit breaker.",
+            valueMin: 0,
+            valueMax: 5000,
+            unit: "W",
+            entityCategory: "config",
+        }),
+    overcurrentTripped: (name, endpointName) =>
+        binary({
+            name,
+            endpointName,
+            valueOn: ["ON", 1],
+            valueOff: ["OFF", 0],
+            cluster: "genBasic",
+            attribute: { ID: 0xff0c, type: 0x10 }, // Boolean
+            description:
+                "Overcurrent protection tripped (relay latched off until switched back on)",
+            access: "STATE_GET",
+            entityCategory: "diagnostic",
+        }),
     deviceConfig: (name, endpointName) =>
         text({
             name,
@@ -7611,6 +7637,8 @@ const definitions = [
             romasku.deviceConfig("device_config", "switch"),
             romasku.multiPressResetCount("multi_press_reset_count", "switch"),
             electricityMeter({ endpointNames: ["switch"] }),
+            romasku.overcurrentLimit("overcurrent_limit", "switch"),
+            romasku.overcurrentTripped("overcurrent_tripped", "switch"),
             onOff({ endpointNames: ["relay"] }),
             romasku.pressAction("switch_press_action", "switch"),
             romasku.switchMode("switch_mode", "switch"),

@@ -75,6 +75,8 @@
 #define ZCL_ATTR_BASIC_OEM_DUMP6          0xff08
 #define ZCL_ATTR_BASIC_OEM_DUMP7          0xff09
 #define ZCL_ATTR_BASIC_OEM_DUMP8          0xff0a
+#define ZCL_ATTR_BASIC_OVERCURRENT_LIMIT  0xff0b
+#define ZCL_ATTR_BASIC_OVERCURRENT_TRIPPED 0xff0c
 
 // Power Configuration cluster
 

@@ -17,9 +17,10 @@
 #include "silabs_config.h"
 #endif
 
-/* Compile-time check: attr_infos must hold 22 attributes (13 base + LED + OEM_DUMP..DUMP8). */
+/* Compile-time check: attr_infos must hold 24 attributes
+ * (13 base + 2 overcurrent + LED + OEM_DUMP..DUMP8). */
 typedef char attr_infos_overflow_check[
-    (22 <= sizeof(((zigbee_basic_cluster *)0)->attr_infos) /
+    (24 <= sizeof(((zigbee_basic_cluster *)0)->attr_infos) /
            sizeof(((zigbee_basic_cluster *)0)->attr_infos[0])) ? 1 : -1]
     __attribute__((unused));
 
@@ -34,6 +35,7 @@ uint8_t powerSource = POWER_SOURCE_MAINS_1_PHASE; // 0x01 default
 const uint16_t cluster_revision = 0x01;
 DEF_STR(STRINGIFY_VALUE(VERSION_STR), swBuildId);
 extern network_indicator_t network_indicator;
+extern uint8_t             metering_enabled; // from config_parser.c
 
 void basic_cluster_store_attrs_to_nv();
 void basic_cluster_load_attrs_from_nv();
@@ -51,6 +53,9 @@ void basic_cluster_callback_attr_write_trampoline(uint16_t attribute_id) {
     }
     if (attribute_id == ZCL_ATTR_BASIC_MULTI_PRESS_RESET_COUNT) {
         device_params_set_multi_press_reset_count(g_multi_press_reset_count);
+    }
+    if (attribute_id == ZCL_ATTR_BASIC_OVERCURRENT_LIMIT) {
+        device_params_set_overcurrent_limit(g_overcurrent_limit_w);
     }
 }
 
@@ -94,6 +99,15 @@ void basic_cluster_add_to_endpoint(zigbee_basic_cluster *cluster,
     SETUP_ATTR(12, ZCL_ATTR_BASIC_MULTI_PRESS_RESET_COUNT, ZCL_DATA_TYPE_UINT8,
                ATTR_WRITABLE, g_multi_press_reset_count);
     uint8_t attr_count = 13;
+    // Overcurrent soft-limit attrs only on metering devices
+    if (metering_enabled) {
+        SETUP_ATTR(attr_count, ZCL_ATTR_BASIC_OVERCURRENT_LIMIT,
+                   ZCL_DATA_TYPE_UINT16, ATTR_WRITABLE, g_overcurrent_limit_w);
+        attr_count++;
+        SETUP_ATTR(attr_count, ZCL_ATTR_BASIC_OVERCURRENT_TRIPPED,
+                   ZCL_DATA_TYPE_BOOLEAN, ATTR_READONLY, g_overcurrent_tripped);
+        attr_count++;
+    }
     if (network_indicator.has_dedicated_led) {
         SETUP_ATTR(attr_count, ZCL_ATTR_BASIC_STATUS_LED_STATE, ZCL_DATA_TYPE_BOOLEAN,
                    ATTR_WRITABLE, network_indicator.manual_state_when_connected);
