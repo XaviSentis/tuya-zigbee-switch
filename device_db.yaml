@@ -3207,7 +3207,7 @@ PLUG___AUBESS_PM_TS011F:
   tuya_module: ZTU
   mcu_family: Telink
   mcu: TLSR8258
-  config_str: gvn91tmx;TS011F-AB-PM;SC4u;RB5;ID2i;M;
+  config_str: gvn91tmx;TS011F-AB-PM;SC4u;RB5;ID2i;EC3C2B4i;M;
   alt_config_str: null
   old_manufacturer_names: null
   old_zb_models: null
@@ -3215,8 +3215,8 @@ PLUG___AUBESS_PM_TS011F:
   stock_image_type: 54179
   firmware_image_type: 43556
   build: yes
-  status: in_progress
-  info: Power monitoring not implemented
+  status: working
+  info: Power monitoring implemented (BL0937, calibrated against factory reference)
   threads: https://github.com/romasku/tuya-zigbee-switch/issues/334
   store: https://aliexpress.com/item/1005005958920309.html
 PLUG___LELLKI_TS0001:

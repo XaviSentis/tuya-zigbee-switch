@@ -4,11 +4,15 @@
 #include "hal/printf_selector.h"
 #include "hal/timer.h"
 
-// Defaults approximating a common BL0937 plug (calibrate per board!)
+// NOTE: these are GLOBAL compile-time defaults, not per-board. There is no
+// per-board coefficient mechanism yet, so calibrating one board changes the
+// default for every BL0937 device. Values below are calibrated for the Aubess
+// PM plug (the only board that currently enables metering). See the PR
+// description for the proposed per-device / per-board follow-up.
 #define DEFAULT_INTERVAL_MS              2000
-#define DEFAULT_COEF_POWER_MHZ_PER_DW    122   // ~1.22 Hz per W
-#define DEFAULT_COEF_VOLTAGE_MHZ_PER_DV  62    // ~1.43 kHz at 230 V
-#define DEFAULT_COEF_CURRENT_MHZ_PER_MA  30    // ~30 Hz per A
+#define DEFAULT_COEF_POWER_MHZ_PER_DW    83    // Aubess PM (vs factory reference)
+#define DEFAULT_COEF_VOLTAGE_MHZ_PER_DV  799   // Aubess PM (vs grid reference)
+#define DEFAULT_COEF_CURRENT_MHZ_PER_MA  108   // Aubess PM (vs factory reference)
 #define DEFAULT_PULSES_PER_WH            1000
 
 static void _metering_update_callback(void *arg);
