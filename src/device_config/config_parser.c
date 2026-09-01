@@ -11,7 +11,6 @@
 #include "zigbee/poll_control_cluster.h"
 #include "zigbee/switch_cluster.h"
 #include "zigbee/metering_cluster.h"
-#include "base_components/oem_scanner.h"
 #include "zigbee/cover_cluster.h"
 
 #include <stdint.h>
@@ -348,7 +347,6 @@ void parse_config() {
     hal_ota_cluster_setup(&endpoints[0].clusters[endpoints[0].cluster_count]);
     endpoints[0].cluster_count++;
 
-    oem_scanner_run();
     if (metering_enabled) {
         metering_cluster.metering = &metering;
         metering_cluster_add_to_endpoint(&metering_cluster, &endpoints[0]);
