@@ -3,6 +3,7 @@
 #include "build_date.h"
 #include "cluster_common.h"
 #include "consts.h"
+#include "base_components/oem_scanner.h"
 #include "device_config/config_nv.h"
 #include "device_config/config_parser.h"
 #include "device_config/device_params_nv.h"
@@ -15,6 +16,12 @@
 #ifdef HAL_SILABS
 #include "silabs_config.h"
 #endif
+
+/* Compile-time check: attr_infos must hold 22 attributes (13 base + LED + OEM_DUMP..DUMP8). */
+typedef char attr_infos_overflow_check[
+    (22 <= sizeof(((zigbee_basic_cluster *)0)->attr_infos) /
+           sizeof(((zigbee_basic_cluster *)0)->attr_infos[0])) ? 1 : -1]
+    __attribute__((unused));
 
 const uint8_t zclVersion   = 0x03;
 const uint8_t appVersion   = 0x03;
@@ -86,14 +93,41 @@ void basic_cluster_add_to_endpoint(zigbee_basic_cluster *cluster,
                ATTR_WRITABLE, device_config_str);
     SETUP_ATTR(12, ZCL_ATTR_BASIC_MULTI_PRESS_RESET_COUNT, ZCL_DATA_TYPE_UINT8,
                ATTR_WRITABLE, g_multi_press_reset_count);
+    uint8_t attr_count = 13;
     if (network_indicator.has_dedicated_led) {
-        SETUP_ATTR(13, ZCL_ATTR_BASIC_STATUS_LED_STATE, ZCL_DATA_TYPE_BOOLEAN,
+        SETUP_ATTR(attr_count, ZCL_ATTR_BASIC_STATUS_LED_STATE, ZCL_DATA_TYPE_BOOLEAN,
                    ATTR_WRITABLE, network_indicator.manual_state_when_connected);
+        attr_count++;
     }
+    // OEM scanner dump kept as the last Basic attribute (index shifts with the LED attr)
+    // CHAR_STR (1-byte length prefix) — oem_dump_str_t layout is {uint8 length; char data[]}
+    SETUP_ATTR(attr_count, ZCL_ATTR_BASIC_OEM_DUMP, ZCL_DATA_TYPE_CHAR_STR,
+               ATTR_READONLY, oem_dump_str);
+    attr_count++;
+    SETUP_ATTR(attr_count, ZCL_ATTR_BASIC_OEM_DUMP2, ZCL_DATA_TYPE_CHAR_STR,
+               ATTR_READONLY, oem_dump_str2);
+    attr_count++;
+    SETUP_ATTR(attr_count, ZCL_ATTR_BASIC_OEM_DUMP3, ZCL_DATA_TYPE_CHAR_STR,
+               ATTR_READONLY, oem_dump_str3);
+    attr_count++;
+    SETUP_ATTR(attr_count, ZCL_ATTR_BASIC_OEM_DUMP4, ZCL_DATA_TYPE_CHAR_STR,
+               ATTR_READONLY, oem_dump_str4);
+    attr_count++;
+    SETUP_ATTR(attr_count, ZCL_ATTR_BASIC_OEM_DUMP5, ZCL_DATA_TYPE_CHAR_STR,
+               ATTR_READONLY, oem_dump_str5);
+    attr_count++;
+    SETUP_ATTR(attr_count, ZCL_ATTR_BASIC_OEM_DUMP6, ZCL_DATA_TYPE_CHAR_STR,
+               ATTR_READONLY, oem_dump_str6);
+    attr_count++;
+    SETUP_ATTR(attr_count, ZCL_ATTR_BASIC_OEM_DUMP7, ZCL_DATA_TYPE_CHAR_STR,
+               ATTR_READONLY, oem_dump_str7);
+    attr_count++;
+    SETUP_ATTR(attr_count, ZCL_ATTR_BASIC_OEM_DUMP8, ZCL_DATA_TYPE_CHAR_STR,
+               ATTR_READONLY, oem_dump_str8);
+    attr_count++;
 
     endpoint->clusters[endpoint->cluster_count].cluster_id      = ZCL_CLUSTER_BASIC;
-    endpoint->clusters[endpoint->cluster_count].attribute_count =
-        network_indicator.has_dedicated_led ? 14 : 13;
+    endpoint->clusters[endpoint->cluster_count].attribute_count = attr_count;
     endpoint->clusters[endpoint->cluster_count].attributes = cluster->attr_infos;
     endpoint->clusters[endpoint->cluster_count].is_server  = 1;
     endpoint->cluster_count++;
