@@ -5,12 +5,14 @@
 #include "hal/timer.h"
 
 // Defaults approximating a common BL0937 plug (calibrate per board!)
-// Aubess PM calibrated 2026-08-31 (SEL EC3C2B4i), cross-validated against a
-// factory Zbeacon TS011F reference at two loads (~2 kW heating and ~146 W drum);
-// both loads yield the same coefficients. VOLTAGE ref = Zbeacon line voltage.
+// Aubess PM calibrated 2026-08-31 (SEL EC3C2B4i). CURRENT/POWER cross-validated
+// against a factory Zbeacon TS011F reference at two loads (~2 kW heating and
+// ~146 W drum). VOLTAGE re-referenced 2026-09-01 to the Protector SalaCalderas
+// (dedicated voltage device, ~237 V) + grid average, which agree and read ~5%
+// higher than the Tuya plugs (the Zbeacon itself reads voltage low).
 #define DEFAULT_INTERVAL_MS              2000
 #define DEFAULT_COEF_POWER_MHZ_PER_DW    83    // Zbeacon ref, 2 kW + drum
-#define DEFAULT_COEF_VOLTAGE_MHZ_PER_DV  842   // Zbeacon line voltage ref
+#define DEFAULT_COEF_VOLTAGE_MHZ_PER_DV  799   // grid/Protector ref ~237 V
 #define DEFAULT_COEF_CURRENT_MHZ_PER_MA  108   // Zbeacon ref, 2 kW + drum
 #define DEFAULT_PULSES_PER_WH            1000
 
