@@ -1,16 +1,2868 @@
 [
   {
-    "fileName": "tlc_switch-1.1.2-67991358-forced.zigbee",
+    "fileName": "tlc_switch-1.1.2-445810f3-forced.zigbee",
+    "fileVersion": 4294967295,
+    "fileSize": 184418,
+    "url": "https://github.com/XaviSentis/tuya-zigbee-switch/raw/refs/heads/fleet/bin/router/BOARD__MHCOZY_TS0004/tlc_switch-1.1.2-445810f3-forced.zigbee",
+    "imageType": 43551,
+    "manufacturerCode": 4417,
+    "sha512": "352224c1661f5273ac476715ef759c52084655f75bbdc06bef69c6e7310f1a5b379be5ef9d9fd8c693fe8b7d83500ae2323da69a36f90fb4b176b059eed24a6e",
+    "otaHeaderString": "Telink OTA Image\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000",
+    "manufacturerName": [
+      "_TZ3000_imaccztn",
+      "imaccztn"
+    ]
+  },
+  {
+    "fileName": "tlc_switch-1.1.2-445810f3-forced.zigbee",
+    "fileVersion": 4294967295,
+    "fileSize": 184418,
+    "url": "https://github.com/XaviSentis/tuya-zigbee-switch/raw/refs/heads/fleet/bin/router/BOARD__MHCOZY_TS0004_1/tlc_switch-1.1.2-445810f3-forced.zigbee",
+    "imageType": 45631,
+    "manufacturerCode": 4417,
+    "sha512": "8bdabaa99db4b949522a2b671b499999460b74c72c3b1885bf82de44d2a30d5b99173fe539ded269cd817a7a3f7c086532f675a1c36e6f2a20c6ac4fe6be8b17",
+    "otaHeaderString": "Telink OTA Image\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000",
+    "manufacturerName": [
+      "_TZ3210_imaccztn",
+      "imaccztn1"
+    ]
+  },
+  {
+    "fileName": "tlc_switch-1.1.2-445810f3-forced.zigbee",
+    "fileVersion": 4294967295,
+    "fileSize": 184418,
+    "url": "https://github.com/XaviSentis/tuya-zigbee-switch/raw/refs/heads/fleet/bin/router/BOARD__MHCOZY_TS0004_2/tlc_switch-1.1.2-445810f3-forced.zigbee",
+    "imageType": 45594,
+    "manufacturerCode": 4417,
+    "sha512": "084f3974365b11d8c488056c3de59664999bbb87be9a0fc442cae8591c21bad91a3ba4167ee9cff096c9aa54a4212ff7e88a9bf7b0ba28a86ed538dd865193ec",
+    "otaHeaderString": "Telink OTA Image\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000",
+    "manufacturerName": [
+      "_TZ3000_u3oupgdy",
+      "u3oupgdy"
+    ]
+  },
+  {
+    "fileName": "tlc_switch-1.1.2-445810f3-forced.zigbee",
+    "fileVersion": 4294967295,
+    "fileSize": 184418,
+    "url": "https://github.com/XaviSentis/tuya-zigbee-switch/raw/refs/heads/fleet/bin/router/BOARD__MHCOZY_TS0004_3/tlc_switch-1.1.2-445810f3-forced.zigbee",
+    "imageType": 45631,
+    "manufacturerCode": 4417,
+    "sha512": "5fd832e045734256058f8ccb3e2f8b5e32995856ec9f86daad2fa97903aa1928d1648c7806a9168e365ed20f247896b7f50e5237d896e6dddc545786eb222508",
+    "otaHeaderString": "Telink OTA Image\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000",
+    "manufacturerName": [
+      "_TZ3210_imaccztn",
+      "imaccztn2"
+    ]
+  },
+  {
+    "fileName": "tlc_switch-1.1.2-445810f3-forced.zigbee",
+    "fileVersion": 4294967295,
+    "fileSize": 184386,
+    "url": "https://github.com/XaviSentis/tuya-zigbee-switch/raw/refs/heads/fleet/bin/router/BOARD__SCIMAGIC_TS0001/tlc_switch-1.1.2-445810f3-forced.zigbee",
+    "imageType": 43623,
+    "manufacturerCode": 4417,
+    "sha512": "dc0972c7d35ee96670284c2f2b4059295666624c09ec898599a62acf7db006b046b4d36f8ab739445d1579c006ed864a74bac3df0cddcbf035be9871fb9d537c",
+    "otaHeaderString": "Telink OTA Image\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000",
+    "manufacturerName": [
+      "_TZ3000_g8n1n7lg",
+      "g8n1n7lg"
+    ]
+  },
+  {
+    "fileName": "tlc_switch-1.1.2-445810f3-forced.zigbee",
     "fileVersion": 4294967295,
     "fileSize": 184402,
-    "url": "https://github.com/XaviSentis/tuya-zigbee-switch/raw/e5f6c62bfc8a9d23354b94e58dca82b90ba65251/bin/router/PLUG___AUBESS_PM_TS011F/tlc_switch-1.1.2-67991358-forced.zigbee",
+    "url": "https://github.com/XaviSentis/tuya-zigbee-switch/raw/refs/heads/fleet/bin/router/BOARD__SCIMAGIC_TS0002/tlc_switch-1.1.2-445810f3-forced.zigbee",
+    "imageType": 45598,
+    "manufacturerCode": 4417,
+    "sha512": "16cc92843e60f72ba44e949d6fe9146d5fc22d11f86624296b21bc25c3d88070f609637390eebdd4c8787a90dbd709511470a5d39448677eeaca61aed2781b19",
+    "otaHeaderString": "Telink OTA Image\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000",
+    "manufacturerName": [
+      "_TZ3000_nuenzetq",
+      "nuenzetq"
+    ]
+  },
+  {
+    "fileName": "tlc_switch-1.1.2-445810f3-forced.zigbee",
+    "fileVersion": 4294967295,
+    "fileSize": 184402,
+    "url": "https://github.com/XaviSentis/tuya-zigbee-switch/raw/refs/heads/fleet/bin/router/BOARD__SCIMAGIC_TS0002_1/tlc_switch-1.1.2-445810f3-forced.zigbee",
+    "imageType": 45599,
+    "manufacturerCode": 4417,
+    "sha512": "c63e95d27275d34e41507d0d778d4990728db97db3cf84ef82a0dfe3306831936cdc57f900620a04978f7fea5edadf0351eb7ee17ff101f38486889e4e276ced",
+    "otaHeaderString": "Telink OTA Image\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000",
+    "manufacturerName": [
+      "_TZ3210_nuenzetq",
+      "nuenzetq1"
+    ]
+  },
+  {
+    "fileName": "tlc_switch-1.1.2-445810f3-forced.zigbee",
+    "fileVersion": 4294967295,
+    "fileSize": 184386,
+    "url": "https://github.com/XaviSentis/tuya-zigbee-switch/raw/refs/heads/fleet/bin/router/BOARD__ZIGBEE_ZTU_2/tlc_switch-1.1.2-445810f3-forced.zigbee",
+    "imageType": 45574,
+    "manufacturerCode": 4417,
+    "sha512": "645296932e1a5e6678790f712eaca98e347410fbc96a2059a51dac5b6ad39e344139a65f521fd3654a4e8932fdd0ea9d404aa759fb67d6661f38df2af179c024",
+    "otaHeaderString": "Telink OTA Image\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000",
+    "manufacturerName": [
+      "TUYA"
+    ]
+  },
+  {
+    "fileName": "tlc_switch-1.1.2-445810f3-forced.zigbee",
+    "fileVersion": 4294967295,
+    "fileSize": 184386,
+    "url": "https://github.com/XaviSentis/tuya-zigbee-switch/raw/refs/heads/fleet/bin/router/DIN_RELAY_TUYA_TS011F_PM/tlc_switch-1.1.2-445810f3-forced.zigbee",
+    "imageType": 45599,
+    "manufacturerCode": 4417,
+    "sha512": "ef6d72246db029b394961a6d5953b0013637dacb3af62d472412c732c0db6bca124899bfaaf5977d629e75d9015b60f6c99c5f2abe79d884432dc53600e6fff8",
+    "otaHeaderString": "Telink OTA Image\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000",
+    "manufacturerName": [
+      "_TZ3210_vbfp8eyv",
+      "vbfp8eyv"
+    ]
+  },
+  {
+    "fileName": "tlc_switch-1.1.2-445810f3-forced.zigbee",
+    "fileVersion": 4294967295,
+    "fileSize": 184386,
+    "url": "https://github.com/XaviSentis/tuya-zigbee-switch/raw/refs/heads/fleet/bin/router/MODULE_AUBESS_TS0001/tlc_switch-1.1.2-445810f3-forced.zigbee",
+    "imageType": 43531,
+    "manufacturerCode": 4417,
+    "sha512": "b3de613df8b49d9b8eb6e7c739490851ae0712d5d959734493b63b38ef420ae175b2381094f4da8b1d49451ac663ba2ef4a8815a6d3f50ac6b27c60a69de9bf4",
+    "otaHeaderString": "Telink OTA Image\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000",
+    "manufacturerName": [
+      "_TZ3000_46t1rvdu",
+      "WHD02-Aubess",
+      "46t1rvdu"
+    ]
+  },
+  {
+    "fileName": "tlc_switch-1.1.2-445810f3-forced.zigbee",
+    "fileVersion": 4294967295,
+    "fileSize": 184402,
+    "url": "https://github.com/XaviSentis/tuya-zigbee-switch/raw/refs/heads/fleet/bin/router/MODULE_AUBESS_TS0002/tlc_switch-1.1.2-445810f3-forced.zigbee",
+    "imageType": 43553,
+    "manufacturerCode": 4417,
+    "sha512": "80519cd252ad52d6431801db79d5e707e4d080268b4f05e595f340e84f893b1bce3b46d84e9d0365d71a253a7b2d654d72b8245225c0cdd2431985fdc34e834e",
+    "otaHeaderString": "Telink OTA Image\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000",
+    "manufacturerName": [
+      "_TZ3000_lmlsduws",
+      "lmlsduws"
+    ]
+  },
+  {
+    "fileName": "tlc_switch-1.1.2-445810f3-forced.zigbee",
+    "fileVersion": 4294967295,
+    "fileSize": 184402,
+    "url": "https://github.com/XaviSentis/tuya-zigbee-switch/raw/refs/heads/fleet/bin/router/MODULE_AUBESS_TS0003/tlc_switch-1.1.2-445810f3-forced.zigbee",
+    "imageType": 43561,
+    "manufacturerCode": 4417,
+    "sha512": "7b5cce436dbdddc39136bb066a311bd111dcfdf2992010e8dbd7cd804d649472627f4c09a28cd79bab06b211d2aff24930e58cf91ef95622435558a67e0348fd",
+    "otaHeaderString": "Telink OTA Image\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000",
+    "manufacturerName": [
+      "_TZ3000_lvhy15ix",
+      "lvhy15ix"
+    ]
+  },
+  {
+    "fileName": "tlc_switch-1.1.2-445810f3-forced.zigbee",
+    "fileVersion": 4294967295,
+    "fileSize": 184418,
+    "url": "https://github.com/XaviSentis/tuya-zigbee-switch/raw/refs/heads/fleet/bin/router/MODULE_AUBESS_TS0004/tlc_switch-1.1.2-445810f3-forced.zigbee",
+    "imageType": 43545,
+    "manufacturerCode": 4417,
+    "sha512": "a3be7ea9e1a05666379f0c5b277f00b609100856cec223de33693b32fe1cf5e5365142a7f643202ee544de01e35464e2ab0c6aa71477b710da3bf178750cca6b",
+    "otaHeaderString": "Telink OTA Image\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000",
+    "manufacturerName": [
+      "_TZ3000_mmkbptmx",
+      "Tuya-TS0004-custom",
+      "mmkbptmx"
+    ]
+  },
+  {
+    "fileName": "tlc_switch-1.1.2-445810f3-forced.zigbee",
+    "fileVersion": 4294967295,
+    "fileSize": 184386,
+    "url": "https://github.com/XaviSentis/tuya-zigbee-switch/raw/refs/heads/fleet/bin/router/MODULE_AVATTO_A_TS0001/tlc_switch-1.1.2-445810f3-forced.zigbee",
+    "imageType": 43527,
+    "manufacturerCode": 4417,
+    "sha512": "5a9a71f504f25b2eaf167d7503c29d3b0457a255c4a28a5ee440af257d460522f50d3028b1d4bcd7cab4dabaeeb26fc0cabd18fb897eadb0e8d169a732815b76",
+    "otaHeaderString": "Telink OTA Image\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000",
+    "manufacturerName": [
+      "_TZ3000_4rbqgcuv",
+      "Tuya-TS0001-Avatto-custom",
+      "TS0001-AV-CUS",
+      "TS0001-AVB",
+      "4rbqgcuv"
+    ]
+  },
+  {
+    "fileName": "tlc_switch-1.1.2-445810f3-forced.zigbee",
+    "fileVersion": 4294967295,
+    "fileSize": 184402,
+    "url": "https://github.com/XaviSentis/tuya-zigbee-switch/raw/refs/heads/fleet/bin/router/MODULE_AVATTO_A_TS0002/tlc_switch-1.1.2-445810f3-forced.zigbee",
+    "imageType": 43528,
+    "manufacturerCode": 4417,
+    "sha512": "e1ab3cc8afa78d8f5c4a2a4ca7827714cbcbb971e9186d997f896d7545f7624a7a252bfe0a22bd287fc8db43e818f9df268e01434d6545b3d95294f7a9f50daa",
+    "otaHeaderString": "Telink OTA Image\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000",
+    "manufacturerName": [
+      "_TZ3000_mtnpt6ws",
+      "Tuya-TS0002-Avatto-custom",
+      "TS0002-AV-CUS",
+      "TS0002-AVB",
+      "mtnpt6ws"
+    ]
+  },
+  {
+    "fileName": "tlc_switch-1.1.2-445810f3-forced.zigbee",
+    "fileVersion": 4294967295,
+    "fileSize": 184402,
+    "url": "https://github.com/XaviSentis/tuya-zigbee-switch/raw/refs/heads/fleet/bin/router/MODULE_AVATTO_A_TS0003/tlc_switch-1.1.2-445810f3-forced.zigbee",
+    "imageType": 43543,
+    "manufacturerCode": 4417,
+    "sha512": "a711d65bb5facd0a23b8b91f9d353f339e5461ca9ee15665ec23807608da3dbc7db37b0e661ea3c3624d02aa74c572ccdf5f324a82c3e067e4c7d859ba747f11",
+    "otaHeaderString": "Telink OTA Image\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000",
+    "manufacturerName": [
+      "_TZ3000_hbic3ka3",
+      "Tuya-TS0003-Avatto-custom",
+      "TS0003-AV-CUS",
+      "TS0003-AVB",
+      "hbic3ka3"
+    ]
+  },
+  {
+    "fileName": "tlc_switch-1.1.2-445810f3-forced.zigbee",
+    "fileVersion": 4294967295,
+    "fileSize": 184418,
+    "url": "https://github.com/XaviSentis/tuya-zigbee-switch/raw/refs/heads/fleet/bin/router/MODULE_AVATTO_A_TS0004/tlc_switch-1.1.2-445810f3-forced.zigbee",
+    "imageType": 43529,
+    "manufacturerCode": 4417,
+    "sha512": "05d5ae62576af5b678cc1d36f71c6f772b2d828510e00e5bcfaf8cfd5875402c239ee3a9419061e0f16069cb3f6727d41787f7c8a00d74bc82b1ccf5cefb02dd",
+    "otaHeaderString": "Telink OTA Image\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000",
+    "manufacturerName": [
+      "_TZ3000_5ajpkyq6",
+      "Tuya-TS0004-Avatto-custom",
+      "TS0004-AV-CUS",
+      "TS0004-AVB",
+      "5ajpkyq6"
+    ]
+  },
+  {
+    "fileName": "tlc_switch-1.1.2-445810f3-forced.zigbee",
+    "fileVersion": 4294967295,
+    "fileSize": 184402,
+    "url": "https://github.com/XaviSentis/tuya-zigbee-switch/raw/refs/heads/fleet/bin/router/MODULE_AVATTO_B_TS0003/tlc_switch-1.1.2-445810f3-forced.zigbee",
+    "imageType": 43603,
+    "manufacturerCode": 4417,
+    "sha512": "12443d1de91511d79a8e28db5607df867072ee331bc7aea55f6a7f7d01e5fc394efe723cff96647799ef946f687edadee041923058ba08e6c8225e04b231804c",
+    "otaHeaderString": "Telink OTA Image\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000",
+    "manufacturerName": [
+      "_TZ3000_iv4eq7eh",
+      "iv4eq7eh"
+    ]
+  },
+  {
+    "fileName": "tlc_switch-1.1.2-445810f3-forced.zigbee",
+    "fileVersion": 4294967295,
+    "fileSize": 184418,
+    "url": "https://github.com/XaviSentis/tuya-zigbee-switch/raw/refs/heads/fleet/bin/router/MODULE_AVATTO_B_TS0004/tlc_switch-1.1.2-445810f3-forced.zigbee",
+    "imageType": 43602,
+    "manufacturerCode": 4417,
+    "sha512": "2f9f53cea16510fd6cd8019782bfd9b9edb5794310bbbbe33c54e0d0726c97847e0c12cc0046fa28ba4025f5dd815158569101922d037b6a143db68dfb5cc779",
+    "otaHeaderString": "Telink OTA Image\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000",
+    "manufacturerName": [
+      "_TZ3000_3n2minvf",
+      "3n2minvf"
+    ]
+  },
+  {
+    "fileName": "tlc_switch-1.1.2-445810f3-forced.zigbee",
+    "fileVersion": 4294967295,
+    "fileSize": 184386,
+    "url": "https://github.com/XaviSentis/tuya-zigbee-switch/raw/refs/heads/fleet/bin/router/MODULE_AVATTO_DRY_TS0001/tlc_switch-1.1.2-445810f3-forced.zigbee",
+    "imageType": 43527,
+    "manufacturerCode": 4417,
+    "sha512": "d1f9e797cfc283e00147cda2361f785057ee80eb244b4c1ec5498f2dbdf5d472b690739c3bdacf82c0ccef83d837f90c5e7960eea18c67aba99c7dea6524f805",
+    "otaHeaderString": "Telink OTA Image\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000",
+    "manufacturerName": [
+      "_TZ3000_gzggw2ia",
+      "gzggw2ia"
+    ]
+  },
+  {
+    "fileName": "tlc_switch-1.1.2-445810f3-forced.zigbee",
+    "fileVersion": 4294967295,
+    "fileSize": 184386,
+    "url": "https://github.com/XaviSentis/tuya-zigbee-switch/raw/refs/heads/fleet/bin/router/MODULE_AVATTO_TS0011/tlc_switch-1.1.2-445810f3-forced.zigbee",
+    "imageType": 43537,
+    "manufacturerCode": 4417,
+    "sha512": "eca0651cee2d7dffffe786a00b21858c7f86cd4d0714f4364f6de5f37f1dc08718fa5f30a724012d4382141968e76a853f69fed135cad45c0d44e64df8ce6700",
+    "otaHeaderString": "Telink OTA Image\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000",
+    "manufacturerName": [
+      "_TZ3000_hbxsdd6k",
+      "TS0011-Avatto",
+      "hbxsdd6k"
+    ]
+  },
+  {
+    "fileName": "tlc_switch-1.1.2-445810f3-forced.zigbee",
+    "fileVersion": 4294967295,
+    "fileSize": 184402,
+    "url": "https://github.com/XaviSentis/tuya-zigbee-switch/raw/refs/heads/fleet/bin/router/MODULE_AVATTO_TS0012/tlc_switch-1.1.2-445810f3-forced.zigbee",
+    "imageType": 43530,
+    "manufacturerCode": 4417,
+    "sha512": "444dd4175b9d41e69f7c36f4ebb73a6923ea5087b6e06597dfa708347377e3a5f59aa106f54f5e856cc95b901f16162c3150175ea20c5da92d6f37712c01dee1",
+    "otaHeaderString": "Telink OTA Image\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000",
+    "manufacturerName": [
+      "_TZ3000_ljhbw1c9",
+      "TS0012-Avatto",
+      "ljhbw1c9"
+    ]
+  },
+  {
+    "fileName": "tlc_switch-1.1.2-445810f3-forced.zigbee",
+    "fileVersion": 4294967295,
+    "fileSize": 184402,
+    "url": "https://github.com/XaviSentis/tuya-zigbee-switch/raw/refs/heads/fleet/bin/router/MODULE_AVATTO_TS0012_1/tlc_switch-1.1.2-445810f3-forced.zigbee",
+    "imageType": 43613,
+    "manufacturerCode": 4417,
+    "sha512": "238057b7b3947c1b066059c905185986dfe9d29a2bbe4a5b7cd266aeb918d5353b0e0f37a76ecc1aa8ea550a19da11ba65fe22d89006a4239df8592c89f87b2f",
+    "otaHeaderString": "Telink OTA Image\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000",
+    "manufacturerName": [
+      "_TZ3000_kpatq5pq",
+      "kpatq5pq"
+    ]
+  },
+  {
+    "fileName": "tlc_switch-1.1.2-445810f3-forced.zigbee",
+    "fileVersion": 4294967295,
+    "fileSize": 184402,
+    "url": "https://github.com/XaviSentis/tuya-zigbee-switch/raw/refs/heads/fleet/bin/router/MODULE_AVATTO_TS0013/tlc_switch-1.1.2-445810f3-forced.zigbee",
+    "imageType": 43552,
+    "manufacturerCode": 4417,
+    "sha512": "bf9fb4a10a19d6f0e989718a38a5e9c79e89152a1290808b4ecb2ca4de2d4d12a44dd477096630b50137bb0aa84d2f92d189f83a33c6e5ecc4a4cf357c3b6af0",
+    "otaHeaderString": "Telink OTA Image\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000",
+    "manufacturerName": [
+      "_TZ3000_avotanj3",
+      "avotanj3"
+    ]
+  },
+  {
+    "fileName": "tlc_switch-1.1.2-445810f3-forced.zigbee",
+    "fileVersion": 4294967295,
+    "fileSize": 184402,
+    "url": "https://github.com/XaviSentis/tuya-zigbee-switch/raw/refs/heads/fleet/bin/router/MODULE_EKAZA_TS0002/tlc_switch-1.1.2-445810f3-forced.zigbee",
+    "imageType": 43547,
+    "manufacturerCode": 4417,
+    "sha512": "aff922c6866f5ebc3e386ecf808124bd3fbcae1d3557a53d94b321c810c5631cb2834139fdae9f514532dbd8f5cca29358c8300fce21f7164fa6d34a73101294",
+    "otaHeaderString": "Telink OTA Image\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000",
+    "manufacturerName": [
+      "_TZ3000_hznzbl0x",
+      "hznzbl0x"
+    ]
+  },
+  {
+    "fileName": "tlc_switch-1.1.2-445810f3-forced.zigbee",
+    "fileVersion": 4294967295,
+    "fileSize": 184402,
+    "url": "https://github.com/XaviSentis/tuya-zigbee-switch/raw/refs/heads/fleet/bin/router/MODULE_EKF_TS0012/tlc_switch-1.1.2-445810f3-forced.zigbee",
+    "imageType": 45592,
+    "manufacturerCode": 4417,
+    "sha512": "69a37de127a99749dde7f5f9510d6dc9e5805172c14fda3a9052e88ebdfeef4ba950a2d72511018f0fbd71b4ac71f2c0d6409c8cda3594c33f320c4a9b5273ea",
+    "otaHeaderString": "Telink OTA Image\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000",
+    "manufacturerName": [
+      "_TZ3000_num4zd6s",
+      "num4zd6s"
+    ]
+  },
+  {
+    "fileName": "tlc_switch-1.1.2-445810f3-forced.zigbee",
+    "fileVersion": 4294967295,
+    "fileSize": 184386,
+    "url": "https://github.com/XaviSentis/tuya-zigbee-switch/raw/refs/heads/fleet/bin/router/MODULE_EMOS_TS0001/tlc_switch-1.1.2-445810f3-forced.zigbee",
+    "imageType": 45587,
+    "manufacturerCode": 4417,
+    "sha512": "b7188da4567b14a669afc048752fac97b125819f6f8b6ea12778f1b00caf8411cc9636b38365557b0315b62aa35924aa5d5796ae195e65c11227c28794e88d5e",
+    "otaHeaderString": "Telink OTA Image\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000",
+    "manufacturerName": [
+      "_TZ3000_hyziup76",
+      "hyziup76"
+    ]
+  },
+  {
+    "fileName": "tlc_switch-1.1.2-445810f3-forced.zigbee",
+    "fileVersion": 4294967295,
+    "fileSize": 184402,
+    "url": "https://github.com/XaviSentis/tuya-zigbee-switch/raw/refs/heads/fleet/bin/router/MODULE_EMOS_TS0002/tlc_switch-1.1.2-445810f3-forced.zigbee",
+    "imageType": 45588,
+    "manufacturerCode": 4417,
+    "sha512": "8f3864be2ca8c7b867aaeeada97b442b858e9f244d4c505ad01950f920d4f53bda3cea172ff8999a2d2ef7eecd1dae730fb512bca6f5492412f758cf397f8b96",
+    "otaHeaderString": "Telink OTA Image\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000",
+    "manufacturerName": [
+      "_TZ3000_wxtmgjbd",
+      "wxtmgjbd"
+    ]
+  },
+  {
+    "fileName": "tlc_switch-1.1.2-445810f3-forced.zigbee",
+    "fileVersion": 4294967295,
+    "fileSize": 184386,
+    "url": "https://github.com/XaviSentis/tuya-zigbee-switch/raw/refs/heads/fleet/bin/router/MODULE_FARYLINK_L_TS0001/tlc_switch-1.1.2-445810f3-forced.zigbee",
+    "imageType": 43617,
+    "manufacturerCode": 4417,
+    "sha512": "7c46e512b9d42e57c556c70fb6f937c06ff4d9deb55f541f2a057e45e6d23eba2c8169c1baf290ec5fba4e6308af6375abfcc3b594ae55bc9b6408f6388079e2",
+    "otaHeaderString": "Telink OTA Image\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000",
+    "manufacturerName": [
+      "_TZ3000_qlhs2kqr",
+      "qlhs2kqr"
+    ]
+  },
+  {
+    "fileName": "tlc_switch-1.1.2-445810f3-forced.zigbee",
+    "fileVersion": 4294967295,
+    "fileSize": 184402,
+    "url": "https://github.com/XaviSentis/tuya-zigbee-switch/raw/refs/heads/fleet/bin/router/MODULE_FARYLINK_TS0002/tlc_switch-1.1.2-445810f3-forced.zigbee",
+    "imageType": 45582,
+    "manufacturerCode": 4417,
+    "sha512": "832fcc8dbe6f7a38572108ffb27d8300894b0261322bbb26136706eaeaecb733d7b2ea6e3994e8819ace2658bc800e6054a1f838923296575a368ca1cfcab31b",
+    "otaHeaderString": "Telink OTA Image\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000",
+    "manufacturerName": [
+      "_TZ3000_ruxexjfz",
+      "ruxexjfz"
+    ]
+  },
+  {
+    "fileName": "tlc_switch-1.1.2-445810f3-forced.zigbee",
+    "fileVersion": 4294967295,
+    "fileSize": 184402,
+    "url": "https://github.com/XaviSentis/tuya-zigbee-switch/raw/refs/heads/fleet/bin/router/MODULE_GIRIER_A_TS0003/tlc_switch-1.1.2-445810f3-forced.zigbee",
+    "imageType": 45573,
+    "manufacturerCode": 4417,
+    "sha512": "2118a3f765b21e3bc71599a0491045fb8ef7ee6096bd0998c19858e4b2a5f0112e8aa3edc83b69ff6eb4a813d1a99ea72350dac6510af261f893b59c73611817",
+    "otaHeaderString": "Telink OTA Image\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000",
+    "manufacturerName": [
+      "_TZ3000_odzoiovu",
+      "odzoiovu"
+    ]
+  },
+  {
+    "fileName": "tlc_switch-1.1.2-445810f3-forced.zigbee",
+    "fileVersion": 4294967295,
+    "fileSize": 184386,
+    "url": "https://github.com/XaviSentis/tuya-zigbee-switch/raw/refs/heads/fleet/bin/router/MODULE_GIRIER_B_TS0001/tlc_switch-1.1.2-445810f3-forced.zigbee",
+    "imageType": 43595,
+    "manufacturerCode": 4417,
+    "sha512": "4cdcd1fdbd012f255c6db4a56de506bc6eda946304d89da3b94a1e695973667a137d4edba191e4a634c0461ee84e8e7c07e37e00089b185d0cef753d126c1cd9",
+    "otaHeaderString": "Telink OTA Image\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000",
+    "manufacturerName": [
+      "_TZ3210_9hbau615",
+      "9hbau615"
+    ]
+  },
+  {
+    "fileName": "tlc_switch-1.1.2-445810f3-forced.zigbee",
+    "fileVersion": 4294967295,
+    "fileSize": 184402,
+    "url": "https://github.com/XaviSentis/tuya-zigbee-switch/raw/refs/heads/fleet/bin/router/MODULE_GIRIER_B_TS0012/tlc_switch-1.1.2-445810f3-forced.zigbee",
+    "imageType": 43615,
+    "manufacturerCode": 4417,
+    "sha512": "29d6d3b8b313706218f0f5f3e6ec1d9e8810e4011eb9947dd316b38fc2bc6826a475897acd3e38167e6dabedcef8e7e7642126c83b85580dfe6c429a780d7eba",
+    "otaHeaderString": "Telink OTA Image\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000",
+    "manufacturerName": [
+      "_TZ3000_5sssic9d",
+      "5sssic9d"
+    ]
+  },
+  {
+    "fileName": "tlc_switch-1.1.2-445810f3-forced.zigbee",
+    "fileVersion": 4294967295,
+    "fileSize": 184386,
+    "url": "https://github.com/XaviSentis/tuya-zigbee-switch/raw/refs/heads/fleet/bin/router/MODULE_GIRIER_DRY_TS0001/tlc_switch-1.1.2-445810f3-forced.zigbee",
+    "imageType": 43638,
+    "manufacturerCode": 4417,
+    "sha512": "bd657c47acf4eb49aa7c4d6ac493b794ef5ec7bf479da5a2dd5785bcbd3e5e5cd77aa2a500d2276d06799c7cef6bfd86d36245cdc0638f9bc5c7a3da4fa472f9",
+    "otaHeaderString": "Telink OTA Image\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000",
+    "manufacturerName": [
+      "_TZ3210_tqlv4ug4",
+      "tqlv4ug42"
+    ]
+  },
+  {
+    "fileName": "tlc_switch-1.1.2-445810f3-forced.zigbee",
+    "fileVersion": 4294967295,
+    "fileSize": 184386,
+    "url": "https://github.com/XaviSentis/tuya-zigbee-switch/raw/refs/heads/fleet/bin/router/MODULE_GIRIER_TS0001/tlc_switch-1.1.2-445810f3-forced.zigbee",
+    "imageType": 45585,
+    "manufacturerCode": 4417,
+    "sha512": "32fd11be94bfbf8dda22d9ac53ee9da9c74a05ecae904233faa29e6657fd1469c2b1782b7bd1d41a2c47139ab69102d407b6d9f155c7f98e25ff2c28cb8beec6",
+    "otaHeaderString": "Telink OTA Image\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000",
+    "manufacturerName": [
+      "_TZ3000_zw7yf6yk",
+      "zw7yf6yk"
+    ]
+  },
+  {
+    "fileName": "tlc_switch-1.1.2-445810f3-forced.zigbee",
+    "fileVersion": 4294967295,
+    "fileSize": 184402,
+    "url": "https://github.com/XaviSentis/tuya-zigbee-switch/raw/refs/heads/fleet/bin/router/MODULE_GIRIER_TS0002/tlc_switch-1.1.2-445810f3-forced.zigbee",
+    "imageType": 43526,
+    "manufacturerCode": 4417,
+    "sha512": "b61ebc8a5bed9c2a58c2883e104c6aa4062914b76e868796d5267fc8c2c5bcf62c2011c68857492e88ab08a2fbffc93a2b25630bf3a991275c231c9ded8f621b",
+    "otaHeaderString": "Telink OTA Image\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000",
+    "manufacturerName": [
+      "_TZ3000_zmy4lslw",
+      "Tuya-TS0002-custom",
+      "zmy4lslw"
+    ]
+  },
+  {
+    "fileName": "tlc_switch-1.1.2-445810f3-forced.zigbee",
+    "fileVersion": 4294967295,
+    "fileSize": 184386,
+    "url": "https://github.com/XaviSentis/tuya-zigbee-switch/raw/refs/heads/fleet/bin/router/MODULE_GIRIER_TS130F_1GANG/tlc_switch-1.1.2-445810f3-forced.zigbee",
+    "imageType": 43616,
+    "manufacturerCode": 4417,
+    "sha512": "5c81796ca3df76e03eb03f86df41da0a15c14d15dc531a8ade6f2606388a495e57018f014e8a07383cff122b72d1e2734b89f2588de0218f4ec3066f4df7058f",
+    "otaHeaderString": "Telink OTA Image\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000",
+    "manufacturerName": [
+      "_TZ3210_dwytrmda",
+      "dwytrmda"
+    ]
+  },
+  {
+    "fileName": "tlc_switch-1.1.2-445810f3-forced.zigbee",
+    "fileVersion": 4294967295,
+    "fileSize": 184402,
+    "url": "https://github.com/XaviSentis/tuya-zigbee-switch/raw/refs/heads/fleet/bin/router/MODULE_GIRIER_TS130F_2GANG/tlc_switch-1.1.2-445810f3-forced.zigbee",
+    "imageType": 45597,
+    "manufacturerCode": 4417,
+    "sha512": "c444c90d229aacbdc6373a9c05bc473c3194048a35d44fae2d7360f685d79b56a4d64dc6ed7542907c4f81d9edd136c6eaf5e434de2bab6f30feeaa017b90742",
+    "otaHeaderString": "Telink OTA Image\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000",
+    "manufacturerName": [
+      "_TZ3000_j1xl73iw",
+      "j1xl73iw"
+    ]
+  },
+  {
+    "fileName": "tlc_switch-1.1.2-445810f3-forced.zigbee",
+    "fileVersion": 4294967295,
+    "fileSize": 184386,
+    "url": "https://github.com/XaviSentis/tuya-zigbee-switch/raw/refs/heads/fleet/bin/router/MODULE_GIRIER_ZTU_TS0001/tlc_switch-1.1.2-445810f3-forced.zigbee",
+    "imageType": 45585,
+    "manufacturerCode": 4417,
+    "sha512": "940c3ab7f6505e8240d8197824e677ce9c1f0f8c54c4e1db76187e2d1da9be7bf64a0fe9e20ccb22d7a03b745f1869b2c68a1ae12ca9fd0b6bdd0b0db9750089",
+    "otaHeaderString": "Telink OTA Image\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000",
+    "manufacturerName": [
+      "_TZ3000_6axxqqi2",
+      "6axxqqi2"
+    ]
+  },
+  {
+    "fileName": "tlc_switch-1.1.2-445810f3-forced.zigbee",
+    "fileVersion": 4294967295,
+    "fileSize": 184386,
+    "url": "https://github.com/XaviSentis/tuya-zigbee-switch/raw/refs/heads/fleet/bin/router/MODULE_HOBEIAN_MINI_TS0001/tlc_switch-1.1.2-445810f3-forced.zigbee",
+    "imageType": 43631,
+    "manufacturerCode": 4417,
+    "sha512": "0e1fbd0eaf91156306bf981c6423cdffcb64ba44bb17727a745457144979a8c85febd921071ff34dd63f592083b1c4f1696d0630432e53eda3d04a29e692df3f",
+    "otaHeaderString": "Telink OTA Image\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000",
+    "manufacturerName": [
+      "HOBEIAN",
+      "ZG-301Z"
+    ]
+  },
+  {
+    "fileName": "tlc_switch-1.1.2-445810f3-forced.zigbee",
+    "fileVersion": 4294967295,
+    "fileSize": 184386,
+    "url": "https://github.com/XaviSentis/tuya-zigbee-switch/raw/refs/heads/fleet/bin/router/MODULE_HOBEIAN_TS0001_1/tlc_switch-1.1.2-445810f3-forced.zigbee",
+    "imageType": 43598,
+    "manufacturerCode": 4417,
+    "sha512": "08d41574ec9bdd2e1a2a027d2c963ef695d6e39b05c5fcbcdf0e2ebbe7b89142189275b648fd3a9e8c1cec089aac90ac82a68362bfaef5fc10784320b659bd42",
+    "otaHeaderString": "Telink OTA Image\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000",
+    "manufacturerName": [
+      "_TZ3000_q6a3tepg",
+      "q6a3tepg"
+    ]
+  },
+  {
+    "fileName": "tlc_switch-1.1.2-445810f3-forced.zigbee",
+    "fileVersion": 4294967295,
+    "fileSize": 184386,
+    "url": "https://github.com/XaviSentis/tuya-zigbee-switch/raw/refs/heads/fleet/bin/router/MODULE_HOBEIAN_TS0001_2/tlc_switch-1.1.2-445810f3-forced.zigbee",
+    "imageType": 45579,
+    "manufacturerCode": 4417,
+    "sha512": "40d0d64e274ec5344eb65bb7f5f34f8d0cfcafcace8c9c864382344afb5d85d72b3f8245a24965961f43d417da8feb93c57c3a3c5e060d5313a3ae95173d23db",
+    "otaHeaderString": "Telink OTA Image\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000",
+    "manufacturerName": [
+      "ZG-301Z"
+    ]
+  },
+  {
+    "fileName": "tlc_switch-1.1.2-445810f3-forced.zigbee",
+    "fileVersion": 4294967295,
+    "fileSize": 184402,
+    "url": "https://github.com/XaviSentis/tuya-zigbee-switch/raw/refs/heads/fleet/bin/router/MODULE_HOMMYN_TS0002/tlc_switch-1.1.2-445810f3-forced.zigbee",
+    "imageType": 47115,
+    "manufacturerCode": 4417,
+    "sha512": "5264f5267546a352d08ee82674975f55ac7942053cbb425c3ff3bb226ab2e56696eac7f7347b6fbcfc317330606fd913792fa4d44264f3ea5067bf1ebad48e87",
+    "otaHeaderString": "Telink OTA Image\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000",
+    "manufacturerName": [
+      "_TZ3000_5gey1ohx",
+      "5gey1ohx"
+    ]
+  },
+  {
+    "fileName": "tlc_switch-1.1.2-445810f3-forced.zigbee",
+    "fileVersion": 4294967295,
+    "fileSize": 184386,
+    "url": "https://github.com/XaviSentis/tuya-zigbee-switch/raw/refs/heads/fleet/bin/router/MODULE_HOMMYN_TS0011/tlc_switch-1.1.2-445810f3-forced.zigbee",
+    "imageType": 45591,
+    "manufacturerCode": 4417,
+    "sha512": "363ecf71e6f827caeae832f027cfb5b7f93bce6c58bf451ef092519274f828e351438c29c5948b81cf211ed630aa738a25d22ff565d0710a118b71310c70a288",
+    "otaHeaderString": "Telink OTA Image\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000",
+    "manufacturerName": [
+      "_TZ3000_tw4ztbp4",
+      "tw4ztbp4"
+    ]
+  },
+  {
+    "fileName": "tlc_switch-1.1.2-445810f3-forced.zigbee",
+    "fileVersion": 4294967295,
+    "fileSize": 184402,
+    "url": "https://github.com/XaviSentis/tuya-zigbee-switch/raw/refs/heads/fleet/bin/router/MODULE_HOMMYN_TS0012/tlc_switch-1.1.2-445810f3-forced.zigbee",
+    "imageType": 47114,
+    "manufacturerCode": 4417,
+    "sha512": "9657aaf101a3d33bfc6af704822244d1e3dca60e78ec8b418ac1eac8c67da6ce2ebb93d9b4bf18154fc50249d7a211afccb76fa6d586c391bd8995e53609c599",
+    "otaHeaderString": "Telink OTA Image\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000",
+    "manufacturerName": [
+      "_TZ3000_0e6uvexf",
+      "0e6uvexf"
+    ]
+  },
+  {
+    "fileName": "tlc_switch-1.1.2-445810f3-forced.zigbee",
+    "fileVersion": 4294967295,
+    "fileSize": 184386,
+    "url": "https://github.com/XaviSentis/tuya-zigbee-switch/raw/refs/heads/fleet/bin/router/MODULE_IHSENO_A_TS0001/tlc_switch-1.1.2-445810f3-forced.zigbee",
+    "imageType": 43626,
+    "manufacturerCode": 4417,
+    "sha512": "0c8aec47c4a32fe04e9d0dc56416d72e917e107acf981997cc45f1f6b0af5f3a5616b15d07eed74e0aa7e28015cb345c5c8b56f588c9b4b12ec20a58ceb9a366",
+    "otaHeaderString": "Telink OTA Image\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000",
+    "manufacturerName": [
+      "_TZ3000_kycczpw8",
+      "kycczpw8"
+    ]
+  },
+  {
+    "fileName": "tlc_switch-1.1.2-445810f3-forced.zigbee",
+    "fileVersion": 4294967295,
+    "fileSize": 184402,
+    "url": "https://github.com/XaviSentis/tuya-zigbee-switch/raw/refs/heads/fleet/bin/router/MODULE_IHSENO_B_TS0001/tlc_switch-1.1.2-445810f3-forced.zigbee",
+    "imageType": 43641,
+    "manufacturerCode": 4417,
+    "sha512": "54f1add57a98b1ed29bc4c6a277ebff4e1974528b996f77daf8caf4a11d5829f7b096f5d75da7c2a592bea344d3ed3fa957625cc00900f8133490ac936cd6eb4",
+    "otaHeaderString": "Telink OTA Image\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000",
+    "manufacturerName": [
+      "_TZ3000_rmjr4ufz",
+      "rmjr4ufz"
+    ]
+  },
+  {
+    "fileName": "tlc_switch-1.1.2-445810f3-forced.zigbee",
+    "fileVersion": 4294967295,
+    "fileSize": 184386,
+    "url": "https://github.com/XaviSentis/tuya-zigbee-switch/raw/refs/heads/fleet/bin/router/MODULE_IHSENO_TS0001/tlc_switch-1.1.2-445810f3-forced.zigbee",
+    "imageType": 43554,
+    "manufacturerCode": 4417,
+    "sha512": "9f3b5aba9c3c538ad7d05a1ae3738396c106b772aff54e91a58751bcd810df70846eb138f2d1b0fc2b3f8930dd2fbf5804c98b13292a0b4ddca6d681e2337779",
+    "otaHeaderString": "Telink OTA Image\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000",
+    "manufacturerName": [
+      "_TZ3000_pgq7ormg",
+      "pgq7ormg"
+    ]
+  },
+  {
+    "fileName": "tlc_switch-1.1.2-445810f3-forced.zigbee",
+    "fileVersion": 4294967295,
+    "fileSize": 184402,
+    "url": "https://github.com/XaviSentis/tuya-zigbee-switch/raw/refs/heads/fleet/bin/router/MODULE_IHSENO_TS0003/tlc_switch-1.1.2-445810f3-forced.zigbee",
+    "imageType": 43546,
+    "manufacturerCode": 4417,
+    "sha512": "47ba69858f246307150c4d8401332bf840f192d91313e9149e797c14b3ee3215417b87a69316057146d583be7836ffd582e71a679488dee08bb381df3b6b4f77",
+    "otaHeaderString": "Telink OTA Image\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000",
+    "manufacturerName": [
+      "_TZ3000_mhhxxjrs",
+      "TS0003-3CH-cus",
+      "TS0003-IHS",
+      "mhhxxjrs"
+    ]
+  },
+  {
+    "fileName": "tlc_switch-1.1.2-445810f3-forced.zigbee",
+    "fileVersion": 4294967295,
+    "fileSize": 184418,
+    "url": "https://github.com/XaviSentis/tuya-zigbee-switch/raw/refs/heads/fleet/bin/router/MODULE_IHSENO_TS0004/tlc_switch-1.1.2-445810f3-forced.zigbee",
+    "imageType": 43548,
+    "manufacturerCode": 4417,
+    "sha512": "6d9fe75a1c3e80733435e2c9ff3dc4a8da45cde79c337fe77c6ca58ce22dd3d996070289eff1d8fbbfbb960d9fe2798d6703dd1105bf1885e24792a334d90d02",
+    "otaHeaderString": "Telink OTA Image\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000",
+    "manufacturerName": [
+      "_TZ3000_knoj8lpk",
+      "TS0004-IHS",
+      "knoj8lpk"
+    ]
+  },
+  {
+    "fileName": "tlc_switch-1.1.2-445810f3-forced.zigbee",
+    "fileVersion": 4294967295,
+    "fileSize": 184386,
+    "url": "https://github.com/XaviSentis/tuya-zigbee-switch/raw/refs/heads/fleet/bin/router/MODULE_LVGESS_PM_TSOOO1/tlc_switch-1.1.2-445810f3-forced.zigbee",
+    "imageType": 47000,
+    "manufacturerCode": 4417,
+    "sha512": "67b31c1e185cfaa0e1d59f8dc2e854fd9b3f088e1e58a31d0e73f39b6b75246008f1aa909ab5fc3091823c3f8fdc7b629b87a5a1f8c397231d39d1420f8e0722",
+    "otaHeaderString": "Telink OTA Image\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000",
+    "manufacturerName": [
+      "_TZ3000_q8r0bbvy",
+      "q8r0bbvy"
+    ]
+  },
+  {
+    "fileName": "tlc_switch-1.1.2-445810f3-forced.zigbee",
+    "fileVersion": 4294967295,
+    "fileSize": 184402,
+    "url": "https://github.com/XaviSentis/tuya-zigbee-switch/raw/refs/heads/fleet/bin/router/MODULE_MOES_TS0002/tlc_switch-1.1.2-445810f3-forced.zigbee",
+    "imageType": 43560,
+    "manufacturerCode": 4417,
+    "sha512": "a5c8c216380674133efac2a5645b5fa243fc2101b82c4583f58ad48340206d8f002c3bf4bf5b53ba68d3e60d0d4ba9c31db2b448d328c64da87d9b6b80400010",
+    "otaHeaderString": "Telink OTA Image\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000",
+    "manufacturerName": [
+      "_TZ3000_qaa59zqd",
+      "qaa59zqd"
+    ]
+  },
+  {
+    "fileName": "tlc_switch-1.1.2-445810f3-forced.zigbee",
+    "fileVersion": 4294967295,
+    "fileSize": 184402,
+    "url": "https://github.com/XaviSentis/tuya-zigbee-switch/raw/refs/heads/fleet/bin/router/MODULE_MOES_TS0003/tlc_switch-1.1.2-445810f3-forced.zigbee",
+    "imageType": 43538,
+    "manufacturerCode": 4417,
+    "sha512": "356d8fe18ebcd13c48b53cf3b35d8ce58ad903a5d572a5fc8e848008710b458465446bfcd935542aa8d1f74495af8b90230a4caea33b07558670dfd1142a42b9",
+    "otaHeaderString": "Telink OTA Image\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000",
+    "manufacturerName": [
+      "_TZ3000_pfc7i3kt",
+      "Tuya-TS0003-custom",
+      "pfc7i3kt"
+    ]
+  },
+  {
+    "fileName": "tlc_switch-1.1.2-445810f3-forced.zigbee",
+    "fileVersion": 4294967295,
+    "fileSize": 191362,
+    "url": "https://github.com/XaviSentis/tuya-zigbee-switch/raw/refs/heads/fleet/bin/router/MODULE_MOES_TS0011/tlc_switch-1.1.2-445810f3-forced.zigbee",
+    "imageType": 43629,
+    "manufacturerCode": 4169,
+    "sha512": "48f77c661096636a30b1e11cd59ec0bdc8418be5ebbcd76d43ab7b0c586b6c2b44f8ceb036a7d19b4343f2c436ad506d4f510b5d8dd75b2fe48609199106320d",
+    "otaHeaderString": "Custom zigbee firmware\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000",
+    "manufacturerName": [
+      "_TZ3000_zzoangmc",
+      "zzoangmc"
+    ]
+  },
+  {
+    "fileName": "tlc_switch-1.1.2-445810f3-forced.zigbee",
+    "fileVersion": 4294967295,
+    "fileSize": 184402,
+    "url": "https://github.com/XaviSentis/tuya-zigbee-switch/raw/refs/heads/fleet/bin/router/MODULE_MOES_ZM4LT2_TS0002/tlc_switch-1.1.2-445810f3-forced.zigbee",
+    "imageType": 45571,
+    "manufacturerCode": 4417,
+    "sha512": "1fee2f336f15980b99092044c318ec95e6c6064ffdd6613e242873f299543c2862a465680cfda5a21d42799f4bb79ca1d4d0a88450c73643454bf2a226b95527",
+    "otaHeaderString": "Telink OTA Image\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000",
+    "manufacturerName": [
+      "_TZ3000_criiahcg",
+      "criiahcg"
+    ]
+  },
+  {
+    "fileName": "tlc_switch-1.1.2-445810f3-forced.zigbee",
+    "fileVersion": 4294967295,
+    "fileSize": 184402,
+    "url": "https://github.com/XaviSentis/tuya-zigbee-switch/raw/refs/heads/fleet/bin/router/MODULE_MOES_ZM4LT3_TS0003/tlc_switch-1.1.2-445810f3-forced.zigbee",
+    "imageType": 43565,
+    "manufacturerCode": 4417,
+    "sha512": "5b04e59c242971e54578f03f637198ced2ab6df57c174e3bbec111345cc1882d038767f7e3810ef355058ed0263ee2cf3eb4a4f241d718ddb14dc9f88e5999a4",
+    "otaHeaderString": "Telink OTA Image\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000",
+    "manufacturerName": [
+      "_TZ3000_mzcp0of6",
+      "mzcp0of6"
+    ]
+  },
+  {
+    "fileName": "tlc_switch-1.1.2-445810f3-forced.zigbee",
+    "fileVersion": 4294967295,
+    "fileSize": 184418,
+    "url": "https://github.com/XaviSentis/tuya-zigbee-switch/raw/refs/heads/fleet/bin/router/MODULE_MOES_ZM4LT4_TS0004/tlc_switch-1.1.2-445810f3-forced.zigbee",
+    "imageType": 43601,
+    "manufacturerCode": 4417,
+    "sha512": "5f4a73972dcd7b56f064c0cc1815ae267699d6e17522ec1d7e1fca96f08c998f7760d29090bd591ef4eceec1ca05b0e5543d3a40e6d5c73a8ac81a4d069f6b6f",
+    "otaHeaderString": "Telink OTA Image\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000",
+    "manufacturerName": [
+      "_TZ3000_tyg4yiat",
+      "tyg4yiat"
+    ]
+  },
+  {
+    "fileName": "tlc_switch-1.1.2-445810f3-forced.zigbee",
+    "fileVersion": 4294967295,
+    "fileSize": 184386,
+    "url": "https://github.com/XaviSentis/tuya-zigbee-switch/raw/refs/heads/fleet/bin/router/MODULE_NOUS_B1Z_TS0001/tlc_switch-1.1.2-445810f3-forced.zigbee",
+    "imageType": 43633,
+    "manufacturerCode": 4417,
+    "sha512": "29ea163a72d094b2b54f033a26d49dc9468a8271db0518d80553ae60a645f22728b86ba21f0ea688c65b8b9fe371a4a939f74a45bda35576a1ccb7099f4c830d",
+    "otaHeaderString": "Telink OTA Image\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000",
+    "manufacturerName": [
+      "_TZ3000_ctftgjwb",
+      "ctftgjwb"
+    ]
+  },
+  {
+    "fileName": "tlc_switch-1.1.2-445810f3-forced.zigbee",
+    "fileVersion": 4294967295,
+    "fileSize": 184402,
+    "url": "https://github.com/XaviSentis/tuya-zigbee-switch/raw/refs/heads/fleet/bin/router/MODULE_NOVADIGITAL_TS0001/tlc_switch-1.1.2-445810f3-forced.zigbee",
+    "imageType": 43614,
+    "manufacturerCode": 4417,
+    "sha512": "db1d463ce557e8d0195a72111da90c619010e205ed99675af892b94ccabccaf033f0a95e2f2b35ace8345a1e8ae6a3e9cecb0abd085cea417cd94eaf2c2ae72f",
+    "otaHeaderString": "Telink OTA Image\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000",
+    "manufacturerName": [
+      "_TZ3000_c8wtsv3p",
+      "c8wtsv3p"
+    ]
+  },
+  {
+    "fileName": "tlc_switch-1.1.2-445810f3-forced.zigbee",
+    "fileVersion": 4294967295,
+    "fileSize": 195718,
+    "url": "https://github.com/XaviSentis/tuya-zigbee-switch/raw/refs/heads/fleet/bin/router/MODULE_SONOFF_ZBMINIL2/tlc_switch-1.1.2-445810f3-forced.zigbee",
+    "imageType": 45596,
+    "manufacturerCode": 4169,
+    "sha512": "7903f6e5dd4f56a427d116716ec9c2764f203b98d3a427f607000e8c742dddd73248bcf71eac19e69dcfcbbd945a0ed1b8dfc3c8d5fac1ee0f729662e8f07bf2",
+    "otaHeaderString": "Custom zigbee firmware\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000",
+    "manufacturerName": [
+      "SONOFF",
+      "sonoff"
+    ]
+  },
+  {
+    "fileName": "tlc_switch-1.1.2-445810f3-forced.zigbee",
+    "fileVersion": 4294967295,
+    "fileSize": 184386,
+    "url": "https://github.com/XaviSentis/tuya-zigbee-switch/raw/refs/heads/fleet/bin/router/MODULE_TLED_TS0001/tlc_switch-1.1.2-445810f3-forced.zigbee",
+    "imageType": 43568,
+    "manufacturerCode": 4417,
+    "sha512": "6771d76a3e557f821239779ec5634a9fcc811fd23a8c62998718e7e53492cac5b1033e8b52ba6b890dd7113b79d6b7e035f88a58ae87edecbcd07368fbc1a7b4",
+    "otaHeaderString": "Telink OTA Image\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000",
+    "manufacturerName": [
+      "_TZ3000_npzfdcof",
+      "npzfdcof"
+    ]
+  },
+  {
+    "fileName": "tlc_switch-1.1.2-445810f3-forced.zigbee",
+    "fileVersion": 4294967295,
+    "fileSize": 184402,
+    "url": "https://github.com/XaviSentis/tuya-zigbee-switch/raw/refs/heads/fleet/bin/router/MODULE_TUYA_A_TS0002/tlc_switch-1.1.2-445810f3-forced.zigbee",
+    "imageType": 47112,
+    "manufacturerCode": 4417,
+    "sha512": "9fd2f9a807279e71b52ca00f9438448e86016f11b5a100e854d58af1370b8fdcf7795b550a9b0e9bbeb380d10734fc47876cafc827372377870e08db96f5ed1d",
+    "otaHeaderString": "Telink OTA Image\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000",
+    "manufacturerName": [
+      "_TZ3000_n1j44rth",
+      "n1j44rth"
+    ]
+  },
+  {
+    "fileName": "tlc_switch-1.1.2-445810f3-forced.zigbee",
+    "fileVersion": 4294967295,
+    "fileSize": 184418,
+    "url": "https://github.com/XaviSentis/tuya-zigbee-switch/raw/refs/heads/fleet/bin/router/MODULE_TUYA_A_TS0003/tlc_switch-1.1.2-445810f3-forced.zigbee",
+    "imageType": 47113,
+    "manufacturerCode": 4417,
+    "sha512": "95b679cf6e283f440f4c019a29c1e304d34a7170185512b9f9b92a6edb2f1cad30a0c214905fa7463fef2719d5dd5a987da12184094d67e3754623b4f9a832bf",
+    "otaHeaderString": "Telink OTA Image\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000",
+    "manufacturerName": [
+      "_TZ3000_uwhjgngj",
+      "uwhjgngj"
+    ]
+  },
+  {
+    "fileName": "tlc_switch-1.1.2-445810f3-forced.zigbee",
+    "fileVersion": 4294967295,
+    "fileSize": 184402,
+    "url": "https://github.com/XaviSentis/tuya-zigbee-switch/raw/refs/heads/fleet/bin/router/MODULE_TUYA_COMMON2_TS0003/tlc_switch-1.1.2-445810f3-forced.zigbee",
+    "imageType": 47005,
+    "manufacturerCode": 4417,
+    "sha512": "7e1979516ca8be163a9afe8b43a3ab1543bd8d16424184d49f2140044b03975caa43413bd7cc2616e5950725b0d8840af0cae580fe2e3d094a6d7a162463b0f5",
+    "otaHeaderString": "Telink OTA Image\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000",
+    "manufacturerName": [
+      "_TZ3000_pf7swkqp",
+      "pf7swkqp"
+    ]
+  },
+  {
+    "fileName": "tlc_switch-1.1.2-445810f3-forced.zigbee",
+    "fileVersion": 4294967295,
+    "fileSize": 184386,
+    "url": "https://github.com/XaviSentis/tuya-zigbee-switch/raw/refs/heads/fleet/bin/router/MODULE_TUYA_COMMON_TS0001/tlc_switch-1.1.2-445810f3-forced.zigbee",
+    "imageType": 43573,
+    "manufacturerCode": 4417,
+    "sha512": "94eb9a338389b31209ff0b2bcb04dbd005b9395ad311db5bb8b4b617db5f932580e98d8b0d440fc22190b38e094563a739a8d0bdb8df9005e716465807587946",
+    "otaHeaderString": "Telink OTA Image\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000",
+    "manufacturerName": [
+      "_TZ3000_rfexs4vs",
+      "rfexs4vs"
+    ]
+  },
+  {
+    "fileName": "tlc_switch-1.1.2-445810f3-forced.zigbee",
+    "fileVersion": 4294967295,
+    "fileSize": 184386,
+    "url": "https://github.com/XaviSentis/tuya-zigbee-switch/raw/refs/heads/fleet/bin/router/MODULE_TUYA_COMMON_TS0001_2/tlc_switch-1.1.2-445810f3-forced.zigbee",
+    "imageType": 47007,
+    "manufacturerCode": 4417,
+    "sha512": "fb1329f1e48984636fc4664d3ad34507f5593c0693e69c13ec3557fec43c442b10f7aa8c35f812f39af0075568861b246652b71b864f1bafc3edbfbc9b0bdab1",
+    "otaHeaderString": "Telink OTA Image\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000",
+    "manufacturerName": [
+      "_TZ3000_khmapq4n",
+      "khmapq4n"
+    ]
+  },
+  {
+    "fileName": "tlc_switch-1.1.2-445810f3-forced.zigbee",
+    "fileVersion": 4294967295,
+    "fileSize": 184402,
+    "url": "https://github.com/XaviSentis/tuya-zigbee-switch/raw/refs/heads/fleet/bin/router/MODULE_TUYA_COMMON_TS0002/tlc_switch-1.1.2-445810f3-forced.zigbee",
+    "imageType": 43574,
+    "manufacturerCode": 4417,
+    "sha512": "10cea84594c660d786ac3ea168dec99bcdd0d91aafb06fceb586ede7a5f85dd1d74d9d293bde4c0a7719fd5b079c8b2ca48e502565f827f42bb535934e48b36f",
+    "otaHeaderString": "Telink OTA Image\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000",
+    "manufacturerName": [
+      "_TZ3000_zbfya6h0",
+      "zbfya6h0"
+    ]
+  },
+  {
+    "fileName": "tlc_switch-1.1.2-445810f3-forced.zigbee",
+    "fileVersion": 4294967295,
+    "fileSize": 184418,
+    "url": "https://github.com/XaviSentis/tuya-zigbee-switch/raw/refs/heads/fleet/bin/router/MODULE_TUYA_COMMON_TS0004/tlc_switch-1.1.2-445810f3-forced.zigbee",
+    "imageType": 47004,
+    "manufacturerCode": 4417,
+    "sha512": "4e9d4df597334a1bcf275a9d6d332b31065335d6bbd3c5475de2dc7ddca029e6cb1b63f560d2ff241ed2d3044fe733b0114907f71d7b4a80f608d8a75eec75f4",
+    "otaHeaderString": "Telink OTA Image\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000",
+    "manufacturerName": [
+      "_TZ3000_liygxtcq",
+      "liygxtcq"
+    ]
+  },
+  {
+    "fileName": "tlc_switch-1.1.2-445810f3-forced.zigbee",
+    "fileVersion": 4294967295,
+    "fileSize": 184386,
+    "url": "https://github.com/XaviSentis/tuya-zigbee-switch/raw/refs/heads/fleet/bin/router/MODULE_TUYA_DEFAULT_A_TS0001/tlc_switch-1.1.2-445810f3-forced.zigbee",
+    "imageType": 43535,
+    "manufacturerCode": 4417,
+    "sha512": "08511060f5582ff5a7181b643fab2e8fce5493269735dcaa9b9fda7dffccf90278aec8f9e8a7df2b1e143a4ef1a838d8d25effe7cd99abaa30bbecd0134c8b4f",
+    "otaHeaderString": "Telink OTA Image\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000",
+    "manufacturerName": [
+      "_TZ3000_skueekg3",
+      "Tuya-WHD02-custom",
+      "skueekg3"
+    ]
+  },
+  {
+    "fileName": "tlc_switch-1.1.2-445810f3-forced.zigbee",
+    "fileVersion": 4294967295,
+    "fileSize": 184386,
+    "url": "https://github.com/XaviSentis/tuya-zigbee-switch/raw/refs/heads/fleet/bin/router/MODULE_TUYA_DEFAULT_A_TS0001_2/tlc_switch-1.1.2-445810f3-forced.zigbee",
+    "imageType": 43541,
+    "manufacturerCode": 4417,
+    "sha512": "0f5a1ea31ff8d8c1e8c745b8c669b39786bb94ada7a3d6e2076f80eef98bcb9e7537b452837366331d0eff00e5ea2d57fa603a073dffc7dd33230969f991e2ec",
+    "otaHeaderString": "Telink OTA Image\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000",
+    "manufacturerName": [
+      "_TZ3000_skueekg3",
+      "Tuya-WHD02-custom",
+      "skueekg3"
+    ]
+  },
+  {
+    "fileName": "tlc_switch-1.1.2-445810f3-forced.zigbee",
+    "fileVersion": 4294967295,
+    "fileSize": 184386,
+    "url": "https://github.com/XaviSentis/tuya-zigbee-switch/raw/refs/heads/fleet/bin/router/MODULE_TUYA_DEFAULT_B_TS0001/tlc_switch-1.1.2-445810f3-forced.zigbee",
+    "imageType": 43522,
+    "manufacturerCode": 4417,
+    "sha512": "15e71c17453af5de07745d8953eee0f94e5e9310046cc2ce682a715704cb450a3c6d1ff9db5d1ddfc059fb4a7b41ea5d2e9a725db26c407814d2b87dc41ec20b",
+    "otaHeaderString": "Telink OTA Image\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000",
+    "manufacturerName": [
+      "_TZ3000_skueekg3",
+      "Tuya-WHD02-custom",
+      "skueekg3"
+    ]
+  },
+  {
+    "fileName": "tlc_switch-1.1.2-445810f3-forced.zigbee",
+    "fileVersion": 4294967295,
+    "fileSize": 184386,
+    "url": "https://github.com/XaviSentis/tuya-zigbee-switch/raw/refs/heads/fleet/bin/router/MODULE_TUYA_DEFAULT_C_TS0001/tlc_switch-1.1.2-445810f3-forced.zigbee",
+    "imageType": 43630,
+    "manufacturerCode": 4417,
+    "sha512": "8d747022be75550f5f6a5cba25ea2cee2e36c74faaa7a9f0bc125a6743199db59c971831f83ad5d4b47857a35b44bfae19b47d9b970b7903aef0840e9a3ef7be",
+    "otaHeaderString": "Telink OTA Image\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000",
+    "manufacturerName": [
+      "_TZ3000_skueekg3",
+      "skueekg3C"
+    ]
+  },
+  {
+    "fileName": "tlc_switch-1.1.2-445810f3-forced.zigbee",
+    "fileVersion": 4294967295,
+    "fileSize": 184386,
+    "url": "https://github.com/XaviSentis/tuya-zigbee-switch/raw/refs/heads/fleet/bin/router/MODULE_TUYA_GIRIER_TS0011/tlc_switch-1.1.2-445810f3-forced.zigbee",
+    "imageType": 43524,
+    "manufacturerCode": 4417,
+    "sha512": "630f7550792fe81fdc8a3ba142dd2a0008315db86e59b164c6545fae6c2d1c3557eb2566d9d0efd6029e713697f83abfbdc7e903515dc122212426c07382f662",
+    "otaHeaderString": "Telink OTA Image\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000",
+    "manufacturerName": [
+      "_TZ3000_ji4araar",
+      "Tuya-TS0011-custom",
+      "ji4araar"
+    ]
+  },
+  {
+    "fileName": "tlc_switch-1.1.2-445810f3-forced.zigbee",
+    "fileVersion": 4294967295,
+    "fileSize": 184386,
+    "url": "https://github.com/XaviSentis/tuya-zigbee-switch/raw/refs/heads/fleet/bin/router/MODULE_TUYA_GIRIER_TS0011_2/tlc_switch-1.1.2-445810f3-forced.zigbee",
+    "imageType": 45576,
+    "manufacturerCode": 4417,
+    "sha512": "39646d1bc2fd74d780159d9ccd7ea41fc8bc7172c1d86c0151324d094093203ad39d8e6ea552531bf83dec030f9d047ffea7244c949cab2d14fe394cbb48b273",
+    "otaHeaderString": "Telink OTA Image\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000",
+    "manufacturerName": [
+      "_TZ3000_ji4araar",
+      "ji4araar"
+    ]
+  },
+  {
+    "fileName": "tlc_switch-1.1.2-445810f3-forced.zigbee",
+    "fileVersion": 4294967295,
+    "fileSize": 184402,
+    "url": "https://github.com/XaviSentis/tuya-zigbee-switch/raw/refs/heads/fleet/bin/router/MODULE_TUYA_GIRIER_TS0012/tlc_switch-1.1.2-445810f3-forced.zigbee",
+    "imageType": 43521,
+    "manufacturerCode": 4417,
+    "sha512": "0c043431a41966459a222ad7a1799e948d574d7d6f9be5bcc3fe6b7e7dd6926ce5b7091c8569c5efb4a3cc84897b2c5de2c0b701c2ec744fec0f48bbec161bb1",
+    "otaHeaderString": "Telink OTA Image\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000",
+    "manufacturerName": [
+      "_TZ3000_jl7qyupf",
+      "Tuya-CUSTOM",
+      "Tuya-TS0012-custom",
+      "jl7qyupf"
+    ]
+  },
+  {
+    "fileName": "tlc_switch-1.1.2-445810f3-forced.zigbee",
+    "fileVersion": 4294967295,
+    "fileSize": 184402,
+    "url": "https://github.com/XaviSentis/tuya-zigbee-switch/raw/refs/heads/fleet/bin/router/MODULE_TUYA_GIRIER_TS0013/tlc_switch-1.1.2-445810f3-forced.zigbee",
+    "imageType": 43539,
+    "manufacturerCode": 4417,
+    "sha512": "80fdb74cca9ba961f56e5a12abd9a03e5e56317e3598b72aee1f69aa138d0e88a1a6cbeaee85f7b8e8ec9a96117f00a1e1089bfcb15318305ef1fa6b6fe68c51",
+    "otaHeaderString": "Telink OTA Image\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000",
+    "manufacturerName": [
+      "_TZ3000_ypgri8yz",
+      "Girier-ZB08-custom",
+      "Girier-ZB08-custom-ED",
+      "ypgri8yz"
+    ]
+  },
+  {
+    "fileName": "tlc_switch-1.1.2-445810f3-forced.zigbee",
+    "fileVersion": 4294967295,
+    "fileSize": 184386,
+    "url": "https://github.com/XaviSentis/tuya-zigbee-switch/raw/refs/heads/fleet/bin/router/MODULE_TUYA_NOVATO_QS_S05_TS0001/tlc_switch-1.1.2-445810f3-forced.zigbee",
+    "imageType": 45577,
+    "manufacturerCode": 4417,
+    "sha512": "c9145fe2d71ede757598e60acb5d8666a07d5f0e772ed64c6ece83c1a06cf2df68480275970e29476991b555e3e448f8545a921783aafc669f74e2a7e75d21f0",
+    "otaHeaderString": "Telink OTA Image\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000",
+    "manufacturerName": [
+      "_TZ3000_yl3zuyaw",
+      "yl3zuyaw"
+    ]
+  },
+  {
+    "fileName": "tlc_switch-1.1.2-445810f3-forced.zigbee",
+    "fileVersion": 4294967295,
+    "fileSize": 184386,
+    "url": "https://github.com/XaviSentis/tuya-zigbee-switch/raw/refs/heads/fleet/bin/router/MODULE_TUYA_NOVATO_QS_S05_TS0011/tlc_switch-1.1.2-445810f3-forced.zigbee",
+    "imageType": 45578,
+    "manufacturerCode": 4417,
+    "sha512": "7cd02e9e71744fc90ba4ba8e2a0737f9d557ddbaf472e70eb9d7f38ad61c07e89c121dbb486fd5906e48c9906f0920d7c29e9fc7068bbd9d2a76fb9a41520aea",
+    "otaHeaderString": "Telink OTA Image\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000",
+    "manufacturerName": [
+      "_TZ3000_qmi1cfuq",
+      "qmi1cfuq"
+    ]
+  },
+  {
+    "fileName": "tlc_switch-1.1.2-445810f3-forced.zigbee",
+    "fileVersion": 4294967295,
+    "fileSize": 184402,
+    "url": "https://github.com/XaviSentis/tuya-zigbee-switch/raw/refs/heads/fleet/bin/router/MODULE_TUYA_NOVATO_TS0002/tlc_switch-1.1.2-445810f3-forced.zigbee",
+    "imageType": 43612,
+    "manufacturerCode": 4417,
+    "sha512": "7d1a86acea7e423e6aba635698fdee63159b088bbb7cce307f4e77f0ebfec4f6a00f7d242fe9fe7fc6e3b30721bd49c2e841b1d9241cd0854efbd8cc16656dba",
+    "otaHeaderString": "Telink OTA Image\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000",
+    "manufacturerName": [
+      "_TZ3000_fisb3ajo",
+      "fisb3ajo"
+    ]
+  },
+  {
+    "fileName": "tlc_switch-1.1.2-445810f3-forced.zigbee",
+    "fileVersion": 4294967295,
+    "fileSize": 184402,
+    "url": "https://github.com/XaviSentis/tuya-zigbee-switch/raw/refs/heads/fleet/bin/router/MODULE_TUYA_NOVATO_TS0003/tlc_switch-1.1.2-445810f3-forced.zigbee",
+    "imageType": 47001,
+    "manufacturerCode": 4417,
+    "sha512": "36a21d456d1332f10c6e99d0e92372c3da5760c98882a0956f7577e0d034252d0a7d8bb0cd76e4888f6f6de7e37e9022efbf49344e4accadade3890a549d0560",
+    "otaHeaderString": "Telink OTA Image\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000",
+    "manufacturerName": [
+      "_TZ3000_ly9apzky",
+      "ly9apzky"
+    ]
+  },
+  {
+    "fileName": "tlc_switch-1.1.2-445810f3-forced.zigbee",
+    "fileVersion": 4294967295,
+    "fileSize": 184386,
+    "url": "https://github.com/XaviSentis/tuya-zigbee-switch/raw/refs/heads/fleet/bin/router/MODULE_TUYA_NOVATO_TS000F_1GANG/tlc_switch-1.1.2-445810f3-forced.zigbee",
+    "imageType": 45595,
+    "manufacturerCode": 4417,
+    "sha512": "51b411176fe17c7bb5fa26c63be777281ba6a69c322858a5749c183e922d59dc13f6542778cb6c2878d3745aa4417802b5f719c7d70b30b9ecff8aa36c05a751",
+    "otaHeaderString": "Telink OTA Image\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000",
+    "manufacturerName": [
+      "_TZ3000_hdc8bbha",
+      "hdc8bbha"
+    ]
+  },
+  {
+    "fileName": "tlc_switch-1.1.2-445810f3-forced.zigbee",
+    "fileVersion": 4294967295,
+    "fileSize": 184402,
+    "url": "https://github.com/XaviSentis/tuya-zigbee-switch/raw/refs/heads/fleet/bin/router/MODULE_TUYA_NOVATO_TS000F_2GANG/tlc_switch-1.1.2-445810f3-forced.zigbee",
+    "imageType": 45628,
+    "manufacturerCode": 4417,
+    "sha512": "78633b4901e4b43bf2991a89dd93d496580a5cf114ede1a97730d606eaac013c5629a4fcb85e15c3a43677dabdaa02af681878cbdc73d8e39ba02fc72f5f63b8",
+    "otaHeaderString": "Telink OTA Image\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000",
+    "manufacturerName": [
+      "_TZ3000_m8f3z8ju",
+      "m8f3z8ju"
+    ]
+  },
+  {
+    "fileName": "tlc_switch-1.1.2-445810f3-forced.zigbee",
+    "fileVersion": 4294967295,
+    "fileSize": 184386,
+    "url": "https://github.com/XaviSentis/tuya-zigbee-switch/raw/refs/heads/fleet/bin/router/MODULE_TUYA_NOVATO_TS0011/tlc_switch-1.1.2-445810f3-forced.zigbee",
+    "imageType": 45593,
+    "manufacturerCode": 4417,
+    "sha512": "b229eab8bfe317c2ff5df1acbeb4ab78435a2714b0d717f04a20c11e0c0c7df536e6549d643294b6870dbb2251e06b7cfa67bcb4fdf417db3c74eba3d348c77d",
+    "otaHeaderString": "Telink OTA Image\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000",
+    "manufacturerName": [
+      "_TZ3000_30jqysvd",
+      "30jqysvd"
+    ]
+  },
+  {
+    "fileName": "tlc_switch-1.1.2-445810f3-forced.zigbee",
+    "fileVersion": 4294967295,
+    "fileSize": 184402,
+    "url": "https://github.com/XaviSentis/tuya-zigbee-switch/raw/refs/heads/fleet/bin/router/MODULE_TUYA_NOVATO_TS0012/tlc_switch-1.1.2-445810f3-forced.zigbee",
+    "imageType": 45590,
+    "manufacturerCode": 4417,
+    "sha512": "997f5cd13bb85d3bc1c15d432385624e1d4ddbe1caecf908e38be56731b030fe9d6c6cf99b6f58e3ad9d55e1fbe467019c1b57ec3d29435353ca62d164d122d0",
+    "otaHeaderString": "Telink OTA Image\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000",
+    "manufacturerName": [
+      "_TZ3000_c4muk4ys",
+      "c4muk4ys"
+    ]
+  },
+  {
+    "fileName": "tlc_switch-1.1.2-445810f3-forced.zigbee",
+    "fileVersion": 4294967295,
+    "fileSize": 184386,
+    "url": "https://github.com/XaviSentis/tuya-zigbee-switch/raw/refs/heads/fleet/bin/router/MODULE_TUYA_NOVATO_TS130F/tlc_switch-1.1.2-445810f3-forced.zigbee",
+    "imageType": 43609,
+    "manufacturerCode": 4417,
+    "sha512": "981c4958d403ea942d5783111a71e5377478de59bbed871534f0fd9ec0b2631adbaf0b2a88adcdbdf70fbd45240bad6d302cd5d836c82d4cdbb6d64257dd3bdc",
+    "otaHeaderString": "Telink OTA Image\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000",
+    "manufacturerName": [
+      "_TZ3210_ol1uhvza",
+      "ol1uhvza"
+    ]
+  },
+  {
+    "fileName": "tlc_switch-1.1.2-445810f3-forced.zigbee",
+    "fileVersion": 4294967295,
+    "fileSize": 184402,
+    "url": "https://github.com/XaviSentis/tuya-zigbee-switch/raw/refs/heads/fleet/bin/router/MODULE_TUYA_OXT_A_TS0003/tlc_switch-1.1.2-445810f3-forced.zigbee",
+    "imageType": 43642,
+    "manufacturerCode": 4417,
+    "sha512": "276acd2bc0b7d9766afdac84eb5f43e8c70148208fea23bba5e8ee962e925f88fc0f12ade823b1ebd5ac79a7af38e3d0509643f482dbe2305da8055b2a5be87f",
+    "otaHeaderString": "Telink OTA Image\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000",
+    "manufacturerName": [
+      "_TZ3210_aksyshpw",
+      "aksyshpw"
+    ]
+  },
+  {
+    "fileName": "tlc_switch-1.1.2-445810f3-forced.zigbee",
+    "fileVersion": 4294967295,
+    "fileSize": 184386,
+    "url": "https://github.com/XaviSentis/tuya-zigbee-switch/raw/refs/heads/fleet/bin/router/MODULE_TUYA_OXT_TS0001/tlc_switch-1.1.2-445810f3-forced.zigbee",
+    "imageType": 43525,
+    "manufacturerCode": 4417,
+    "sha512": "03d3e4e0bffea9bfa632337d1ee3e0e370ea473f85e6a022e884eb8cb4bf4f6d3c118c7074a60d428777b931f96d00c06a39c18a77746600be35ad6949f8d084",
+    "otaHeaderString": "Telink OTA Image\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000",
+    "manufacturerName": [
+      "_TZ3000_tqlv4ug4",
+      "Tuya-TS0001-custom",
+      "tqlv4ug4"
+    ]
+  },
+  {
+    "fileName": "tlc_switch-1.1.2-445810f3-forced.zigbee",
+    "fileVersion": 4294967295,
+    "fileSize": 184402,
+    "url": "https://github.com/XaviSentis/tuya-zigbee-switch/raw/refs/heads/fleet/bin/router/MODULE_TUYA_OXT_TS0002/tlc_switch-1.1.2-445810f3-forced.zigbee",
+    "imageType": 43547,
+    "manufacturerCode": 4417,
+    "sha512": "9590627e9131cfba908ba13b04a6e8dbe040ad21875489f64ed2c65b6c53b44eb7f95c71b013533164d6df7db5593de2dfd2332d9d693d21ca5bfb952fdc404d",
+    "otaHeaderString": "Telink OTA Image\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000",
+    "manufacturerName": [
+      "_TZ3000_bvrlqyj7",
+      "TS0002-OXT-CUS",
+      "bvrlqyj7"
+    ]
+  },
+  {
+    "fileName": "tlc_switch-1.1.2-445810f3-forced.zigbee",
+    "fileVersion": 4294967295,
+    "fileSize": 184402,
+    "url": "https://github.com/XaviSentis/tuya-zigbee-switch/raw/refs/heads/fleet/bin/router/MODULE_TUYA_TS0002/tlc_switch-1.1.2-445810f3-forced.zigbee",
+    "imageType": 43523,
+    "manufacturerCode": 4417,
+    "sha512": "020bb7b6642d8787f4129636087dbc4a527eef9a481a3b01267909d5284867aed623d7c25bada633d69b5d86af9ad68dcf088b25f05773075e5f7add62a1201a",
+    "otaHeaderString": "Telink OTA Image\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000",
+    "manufacturerName": [
+      "_TZ3000_01gpyda5",
+      "Tuya-TS0002-custom",
+      "01gpyda5"
+    ]
+  },
+  {
+    "fileName": "tlc_switch-1.1.2-445810f3-forced.zigbee",
+    "fileVersion": 4294967295,
+    "fileSize": 184386,
+    "url": "https://github.com/XaviSentis/tuya-zigbee-switch/raw/refs/heads/fleet/bin/router/MODULE_TUYA_TS011F/tlc_switch-1.1.2-445810f3-forced.zigbee",
+    "imageType": 45629,
+    "manufacturerCode": 4417,
+    "sha512": "c0f402e5aeb0022e0f0f53e0493a7ca30e088895bab3eab5f75dbe18a7b7c9a34af70c9d9da9921e106e56d5116ca3ce25c96c5cc7fcb7d68b3bb0ea6ff62577",
+    "otaHeaderString": "Telink OTA Image\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000",
+    "manufacturerName": [
+      "_TZ3000_i9oy2rdq",
+      "i9oy2rdq"
+    ]
+  },
+  {
+    "fileName": "tlc_switch-1.1.2-445810f3-forced.zigbee",
+    "fileVersion": 4294967295,
+    "fileSize": 191374,
+    "url": "https://github.com/XaviSentis/tuya-zigbee-switch/raw/refs/heads/fleet/bin/router/MODULE_TUYA_ZS2S_TS0001/tlc_switch-1.1.2-445810f3-forced.zigbee",
+    "imageType": 45630,
+    "manufacturerCode": 4169,
+    "sha512": "6f427a902acde4dd6857746d58cba6fd162efeef404797d3ba861a68552407501b3874a44fad3f90901126363af71dfb764f70e72dc0c6ebf578e1bb84909f69",
+    "otaHeaderString": "Custom zigbee firmware\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000",
+    "manufacturerName": [
+      "_TZ3000_hktqahrq",
+      "hktqahrq"
+    ]
+  },
+  {
+    "fileName": "tlc_switch-1.1.2-445810f3-forced.zigbee",
+    "fileVersion": 4294967295,
+    "fileSize": 184386,
+    "url": "https://github.com/XaviSentis/tuya-zigbee-switch/raw/refs/heads/fleet/bin/router/MODULE_TUYA_ZTU_TS0001/tlc_switch-1.1.2-445810f3-forced.zigbee",
+    "imageType": 43623,
+    "manufacturerCode": 4417,
+    "sha512": "5437b1e56249e045817500f98ffd976e59df6c2ab93feff2194d3864adc3f29a6be30f4a714918d289584d0ffb8bc337280538166f0e95c9ce60c9f89cc73639",
+    "otaHeaderString": "Telink OTA Image\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000",
+    "manufacturerName": [
+      "_TZ3000_gjrubzje",
+      "gjrubzje"
+    ]
+  },
+  {
+    "fileName": "tlc_switch-1.1.2-445810f3-forced.zigbee",
+    "fileVersion": 4294967295,
+    "fileSize": 184418,
+    "url": "https://github.com/XaviSentis/tuya-zigbee-switch/raw/refs/heads/fleet/bin/router/MODULE_TUYA_ZTU_TS0004/tlc_switch-1.1.2-445810f3-forced.zigbee",
+    "imageType": 43540,
+    "manufacturerCode": 4417,
+    "sha512": "c785ecd070ba4f69c5161fb9946362ca04a3892deff67f15c48bce3ad575f731d56358ac76c2b6992c8ef7fb2220d746b04050f32661b0b849745bf21a64563c",
+    "otaHeaderString": "Telink OTA Image\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000",
+    "manufacturerName": [
+      "_TZ3000_ltt60asa",
+      "TS0004-Avv",
+      "ltt60asa"
+    ]
+  },
+  {
+    "fileName": "tlc_switch-1.1.2-445810f3-forced.zigbee",
+    "fileVersion": 4294967295,
+    "fileSize": 184402,
+    "url": "https://github.com/XaviSentis/tuya-zigbee-switch/raw/refs/heads/fleet/bin/router/MODULE_UNSH_TS0002/tlc_switch-1.1.2-445810f3-forced.zigbee",
+    "imageType": 43590,
+    "manufacturerCode": 4417,
+    "sha512": "572aff7b13b002f22cf54ac3f25847c9bfa33d7ec826cc04077eb0a8e548a8d83a88d92e618ed2059b33d9e42037f4b4f7d88621062bbd8d8e1777a276ffb9ad",
+    "otaHeaderString": "Telink OTA Image\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000",
+    "manufacturerName": [
+      "_TZ3000_ruxexjfz",
+      "ruxexjfz"
+    ]
+  },
+  {
+    "fileName": "tlc_switch-1.1.2-445810f3-forced.zigbee",
+    "fileVersion": 4294967295,
+    "fileSize": 184402,
+    "url": "https://github.com/XaviSentis/tuya-zigbee-switch/raw/refs/heads/fleet/bin/router/MODULE_ZBEACON_TS0002/tlc_switch-1.1.2-445810f3-forced.zigbee",
+    "imageType": 43640,
+    "manufacturerCode": 4417,
+    "sha512": "3f16cb55792fa4c8ffacfcc781eb83aac874cc0be0cc73633c325052e7b848118e26f434c7c896fcf93b835e8f1d28769504b4144a079335d07167a6846f38ee",
+    "otaHeaderString": "Telink OTA Image\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000",
+    "manufacturerName": [
+      "Zbeacon",
+      "Zbeacon2"
+    ]
+  },
+  {
+    "fileName": "tlc_switch-1.1.2-445810f3-forced.zigbee",
+    "fileVersion": 4294967295,
+    "fileSize": 184386,
+    "url": "https://github.com/XaviSentis/tuya-zigbee-switch/raw/refs/heads/fleet/bin/router/OUTLET_BSEED_BORUIDAPLS_PM_TS011F/tlc_switch-1.1.2-445810f3-forced.zigbee",
+    "imageType": 47006,
+    "manufacturerCode": 4417,
+    "sha512": "187c98862c1bf6b17f7385752782a410860771d13055faaabd2409db595cef748f53fd63c9a8bef960daeafa6a75851c82db689976bc087c4d695fe9bf9990bc",
+    "otaHeaderString": "Telink OTA Image\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000",
+    "manufacturerName": [
+      "_TZ3210_zifx0xoj",
+      "zifx0xoj"
+    ]
+  },
+  {
+    "fileName": "tlc_switch-1.1.2-445810f3-forced.zigbee",
+    "fileVersion": 4294967295,
+    "fileSize": 184386,
+    "url": "https://github.com/XaviSentis/tuya-zigbee-switch/raw/refs/heads/fleet/bin/router/OUTLET_BSEED_PM_TS011F/tlc_switch-1.1.2-445810f3-forced.zigbee",
     "imageType": 43556,
     "manufacturerCode": 4417,
-    "sha512": "8f1df3b3bc6dd79edb9827385f131674c6ad79e43cadf570b9c203272fef2a70611cdf49b71d9b92471c29a149a4acca4786d70e2ec41181b61a054c8a746aa3",
+    "sha512": "ecd21fce19f30e6296ec10db25e5f2e49bbeb12b3f918ebfac7f6e88b31985e17cc36f0ee6e58c68ff00d7c9c2e9712b6679d2f7ea076f261e2568288d649c64",
+    "otaHeaderString": "Telink OTA Image\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000",
+    "manufacturerName": [
+      "_TZ3000_b28wrpvx",
+      "b28wrpvx"
+    ]
+  },
+  {
+    "fileName": "tlc_switch-1.1.2-445810f3-forced.zigbee",
+    "fileVersion": 4294967295,
+    "fileSize": 184402,
+    "url": "https://github.com/XaviSentis/tuya-zigbee-switch/raw/refs/heads/fleet/bin/router/OUTLET_BSEED_PM_TS011F_1/tlc_switch-1.1.2-445810f3-forced.zigbee",
+    "imageType": 47003,
+    "manufacturerCode": 4417,
+    "sha512": "610f94c0062cb26cd2a679c4c84eab69416e3c794852babf3361447959f381a481b279e4f99fcd06b72018c9691eab00f99742a6e8054cf584bcd01a870c32fa",
+    "otaHeaderString": "Telink OTA Image\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000",
+    "manufacturerName": [
+      "_TZ3000_ko6v90pg",
+      "ko6v90pg"
+    ]
+  },
+  {
+    "fileName": "tlc_switch-1.1.2-445810f3-forced.zigbee",
+    "fileVersion": 4294967295,
+    "fileSize": 184386,
+    "url": "https://github.com/XaviSentis/tuya-zigbee-switch/raw/refs/heads/fleet/bin/router/OUTLET_BSEED_PM_TS011F_2/tlc_switch-1.1.2-445810f3-forced.zigbee",
+    "imageType": 47004,
+    "manufacturerCode": 4417,
+    "sha512": "35c6434c33871f660607e5a3c6f7904fd99b63396b93afff6fea186c628b8f316307e1e9a5a2d58c7d1516a2f82705036c61e1b65bdfc14c2d34a3fc4caaf2bd",
+    "otaHeaderString": "Telink OTA Image\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000",
+    "manufacturerName": [
+      "_TZ3000_4ux0ondb",
+      "4ux0ondb"
+    ]
+  },
+  {
+    "fileName": "tlc_switch-1.1.2-445810f3-forced.zigbee",
+    "fileVersion": 4294967295,
+    "fileSize": 184386,
+    "url": "https://github.com/XaviSentis/tuya-zigbee-switch/raw/refs/heads/fleet/bin/router/OUTLET_BSEED_TS011F/tlc_switch-1.1.2-445810f3-forced.zigbee",
+    "imageType": 43555,
+    "manufacturerCode": 4417,
+    "sha512": "8d9ec13dd6b4e917bb90266ea8de7e316a9b40644012daba4f2e774475a95eb2cf101325f21de269889e2da595fb4773c711fe78b664b1058074af63dac2a7ff",
+    "otaHeaderString": "Telink OTA Image\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000",
+    "manufacturerName": [
+      "_TZ3000_o1jzcxou",
+      "o1jzcxou"
+    ]
+  },
+  {
+    "fileName": "tlc_switch-1.1.2-445810f3-forced.zigbee",
+    "fileVersion": 4294967295,
+    "fileSize": 184402,
+    "url": "https://github.com/XaviSentis/tuya-zigbee-switch/raw/refs/heads/fleet/bin/router/OUTLET_MAKEGOOD_PM_TS011F_2GANG/tlc_switch-1.1.2-445810f3-forced.zigbee",
+    "imageType": 47009,
+    "manufacturerCode": 4417,
+    "sha512": "4aedd95b41f5ab85a158f0e178d11e02a8931f2fe634086fd676441630d2fd22462c5ec7187069cee7556a2c0b0001d94e8e3b246f71028309c333e5cf758768",
+    "otaHeaderString": "Telink OTA Image\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000",
+    "manufacturerName": [
+      "_TZ3210_bep7ccew",
+      "bep7ccew"
+    ]
+  },
+  {
+    "fileName": "tlc_switch-1.1.2-445810f3-forced.zigbee",
+    "fileVersion": 4294967295,
+    "fileSize": 184386,
+    "url": "https://github.com/XaviSentis/tuya-zigbee-switch/raw/refs/heads/fleet/bin/router/OUTLET_MOES_PM_TS011F/tlc_switch-1.1.2-445810f3-forced.zigbee",
+    "imageType": 45681,
+    "manufacturerCode": 4417,
+    "sha512": "a3f28ab8f00bd3cbe02b090600cea9383add349e640b5fed9d733b23528cf1584dcb2e2441ef92ac29163dc91cb2e7afa67a6612d7a1c01b5e1ec3c50f87291f",
+    "otaHeaderString": "Telink OTA Image\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000",
+    "manufacturerName": [
+      "_TZ3000_ss98ec5d",
+      "ss98ec5d"
+    ]
+  },
+  {
+    "fileName": "tlc_switch-1.1.2-445810f3-forced.zigbee",
+    "fileVersion": 4294967295,
+    "fileSize": 184386,
+    "url": "https://github.com/XaviSentis/tuya-zigbee-switch/raw/refs/heads/fleet/bin/router/OUTLET_TUYA_PM_TS011F/tlc_switch-1.1.2-445810f3-forced.zigbee",
+    "imageType": 45681,
+    "manufacturerCode": 4417,
+    "sha512": "da7abe20e86c3fc7f9b77989d70d1a3823727fcd5aa71b20e0a0eee7a242933aaac9e0eae8703b4727b93bc23cdee583b7f3afcb18dc9df506614857482f656d",
+    "otaHeaderString": "Telink OTA Image\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000",
+    "manufacturerName": [
+      "_TZ3210_vddauzhn",
+      "vddauzhn"
+    ]
+  },
+  {
+    "fileName": "tlc_switch-1.1.2-445810f3-forced.zigbee",
+    "fileVersion": 4294967295,
+    "fileSize": 184402,
+    "url": "https://github.com/XaviSentis/tuya-zigbee-switch/raw/refs/heads/fleet/bin/router/PLUG___AUBESS_PM_TS011F/tlc_switch-1.1.2-445810f3-forced.zigbee",
+    "imageType": 43556,
+    "manufacturerCode": 4417,
+    "sha512": "602224b7945d1204eeecd82bb79adc1cf6ffae09f10bc78bb6452d843b98637b1bf7d7252e5abaeec5839c2c0bd08eed719c4cc316d44088c0dc8cd4c102655e",
     "otaHeaderString": "Telink OTA Image\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000",
     "manufacturerName": [
       "_TZ3000_gvn91tmx",
       "gvn91tmx"
+    ]
+  },
+  {
+    "fileName": "tlc_switch-1.1.2-445810f3-forced.zigbee",
+    "fileVersion": 4294967295,
+    "fileSize": 184386,
+    "url": "https://github.com/XaviSentis/tuya-zigbee-switch/raw/refs/heads/fleet/bin/router/PLUG___LELLKI_TS0001/tlc_switch-1.1.2-445810f3-forced.zigbee",
+    "imageType": 47003,
+    "manufacturerCode": 4417,
+    "sha512": "24a086c21d6fa52906ec474711742f9e01104ea62a46ba8f2dddb28fc0a433bff4b3f79c305303a8a17c9e61c09c09d0e7ad40ed0e871dc41f3ca8913cb1dcd8",
+    "otaHeaderString": "Telink OTA Image\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000",
+    "manufacturerName": [
+      "LELLKI",
+      "LELLKI"
+    ]
+  },
+  {
+    "fileName": "tlc_switch-1.1.2-445810f3-forced.zigbee",
+    "fileVersion": 4294967295,
+    "fileSize": 184386,
+    "url": "https://github.com/XaviSentis/tuya-zigbee-switch/raw/refs/heads/fleet/bin/router/PLUG___LIDL_PM_TS011F/tlc_switch-1.1.2-445810f3-forced.zigbee",
+    "imageType": 47008,
+    "manufacturerCode": 4417,
+    "sha512": "814124a97384d1810aca48451ffc799b420b9bbb2008e9188404592ce9dcce3fd5c4855f8923b53c554e48dfed8423b18140a0b686b76e0fd5886fa38e132fe4",
+    "otaHeaderString": "Telink OTA Image\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000",
+    "manufacturerName": [
+      "_TZ3000_ynmowqk2",
+      "ynmowqk2"
+    ]
+  },
+  {
+    "fileName": "tlc_switch-1.1.2-445810f3-forced.zigbee",
+    "fileVersion": 4294967295,
+    "fileSize": 184386,
+    "url": "https://github.com/XaviSentis/tuya-zigbee-switch/raw/refs/heads/fleet/bin/router/REMOTE_HOBEIAN_BUTTON_TS0001/tlc_switch-1.1.2-445810f3-forced.zigbee",
+    "imageType": 47002,
+    "manufacturerCode": 4417,
+    "sha512": "4e5a9e791697afb825d03191d0da224bfa0685537a417e01016d0b17a66af1d10b268427d61cd5a75ee7f27f461e5f661573bbfab0de2053f38a7c9d7df51b54",
+    "otaHeaderString": "Telink OTA Image\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000",
+    "manufacturerName": [
+      "HOBEIAN",
+      "ZG-101ZL"
+    ]
+  },
+  {
+    "fileName": "tlc_switch-1.1.2-445810f3-forced.zigbee",
+    "fileVersion": 4294967295,
+    "fileSize": 184418,
+    "url": "https://github.com/XaviSentis/tuya-zigbee-switch/raw/refs/heads/fleet/bin/router/REMOTE_HOBEIAN_TS0044/tlc_switch-1.1.2-445810f3-forced.zigbee",
+    "imageType": 43628,
+    "manufacturerCode": 4417,
+    "sha512": "fdf48e5f3d5e6a29584cca8465179c273d09f54d528c73a2527c44d8122e80c0876a2960e7e360404c049cb3f93299fca0b89df12e84ae36352a062c325e3b1b",
+    "otaHeaderString": "Telink OTA Image\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000",
+    "manufacturerName": [
+      "_TZ3000_bgtzm4ny",
+      "bgtzm4ny"
+    ]
+  },
+  {
+    "fileName": "tlc_switch-1.1.2-445810f3-forced.zigbee",
+    "fileVersion": 4294967295,
+    "fileSize": 184386,
+    "url": "https://github.com/XaviSentis/tuya-zigbee-switch/raw/refs/heads/fleet/bin/router/REMOTE_IHSENO_BUTTON_TS0041/tlc_switch-1.1.2-445810f3-forced.zigbee",
+    "imageType": 47002,
+    "manufacturerCode": 4417,
+    "sha512": "d928ac33d750b4467b501f6aa44d4093f40d91ec5526e7f14c8f1d1963ad95ff53c2cb8a2be51b3c791af8d624635ac7f13b72385b1d89b3143fcf9144ca3182",
+    "otaHeaderString": "Telink OTA Image\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000",
+    "manufacturerName": [
+      "_TZ3000_fa9mlvja",
+      "fa9mlvja"
+    ]
+  },
+  {
+    "fileName": "tlc_switch-1.1.2-445810f3-forced.zigbee",
+    "fileVersion": 4294967295,
+    "fileSize": 184402,
+    "url": "https://github.com/XaviSentis/tuya-zigbee-switch/raw/refs/heads/fleet/bin/router/REMOTE_IHSENO_TS0044/tlc_switch-1.1.2-445810f3-forced.zigbee",
+    "imageType": 43563,
+    "manufacturerCode": 4417,
+    "sha512": "20ae1a5ce481d2e662fc0746ad4fc9eb12da1d136192294afd28564d9737751179047245a830e73be2ee7e1c8912f953a70ee527a09ca0d8ec7cde4ba3206160",
+    "otaHeaderString": "Telink OTA Image\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000",
+    "manufacturerName": [
+      "_TZ3000_mh9px7cq",
+      "mh9px7cq"
+    ]
+  },
+  {
+    "fileName": "tlc_switch-1.1.2-445810f3-forced.zigbee",
+    "fileVersion": 4294967295,
+    "fileSize": 184418,
+    "url": "https://github.com/XaviSentis/tuya-zigbee-switch/raw/refs/heads/fleet/bin/router/REMOTE_IHSENO_TS0046/tlc_switch-1.1.2-445810f3-forced.zigbee",
+    "imageType": 43563,
+    "manufacturerCode": 4417,
+    "sha512": "63af463971d80734645d7a2f471f2d909ee61825c9c7e819e863f4f7069d2e1f5f59839957d19ebc18e5e1bd0ac8901f50aaa952a945d0cb7a199b26ddc7f980",
+    "otaHeaderString": "Telink OTA Image\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000",
+    "manufacturerName": [
+      "_TZ3000_nrfkrgf4",
+      "nrfkrgf4"
+    ]
+  },
+  {
+    "fileName": "tlc_switch-1.1.2-445810f3-forced.zigbee",
+    "fileVersion": 4294967295,
+    "fileSize": 191366,
+    "url": "https://github.com/XaviSentis/tuya-zigbee-switch/raw/refs/heads/fleet/bin/router/REMOTE_LIDL_BUTTON_TS004F/tlc_switch-1.1.2-445810f3-forced.zigbee",
+    "imageType": 45635,
+    "manufacturerCode": 4169,
+    "sha512": "4fc852cf8c0f78974fa9f92c490e3d3011899355fc7c1734c1489be7b898fb4920572a6a83b64b00b2432c5e020cad5030f215b0fae0603e63cf18ff2b904acc",
+    "otaHeaderString": "Custom zigbee firmware\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000",
+    "manufacturerName": [
+      "_TZ3000_rco1yzb1",
+      "rco1yzb1"
+    ]
+  },
+  {
+    "fileName": "tlc_switch-1.1.2-445810f3-forced.zigbee",
+    "fileVersion": 4294967295,
+    "fileSize": 191338,
+    "url": "https://github.com/XaviSentis/tuya-zigbee-switch/raw/refs/heads/fleet/bin/router/REMOTE_MOES_SWITCH_A_TS0041/tlc_switch-1.1.2-445810f3-forced.zigbee",
+    "imageType": 45638,
+    "manufacturerCode": 4169,
+    "sha512": "7a0489717b32529f2b5e18dbf2992f9a4f52c99b6ffd5f59e1392171b49e2be9eca626b3df12ee338284d6bb032329e253b1aecd2fb70f5440f5543141687414",
+    "otaHeaderString": "Custom zigbee firmware\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000",
+    "manufacturerName": [
+      "_TZ3000_axpdxqgu",
+      "axpdxqgu"
+    ]
+  },
+  {
+    "fileName": "tlc_switch-1.1.2-445810f3-forced.zigbee",
+    "fileVersion": 4294967295,
+    "fileSize": 191334,
+    "url": "https://github.com/XaviSentis/tuya-zigbee-switch/raw/refs/heads/fleet/bin/router/REMOTE_MOES_SWITCH_A_TS0042/tlc_switch-1.1.2-445810f3-forced.zigbee",
+    "imageType": 45635,
+    "manufacturerCode": 4169,
+    "sha512": "315ede55d669bce0af1b88b3c255210d63765dde81e300d268f544500026a7bce6a962d305198e4236e66fb1c1a283a37160b862afe85b5510961809ab18983d",
+    "otaHeaderString": "Custom zigbee firmware\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000",
+    "manufacturerName": [
+      "_TZ3000_5e235jpa",
+      "5e235jpa"
+    ]
+  },
+  {
+    "fileName": "tlc_switch-1.1.2-445810f3-forced.zigbee",
+    "fileVersion": 4294967295,
+    "fileSize": 191338,
+    "url": "https://github.com/XaviSentis/tuya-zigbee-switch/raw/refs/heads/fleet/bin/router/REMOTE_MOES_SWITCH_A_TS0043/tlc_switch-1.1.2-445810f3-forced.zigbee",
+    "imageType": 45633,
+    "manufacturerCode": 4169,
+    "sha512": "7b80dc6339b5f2c3a3437e24dcd11f48ea5871cbb2aea7c39a58a9cbc19618063a18d821c22bd1b986e607a7fb80aa23f0dea496a0bb41627a38d3593edddaa1",
+    "otaHeaderString": "Custom zigbee firmware\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000",
+    "manufacturerName": [
+      "_TZ3000_gbm10jnj",
+      "gbm10jnj"
+    ]
+  },
+  {
+    "fileName": "tlc_switch-1.1.2-445810f3-forced.zigbee",
+    "fileVersion": 4294967295,
+    "fileSize": 191394,
+    "url": "https://github.com/XaviSentis/tuya-zigbee-switch/raw/refs/heads/fleet/bin/router/REMOTE_MOES_SWITCH_A_TS0044/tlc_switch-1.1.2-445810f3-forced.zigbee",
+    "imageType": 45634,
+    "manufacturerCode": 4169,
+    "sha512": "4fbc6039c5a3a5fbf677f7075e151df8b0a7e1fceff2decba45c2b8cd3da28d9ca4f694dbcc3badfe219352be20820738b5824bfdb494c3d6900ca5335efdaf8",
+    "otaHeaderString": "Custom zigbee firmware\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000",
+    "manufacturerName": [
+      "_TZ3000_a4xycprs",
+      "a4xycprs"
+    ]
+  },
+  {
+    "fileName": "tlc_switch-1.1.2-445810f3-forced.zigbee",
+    "fileVersion": 4294967295,
+    "fileSize": 184418,
+    "url": "https://github.com/XaviSentis/tuya-zigbee-switch/raw/refs/heads/fleet/bin/router/REMOTE_MOES_SWITCH_TS0044/tlc_switch-1.1.2-445810f3-forced.zigbee",
+    "imageType": 43572,
+    "manufacturerCode": 4417,
+    "sha512": "ff5884423a32ed91f8bd93f59ba5f1ab46ff9097ed5015ca587978247b5564d33994f3c7ea9ccb531c8195e8b767820e2c182d121e49a191b9161f7c1a273677",
+    "otaHeaderString": "Telink OTA Image\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000",
+    "manufacturerName": [
+      "_TZ3000_zgyzgdua",
+      "zgyzgdua"
+    ]
+  },
+  {
+    "fileName": "tlc_switch-1.1.2-445810f3-forced.zigbee",
+    "fileVersion": 4294967295,
+    "fileSize": 184386,
+    "url": "https://github.com/XaviSentis/tuya-zigbee-switch/raw/refs/heads/fleet/bin/router/REMOTE_TUYA_BUTTON_TS0041/tlc_switch-1.1.2-445810f3-forced.zigbee",
+    "imageType": 45636,
+    "manufacturerCode": 4417,
+    "sha512": "8db85ba23156320ef8eda02a76fe6f88a64c2d1a830442128fce4b442ae4c5d6bc89eefeadb7b27dea2bcf020182adb41334d1d2aa80c12bf5d2753b7256e0de",
+    "otaHeaderString": "Telink OTA Image\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000",
+    "manufacturerName": [
+      "_TZ3000_mrpevh8p",
+      "mrpevh8p"
+    ]
+  },
+  {
+    "fileName": "tlc_switch-1.1.2-445810f3-forced.zigbee",
+    "fileVersion": 4294967295,
+    "fileSize": 184386,
+    "url": "https://github.com/XaviSentis/tuya-zigbee-switch/raw/refs/heads/fleet/bin/router/REMOTE_TUYA_BUTTON_TS0041_2/tlc_switch-1.1.2-445810f3-forced.zigbee",
+    "imageType": 45636,
+    "manufacturerCode": 4417,
+    "sha512": "1731d1514a262c6bf1ce1a7b93c8d9200c91a158e9fa8238567d568f5f74adbeb7567774c19d8632d1800da7ea15c42cac1b31f7a5cc81350e27f28d3232b31c",
+    "otaHeaderString": "Telink OTA Image\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000",
+    "manufacturerName": [
+      "_TZ3000_yj6k7vfo",
+      "yj6k7vfo"
+    ]
+  },
+  {
+    "fileName": "tlc_switch-1.1.2-445810f3-forced.zigbee",
+    "fileVersion": 4294967295,
+    "fileSize": 184386,
+    "url": "https://github.com/XaviSentis/tuya-zigbee-switch/raw/refs/heads/fleet/bin/router/REMOTE_TUYA_SWITCH_TS0041/tlc_switch-1.1.2-445810f3-forced.zigbee",
+    "imageType": 45636,
+    "manufacturerCode": 4417,
+    "sha512": "2ccfb630e25454d137293f2c5acc5dc76381945c8ffec239cb25fd2879f922ceb5c62c2c13b1aaaa02b0e3930d2d845b16e66a0e8731d7f7c80d4cd59f1521f5",
+    "otaHeaderString": "Telink OTA Image\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000",
+    "manufacturerName": [
+      "_TZ3000_itb0omhv",
+      "itb0omhv"
+    ]
+  },
+  {
+    "fileName": "tlc_switch-1.1.2-445810f3-forced.zigbee",
+    "fileVersion": 4294967295,
+    "fileSize": 184402,
+    "url": "https://github.com/XaviSentis/tuya-zigbee-switch/raw/refs/heads/fleet/bin/router/REMOTE_TUYA_SWITCH_TS0042/tlc_switch-1.1.2-445810f3-forced.zigbee",
+    "imageType": 45637,
+    "manufacturerCode": 4417,
+    "sha512": "36a4bcdbada3757f57be621b3364ada59e27c720548fbce17387359865cc866c0164c48732a3dad42ade79c5cd08b67eb715a636c3adb6dcc927a079e64f0ba2",
+    "otaHeaderString": "Telink OTA Image\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000",
+    "manufacturerName": [
+      "_TZ3000_tzvbimpq",
+      "tzvbimpq"
+    ]
+  },
+  {
+    "fileName": "tlc_switch-1.1.2-445810f3-forced.zigbee",
+    "fileVersion": 4294967295,
+    "fileSize": 184402,
+    "url": "https://github.com/XaviSentis/tuya-zigbee-switch/raw/refs/heads/fleet/bin/router/REMOTE_TUYA_SWITCH_TS0043/tlc_switch-1.1.2-445810f3-forced.zigbee",
+    "imageType": 45637,
+    "manufacturerCode": 4417,
+    "sha512": "9effa65ea722aa50d3de0f2e75c970e01f027ca02e2ba6ecf21a2e9820b583bdb5d4b5c642a26aa451690d77be8ed1eb83f0fe0ac2d8fa772a902d7be2033f06",
+    "otaHeaderString": "Telink OTA Image\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000",
+    "manufacturerName": [
+      "_TZ3000_pkeqinnt",
+      "pkeqinnt"
+    ]
+  },
+  {
+    "fileName": "tlc_switch-1.1.2-445810f3-forced.zigbee",
+    "fileVersion": 4294967295,
+    "fileSize": 184402,
+    "url": "https://github.com/XaviSentis/tuya-zigbee-switch/raw/refs/heads/fleet/bin/router/REMOTE_TUYA_SWITCH_TS0043_1/tlc_switch-1.1.2-445810f3-forced.zigbee",
+    "imageType": 45637,
+    "manufacturerCode": 4417,
+    "sha512": "607cc90b27350db3ccf936fbe6abc7b85900e177850b36a251e78f058ef0a2a3d6692db2e2ad14b1eba9ca0cb5a055ca7f10593cd0dfe0c0496d5abeb0e887e4",
+    "otaHeaderString": "Telink OTA Image\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000",
+    "manufacturerName": [
+      "_TZ3000_sj7jbgks",
+      "sj7jbgks"
+    ]
+  },
+  {
+    "fileName": "tlc_switch-1.1.2-445810f3-forced.zigbee",
+    "fileVersion": 4294967295,
+    "fileSize": 184402,
+    "url": "https://github.com/XaviSentis/tuya-zigbee-switch/raw/refs/heads/fleet/bin/router/REMOTE_TUYA_TLSR82XX_2GANG/tlc_switch-1.1.2-445810f3-forced.zigbee",
+    "imageType": 45632,
+    "manufacturerCode": 4417,
+    "sha512": "99e223081119e5c9164be633db154978bbb338a8479c09344038096115938709a5f11f2b4924760514e33913726f091582a2e5829670d02352bcbbe66fb80a74",
+    "otaHeaderString": "Telink OTA Image\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000",
+    "manufacturerName": [
+      "TELINK",
+      "TELINK"
+    ]
+  },
+  {
+    "fileName": "tlc_switch-1.1.2-445810f3-forced.zigbee",
+    "fileVersion": 4294967295,
+    "fileSize": 191354,
+    "url": "https://github.com/XaviSentis/tuya-zigbee-switch/raw/refs/heads/fleet/bin/router/REMOTE_TUYA_TS0044/tlc_switch-1.1.2-445810f3-forced.zigbee",
+    "imageType": 43577,
+    "manufacturerCode": 4169,
+    "sha512": "6c12516600cd7b0a332cfb837759f54198e0c47b04b1448ee36f3d08abc3e8b76c5dcc94d641634672c26c6c4836878dfe0f2d4ac08547ee667d433326fa34b2",
+    "otaHeaderString": "Custom zigbee firmware\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000",
+    "manufacturerName": [
+      "_TZ3000_wkai4ga5",
+      "wkai4ga5"
+    ]
+  },
+  {
+    "fileName": "tlc_switch-1.1.2-445810f3-forced.zigbee",
+    "fileVersion": 4294967295,
+    "fileSize": 191358,
+    "url": "https://github.com/XaviSentis/tuya-zigbee-switch/raw/refs/heads/fleet/bin/router/REMOTE_TUYA_TS004F/tlc_switch-1.1.2-445810f3-forced.zigbee",
+    "imageType": 43578,
+    "manufacturerCode": 4169,
+    "sha512": "c6e6be1f0df2d26c829a8963fe3b85776d2e57d194b43a227e45b232048c61756f9a58653aefd2f418fd9a29d02124c2951ad52f55c8ecca4b34967e582fb7cf",
+    "otaHeaderString": "Custom zigbee firmware\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000",
+    "manufacturerName": [
+      "_TZ3000_xabckq1v",
+      "xabckq1v"
+    ]
+  },
+  {
+    "fileName": "tlc_switch-1.1.2-445810f3-forced.zigbee",
+    "fileVersion": 4294967295,
+    "fileSize": 184402,
+    "url": "https://github.com/XaviSentis/tuya-zigbee-switch/raw/refs/heads/fleet/bin/router/REMOTE_TUYA_TS004F_2/tlc_switch-1.1.2-445810f3-forced.zigbee",
+    "imageType": 47002,
+    "manufacturerCode": 4417,
+    "sha512": "81f80707113b56ede96ec073f56c92598fcbfec86954ceddc7ddae554a421f489607422e5d7de53959b09bd14618884255234874fdd58409f86b0f14ff34baa9",
+    "otaHeaderString": "Telink OTA Image\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000",
+    "manufacturerName": [
+      "_TZ3000_ja5osu5g",
+      "ja5osu5g"
+    ]
+  },
+  {
+    "fileName": "tlc_switch-1.1.2-445810f3-forced.zigbee",
+    "fileVersion": 4294967295,
+    "fileSize": 184386,
+    "url": "https://github.com/XaviSentis/tuya-zigbee-switch/raw/refs/heads/fleet/bin/router/SWITCH_AVATTO_TOUCH_TS0001/tlc_switch-1.1.2-445810f3-forced.zigbee",
+    "imageType": 45583,
+    "manufacturerCode": 4417,
+    "sha512": "448a74e0f34b5a48830e4623c02db16f6e48a0cf29f9f66668a7f4dd1f41d6c02a9ab36c5941817fec7e881a13e7778a53ac4991bf61a703ef848bd01b060b23",
+    "otaHeaderString": "Telink OTA Image\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000",
+    "manufacturerName": [
+      "_TZ3000_w1tcofu8",
+      "w1tcofu8"
+    ]
+  },
+  {
+    "fileName": "tlc_switch-1.1.2-445810f3-forced.zigbee",
+    "fileVersion": 4294967295,
+    "fileSize": 184402,
+    "url": "https://github.com/XaviSentis/tuya-zigbee-switch/raw/refs/heads/fleet/bin/router/SWITCH_AVATTO_TOUCH_TS0002/tlc_switch-1.1.2-445810f3-forced.zigbee",
+    "imageType": 45584,
+    "manufacturerCode": 4417,
+    "sha512": "a8787df100669abeed939436564e1104dc5e166d4924a03588c0b7eab761086b16805cae8e71f91b73577335c7a6a728edef95a255d1549800e2d94e1f78394e",
+    "otaHeaderString": "Telink OTA Image\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000",
+    "manufacturerName": [
+      "_TZ3000_ogpla3lh",
+      "ogpla3lh"
+    ]
+  },
+  {
+    "fileName": "tlc_switch-1.1.2-445810f3-forced.zigbee",
+    "fileVersion": 4294967295,
+    "fileSize": 184402,
+    "url": "https://github.com/XaviSentis/tuya-zigbee-switch/raw/refs/heads/fleet/bin/router/SWITCH_AVATTO_TOUCH_TS0003/tlc_switch-1.1.2-445810f3-forced.zigbee",
+    "imageType": 43542,
+    "manufacturerCode": 4417,
+    "sha512": "100f24e737460a5fc263832ec8c7381cf5d444ddf61f3f67c5865b33883b8b10094fd8f365e3b984682f0a6e65ef46845bd5db3ab28d11c09dd75ff5df769d65",
+    "otaHeaderString": "Telink OTA Image\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000",
+    "manufacturerName": [
+      "_TZ3000_avky2mvc",
+      "Avatto-3-touch",
+      "avky2mvc"
+    ]
+  },
+  {
+    "fileName": "tlc_switch-1.1.2-445810f3-forced.zigbee",
+    "fileVersion": 4294967295,
+    "fileSize": 184418,
+    "url": "https://github.com/XaviSentis/tuya-zigbee-switch/raw/refs/heads/fleet/bin/router/SWITCH_AVATTO_TOUCH_TS0004/tlc_switch-1.1.2-445810f3-forced.zigbee",
+    "imageType": 43611,
+    "manufacturerCode": 4417,
+    "sha512": "6f9c898994ad35418eb3a58a80835ae2167558931705a9c9e2a8b7d0795c522d02273fd73d38343a6b144247a08f8564b6c74e0f19565a263e8c40604b3c39e0",
+    "otaHeaderString": "Telink OTA Image\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000",
+    "manufacturerName": [
+      "_TZ3000_eeswvvtm",
+      "eeswvvtm"
+    ]
+  },
+  {
+    "fileName": "tlc_switch-1.1.2-445810f3-forced.zigbee",
+    "fileVersion": 4294967295,
+    "fileSize": 184386,
+    "url": "https://github.com/XaviSentis/tuya-zigbee-switch/raw/refs/heads/fleet/bin/router/SWITCH_BSEED_TOUCH_BACKLIGHT_TS0001/tlc_switch-1.1.2-445810f3-forced.zigbee",
+    "imageType": 43567,
+    "manufacturerCode": 4417,
+    "sha512": "cce486931e6c162933a2635840dca1d11cde8cfa5e2abb45b08596417e5079f3d23aaa031a875604637f63526754d7950f29644d814ac9ac3bc4f700b34212f2",
+    "otaHeaderString": "Telink OTA Image\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000",
+    "manufacturerName": [
+      "_TZ3000_blhvsaqf",
+      "blhvsaqf"
+    ]
+  },
+  {
+    "fileName": "tlc_switch-1.1.2-445810f3-forced.zigbee",
+    "fileVersion": 4294967295,
+    "fileSize": 184402,
+    "url": "https://github.com/XaviSentis/tuya-zigbee-switch/raw/refs/heads/fleet/bin/router/SWITCH_BSEED_TOUCH_BACKLIGHT_TS0002/tlc_switch-1.1.2-445810f3-forced.zigbee",
+    "imageType": 43581,
+    "manufacturerCode": 4417,
+    "sha512": "533fced0a2e40468b1376924288881f1eee0669d409dfa9d407155e68a2177cd399f08ee303917244f8bd7432456f586772b4b4c367a8be5262a5f6d0e4f91a4",
+    "otaHeaderString": "Telink OTA Image\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000",
+    "manufacturerName": [
+      "_TZ3000_l9brjwau",
+      "l9brjwau"
+    ]
+  },
+  {
+    "fileName": "tlc_switch-1.1.2-445810f3-forced.zigbee",
+    "fileVersion": 4294967295,
+    "fileSize": 184402,
+    "url": "https://github.com/XaviSentis/tuya-zigbee-switch/raw/refs/heads/fleet/bin/router/SWITCH_BSEED_TOUCH_BACKLIGHT_TS0003/tlc_switch-1.1.2-445810f3-forced.zigbee",
+    "imageType": 43571,
+    "manufacturerCode": 4417,
+    "sha512": "17920c91d2d1e0692f0a4f74de58ad9ae0bd98462c5f83ef401b7a61cb53633bd62f9c19041e1012c321013b6325a1d6bcc2577d7880e83e4515e304c8814881",
+    "otaHeaderString": "Telink OTA Image\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000",
+    "manufacturerName": [
+      "_TZ3000_qkixdnon",
+      "qkixdnon"
+    ]
+  },
+  {
+    "fileName": "tlc_switch-1.1.2-445810f3-forced.zigbee",
+    "fileVersion": 4294967295,
+    "fileSize": 184386,
+    "url": "https://github.com/XaviSentis/tuya-zigbee-switch/raw/refs/heads/fleet/bin/router/SWITCH_BSEED_TOUCH_LATCHING_TS0011/tlc_switch-1.1.2-445810f3-forced.zigbee",
+    "imageType": 43585,
+    "manufacturerCode": 4417,
+    "sha512": "679d3617b7cf61cae3b84650dbfd41de480e3b7fdd7fa1358623977cddbca971fb102ce3b4bb39625f32d0949bebedb8166d053a62dd3334228c6bd8fe3af706",
+    "otaHeaderString": "Telink OTA Image\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000",
+    "manufacturerName": [
+      "_TZ3000_aetquff4",
+      "aetquff4"
+    ]
+  },
+  {
+    "fileName": "tlc_switch-1.1.2-445810f3-forced.zigbee",
+    "fileVersion": 4294967295,
+    "fileSize": 184402,
+    "url": "https://github.com/XaviSentis/tuya-zigbee-switch/raw/refs/heads/fleet/bin/router/SWITCH_BSEED_TOUCH_LATCHING_TS0012/tlc_switch-1.1.2-445810f3-forced.zigbee",
+    "imageType": 43544,
+    "manufacturerCode": 4417,
+    "sha512": "219c2414e876a3e45ae4a0c0b704a7a17831dd4fbd0e473c41ccf0db78e0745c1371bc6eb35e38d2f68df200df4c62864872d4581999ed3df660127e46055f83",
+    "otaHeaderString": "Telink OTA Image\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000",
+    "manufacturerName": [
+      "_TZ3000_xk5udnd6",
+      "Bseed-2-gang-2",
+      "xk5udnd6"
+    ]
+  },
+  {
+    "fileName": "tlc_switch-1.1.2-445810f3-forced.zigbee",
+    "fileVersion": 4294967295,
+    "fileSize": 184418,
+    "url": "https://github.com/XaviSentis/tuya-zigbee-switch/raw/refs/heads/fleet/bin/router/SWITCH_BSEED_TOUCH_LATCHING_TS0013/tlc_switch-1.1.2-445810f3-forced.zigbee",
+    "imageType": 43580,
+    "manufacturerCode": 4417,
+    "sha512": "1212b0666b67236bca67f9b4f1ba43fbad872ce973c640748af4947b32ebb8804533cf0978cfe706cc0933293948a91892c37893361d485f0356b0027737107e",
+    "otaHeaderString": "Telink OTA Image\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000",
+    "manufacturerName": [
+      "_TZ3000_kfwhmnvc",
+      "kfwhmnvc"
+    ]
+  },
+  {
+    "fileName": "tlc_switch-1.1.2-445810f3-forced.zigbee",
+    "fileVersion": 4294967295,
+    "fileSize": 184386,
+    "url": "https://github.com/XaviSentis/tuya-zigbee-switch/raw/refs/heads/fleet/bin/router/SWITCH_BSEED_TOUCH_MELODY_TS0001/tlc_switch-1.1.2-445810f3-forced.zigbee",
+    "imageType": 43583,
+    "manufacturerCode": 4417,
+    "sha512": "b09e37dfa83e4186d3ca9fcda6e80f40778229a7e5aeeca69c5e441bcef49463ca0f25a1d4ba26cf44435965469ce7497324109d131fd606643819e64c47fd82",
+    "otaHeaderString": "Telink OTA Image\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000",
+    "manufacturerName": [
+      "_TZ3000_ysdv91bk",
+      "ysdv91bk"
+    ]
+  },
+  {
+    "fileName": "tlc_switch-1.1.2-445810f3-forced.zigbee",
+    "fileVersion": 4294967295,
+    "fileSize": 184402,
+    "url": "https://github.com/XaviSentis/tuya-zigbee-switch/raw/refs/heads/fleet/bin/router/SWITCH_BSEED_TOUCH_MELODY_TS0002/tlc_switch-1.1.2-445810f3-forced.zigbee",
+    "imageType": 43584,
+    "manufacturerCode": 4417,
+    "sha512": "26a66aeb690acb50e31aad4b47c02cbd338a13cfd94035defdb428e8f1a1212eeae414c6e254f44d3a8e6ca3d466640fe2cc027ed0266d1b710f132e3f0b81f9",
+    "otaHeaderString": "Telink OTA Image\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000",
+    "manufacturerName": [
+      "_TZ3000_mklgayek",
+      "mklgayek"
+    ]
+  },
+  {
+    "fileName": "tlc_switch-1.1.2-445810f3-forced.zigbee",
+    "fileVersion": 4294967295,
+    "fileSize": 184402,
+    "url": "https://github.com/XaviSentis/tuya-zigbee-switch/raw/refs/heads/fleet/bin/router/SWITCH_BSEED_TOUCH_MELODY_TS0003/tlc_switch-1.1.2-445810f3-forced.zigbee",
+    "imageType": 43549,
+    "manufacturerCode": 4417,
+    "sha512": "eb3563c57a97cd43cfa566a87c90a7ce51eb7d3aee4cbcc334252ab429a487d78f40b9a25db5fd0a404c396f10fc93e92a2125d7eb7395a0e5fd35cd7b12f53c",
+    "otaHeaderString": "Telink OTA Image\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000",
+    "manufacturerName": [
+      "_TZ3000_7aqaupa9",
+      "7aqaupa9"
+    ]
+  },
+  {
+    "fileName": "tlc_switch-1.1.2-445810f3-forced.zigbee",
+    "fileVersion": 4294967295,
+    "fileSize": 184418,
+    "url": "https://github.com/XaviSentis/tuya-zigbee-switch/raw/refs/heads/fleet/bin/router/SWITCH_BSEED_TOUCH_MELODY_TS0004/tlc_switch-1.1.2-445810f3-forced.zigbee",
+    "imageType": 43582,
+    "manufacturerCode": 4417,
+    "sha512": "6022c5d939249b0995309105518a6dbab4b4f4010eb130e70caaa45a0234d0852410d67d8b6e1490e78d4a084e2e4fa0ccf89d21bc63409829d5caa505beb319",
+    "otaHeaderString": "Telink OTA Image\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000",
+    "manufacturerName": [
+      "_TZ3000_s6ma1nh4",
+      "s6ma1nh4"
+    ]
+  },
+  {
+    "fileName": "tlc_switch-1.1.2-445810f3-forced.zigbee",
+    "fileVersion": 4294967295,
+    "fileSize": 184386,
+    "url": "https://github.com/XaviSentis/tuya-zigbee-switch/raw/refs/heads/fleet/bin/router/SWITCH_BSEED_TOUCH_TS0001/tlc_switch-1.1.2-445810f3-forced.zigbee",
+    "imageType": 45575,
+    "manufacturerCode": 4417,
+    "sha512": "ec64b2f1e8dbc1fb8e2aa0adf195d3102ff6f102b2c49303bfb26ec5765c0fea576e4bca000190470ae243e5d9605161928bdabc667df51a91eaaaedcd4a210b",
+    "otaHeaderString": "Telink OTA Image\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000",
+    "manufacturerName": [
+      "_TZ3000_9akmi5ly",
+      "9akmi5ly"
+    ]
+  },
+  {
+    "fileName": "tlc_switch-1.1.2-445810f3-forced.zigbee",
+    "fileVersion": 4294967295,
+    "fileSize": 184386,
+    "url": "https://github.com/XaviSentis/tuya-zigbee-switch/raw/refs/heads/fleet/bin/router/SWITCH_BSEED_TOUCH_TS0001_2/tlc_switch-1.1.2-445810f3-forced.zigbee",
+    "imageType": 45575,
+    "manufacturerCode": 4417,
+    "sha512": "d529da824cf6aee82e48d8ac6743c96deb92cfd747ca4e9e8566de8681366b73f4b7c298c54d67c73e87c612f1c72faaf57837cb0b14ffb0a17a8ebf85513e9c",
+    "otaHeaderString": "Telink OTA Image\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000",
+    "manufacturerName": [
+      "_TZ3000_wijoqjk1",
+      "wijoqjk1"
+    ]
+  },
+  {
+    "fileName": "tlc_switch-1.1.2-445810f3-forced.zigbee",
+    "fileVersion": 4294967295,
+    "fileSize": 184402,
+    "url": "https://github.com/XaviSentis/tuya-zigbee-switch/raw/refs/heads/fleet/bin/router/SWITCH_BSEED_TOUCH_TS0002/tlc_switch-1.1.2-445810f3-forced.zigbee",
+    "imageType": 45578,
+    "manufacturerCode": 4417,
+    "sha512": "2885880855d5039f15c28d78ca346f9ead93e1e98bc4792b219b9b48140df95fcdc22e3e5b3e8c31a1d2ef2d670ea58d099b11ba38fb4a473d326763e7d0814e",
+    "otaHeaderString": "Telink OTA Image\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000",
+    "manufacturerName": [
+      "_TZ3000_cauq1okq",
+      "cauq1okq"
+    ]
+  },
+  {
+    "fileName": "tlc_switch-1.1.2-445810f3-forced.zigbee",
+    "fileVersion": 4294967295,
+    "fileSize": 184402,
+    "url": "https://github.com/XaviSentis/tuya-zigbee-switch/raw/refs/heads/fleet/bin/router/SWITCH_BSEED_TOUCH_TS0002_2/tlc_switch-1.1.2-445810f3-forced.zigbee",
+    "imageType": 45578,
+    "manufacturerCode": 4417,
+    "sha512": "1b7bff869783bfe0ef04fb48ac3f399573085b926ea827d2074d9358e849f034a9e4bb561f5b57b2794e77698a4d3f504ae38f711becf48287cc41fe6469f9cd",
+    "otaHeaderString": "Telink OTA Image\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000",
+    "manufacturerName": [
+      "_TZ3000_w5xztuy7",
+      "w5xztuy7"
+    ]
+  },
+  {
+    "fileName": "tlc_switch-1.1.2-445810f3-forced.zigbee",
+    "fileVersion": 4294967295,
+    "fileSize": 184386,
+    "url": "https://github.com/XaviSentis/tuya-zigbee-switch/raw/refs/heads/fleet/bin/router/SWITCH_BSEED_TOUCH_TS0011/tlc_switch-1.1.2-445810f3-forced.zigbee",
+    "imageType": 43564,
+    "manufacturerCode": 4417,
+    "sha512": "4743751af291a9dbe2fcf3fcd4e43d1fef21fe4f5cd295f8bac768b67242994eac5d8f90ce6ac5ac070fa424292f8a0c1cb8bbba897487a73a51b40ea37f09ad",
+    "otaHeaderString": "Telink OTA Image\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000",
+    "manufacturerName": [
+      "_TZ3000_hafsqare",
+      "hafsqare"
+    ]
+  },
+  {
+    "fileName": "tlc_switch-1.1.2-445810f3-forced.zigbee",
+    "fileVersion": 4294967295,
+    "fileSize": 184402,
+    "url": "https://github.com/XaviSentis/tuya-zigbee-switch/raw/refs/heads/fleet/bin/router/SWITCH_BSEED_TOUCH_TS0012_1/tlc_switch-1.1.2-445810f3-forced.zigbee",
+    "imageType": 43534,
+    "manufacturerCode": 4417,
+    "sha512": "1ab4880a77d761527acc8c867d4c067c0b7da3df098e8eb1e47800fd1ff8eb727868ad35423af5e46661c37d016b3f5af86e3897470914df4a38fdd3b141b8fd",
+    "otaHeaderString": "Telink OTA Image\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000",
+    "manufacturerName": [
+      "_TZ3000_f2slq5pj",
+      "Bseed-2-gang",
+      "f2slq5pj"
+    ]
+  },
+  {
+    "fileName": "tlc_switch-1.1.2-445810f3-forced.zigbee",
+    "fileVersion": 4294967295,
+    "fileSize": 184402,
+    "url": "https://github.com/XaviSentis/tuya-zigbee-switch/raw/refs/heads/fleet/bin/router/SWITCH_BSEED_TOUCH_TS0012_2/tlc_switch-1.1.2-445810f3-forced.zigbee",
+    "imageType": 43569,
+    "manufacturerCode": 4417,
+    "sha512": "50a490d986d01699fd76bde5b2633916a75de4ec72efdf3f373800304101f9ac64910b69a656714c9b47367b6dbc479145e8470e8025323efdf28ef707a92f85",
+    "otaHeaderString": "Telink OTA Image\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000",
+    "manufacturerName": [
+      "_TZ3000_e98krvvk",
+      "e98krvvk"
+    ]
+  },
+  {
+    "fileName": "tlc_switch-1.1.2-445810f3-forced.zigbee",
+    "fileVersion": 4294967295,
+    "fileSize": 184418,
+    "url": "https://github.com/XaviSentis/tuya-zigbee-switch/raw/refs/heads/fleet/bin/router/SWITCH_BSEED_TOUCH_TS0013/tlc_switch-1.1.2-445810f3-forced.zigbee",
+    "imageType": 43570,
+    "manufacturerCode": 4417,
+    "sha512": "4059e971a2591d59984cb0f3c7c55506660ae16bea2cee25beec6c8385bc7991b74635518348114da1a951fdd448ffc16506a852ccae71ab544adddbb6c35409",
+    "otaHeaderString": "Telink OTA Image\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000",
+    "manufacturerName": [
+      "_TZ3000_5e5ptb24",
+      "5e5ptb24"
+    ]
+  },
+  {
+    "fileName": "tlc_switch-1.1.2-445810f3-forced.zigbee",
+    "fileVersion": 4294967295,
+    "fileSize": 184386,
+    "url": "https://github.com/XaviSentis/tuya-zigbee-switch/raw/refs/heads/fleet/bin/router/SWITCH_BSEED_TS0726_1GANG/tlc_switch-1.1.2-445810f3-forced.zigbee",
+    "imageType": 45580,
+    "manufacturerCode": 4417,
+    "sha512": "98cf6d93ecf84031012b5b0438a529c8b3da7f7e825abf05991354073a174cced3f4190a7293afff6e65b4a3b9817e0ac1e5acd5d9722785c0ae1f911bc8e5ef",
+    "otaHeaderString": "Telink OTA Image\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000",
+    "manufacturerName": [
+      "_TZ3002_jn2x20tg",
+      "jn2x20tg"
+    ]
+  },
+  {
+    "fileName": "tlc_switch-1.1.2-445810f3-forced.zigbee",
+    "fileVersion": 4294967295,
+    "fileSize": 184402,
+    "url": "https://github.com/XaviSentis/tuya-zigbee-switch/raw/refs/heads/fleet/bin/router/SWITCH_BSEED_TS0726_2GANG/tlc_switch-1.1.2-445810f3-forced.zigbee",
+    "imageType": 43562,
+    "manufacturerCode": 4417,
+    "sha512": "a2436096efd7db6017fb5f9f32f97e5951ec331ab05b70745477d0ae379e50f1b5bb2784fa03d539551ed5d2a2e9978ffad822d7ede969612c4253b89d1f0c3d",
+    "otaHeaderString": "Telink OTA Image\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000",
+    "manufacturerName": [
+      "_TZ3002_zjuvw9zf",
+      "zjuvw9zf"
+    ]
+  },
+  {
+    "fileName": "tlc_switch-1.1.2-445810f3-forced.zigbee",
+    "fileVersion": 4294967295,
+    "fileSize": 184418,
+    "url": "https://github.com/XaviSentis/tuya-zigbee-switch/raw/refs/heads/fleet/bin/router/SWITCH_BSEED_TS0726_3GANG/tlc_switch-1.1.2-445810f3-forced.zigbee",
+    "imageType": 45577,
+    "manufacturerCode": 4417,
+    "sha512": "37f4c50e8a193875b81dd3f30774dc285f3464ef0c60565fe7094b0f05ff74a27a223ae260c70f078b64bde0ae6ce0d9d7989e158323039253a7d52940b2b9bb",
+    "otaHeaderString": "Telink OTA Image\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000",
+    "manufacturerName": [
+      "_TZ3002_iedhxgyi",
+      "iedhxgyi"
+    ]
+  },
+  {
+    "fileName": "tlc_switch-1.1.2-445810f3-forced.zigbee",
+    "fileVersion": 4294967295,
+    "fileSize": 184418,
+    "url": "https://github.com/XaviSentis/tuya-zigbee-switch/raw/refs/heads/fleet/bin/router/SWITCH_BSEED_TS0726_4GANG/tlc_switch-1.1.2-445810f3-forced.zigbee",
+    "imageType": 43627,
+    "manufacturerCode": 4417,
+    "sha512": "8659155fc00f031f75c1e215bebc1c552fe040d0dba6bd27108fd6f17462dea34781d92543190ab11ab6f749fe9a52066041fc6edaaca5f431cb31d1f53179dc",
+    "otaHeaderString": "Telink OTA Image\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000",
+    "manufacturerName": [
+      "_TZ3002_pzao9ls1",
+      "pzao9ls1"
+    ]
+  },
+  {
+    "fileName": "tlc_switch-1.1.2-445810f3-forced.zigbee",
+    "fileVersion": 4294967295,
+    "fileSize": 184386,
+    "url": "https://github.com/XaviSentis/tuya-zigbee-switch/raw/refs/heads/fleet/bin/router/SWITCH_BSEED_TS0726_L_1GANG/tlc_switch-1.1.2-445810f3-forced.zigbee",
+    "imageType": 43632,
+    "manufacturerCode": 4417,
+    "sha512": "d55d293f83c1d85fa0b2683aaa8677fbd38a03b47f65a09fd20fecfd1d45c81efadd6d211ee5efdcf0ab778f3ac409ad81008bef0ab1083d1848c626a7a4ee2f",
+    "otaHeaderString": "Telink OTA Image\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000",
+    "manufacturerName": [
+      "_TZ3002_xkxgfxsg",
+      "xkxgfxsg"
+    ]
+  },
+  {
+    "fileName": "tlc_switch-1.1.2-445810f3-forced.zigbee",
+    "fileVersion": 4294967295,
+    "fileSize": 184402,
+    "url": "https://github.com/XaviSentis/tuya-zigbee-switch/raw/refs/heads/fleet/bin/router/SWITCH_BSEED_TS0726_L_2GANG/tlc_switch-1.1.2-445810f3-forced.zigbee",
+    "imageType": 43633,
+    "manufacturerCode": 4417,
+    "sha512": "b1e7b4e77c18c0e2181fbc1134ab6eb9877dd6662d602de5311ffac2c50908a0d76236f6191368f2154efc3b127d3b12e6d56dc0412131714a93eafd4b09c0c3",
+    "otaHeaderString": "Telink OTA Image\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000",
+    "manufacturerName": [
+      "_TZ3002_tlsvxhxc",
+      "tlsvxhxc"
+    ]
+  },
+  {
+    "fileName": "tlc_switch-1.1.2-445810f3-forced.zigbee",
+    "fileVersion": 4294967295,
+    "fileSize": 184418,
+    "url": "https://github.com/XaviSentis/tuya-zigbee-switch/raw/refs/heads/fleet/bin/router/SWITCH_BSEED_TS0726_L_3GANG_2/tlc_switch-1.1.2-445810f3-forced.zigbee",
+    "imageType": 47007,
+    "manufacturerCode": 4417,
+    "sha512": "cf85e0bf118f2fc464e2fddd46e1d4bea8d0a1ba5e820ffc129a2e830c05486b5731d4e85c7a38728d1ff79ee57019bfa65f940109269593ce4a674f5cbb8f34",
+    "otaHeaderString": "Telink OTA Image\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000",
+    "manufacturerName": [
+      "_TZ3000_r2fgo9ks",
+      "r2fgo9ks"
+    ]
+  },
+  {
+    "fileName": "tlc_switch-1.1.2-445810f3-forced.zigbee",
+    "fileVersion": 4294967295,
+    "fileSize": 191402,
+    "url": "https://github.com/XaviSentis/tuya-zigbee-switch/raw/refs/heads/fleet/bin/router/SWITCH_GIRIER_TS0014/tlc_switch-1.1.2-445810f3-forced.zigbee",
+    "imageType": 43644,
+    "manufacturerCode": 4169,
+    "sha512": "96999e02063b2ea8916595ebae1464056c10233a39572a34413b8d79c9fb0eeadada042973fbc9228fa8cf95c8466f9d1048f5180fc92d682ada67ea83929ff7",
+    "otaHeaderString": "Custom zigbee firmware\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000",
+    "manufacturerName": [
+      "_TZ3000_p1h4zuvh",
+      "p1h4zuvh"
+    ]
+  },
+  {
+    "fileName": "tlc_switch-1.1.2-445810f3-forced.zigbee",
+    "fileVersion": 4294967295,
+    "fileSize": 184386,
+    "url": "https://github.com/XaviSentis/tuya-zigbee-switch/raw/refs/heads/fleet/bin/router/SWITCH_HOBEIAN_TS0011/tlc_switch-1.1.2-445810f3-forced.zigbee",
+    "imageType": 43622,
+    "manufacturerCode": 4417,
+    "sha512": "bafc19e0159d082af222dde7481fcec0fd5e3fb2a6677704768d3ecce889c59b52988957c0a84b0899b4dfd63313b0f84cf64f359f6455b874b6af758808d85c",
+    "otaHeaderString": "Telink OTA Image\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000",
+    "manufacturerName": [
+      "HOBEIAN",
+      "ZG-302Z1"
+    ]
+  },
+  {
+    "fileName": "tlc_switch-1.1.2-445810f3-forced.zigbee",
+    "fileVersion": 4294967295,
+    "fileSize": 184386,
+    "url": "https://github.com/XaviSentis/tuya-zigbee-switch/raw/refs/heads/fleet/bin/router/SWITCH_HOMEETEC_TOUCH_TS0001/tlc_switch-1.1.2-445810f3-forced.zigbee",
+    "imageType": 43608,
+    "manufacturerCode": 4417,
+    "sha512": "25a2b52e8618ebd9c336f564c10ddca3b16eb319606df7977859d717ddf58887405571eaf68ea27ed072ea399191c4cf178b4dcee1752637fe23e6d35d490d07",
+    "otaHeaderString": "Telink OTA Image\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000",
+    "manufacturerName": [
+      "_TZ3000_bmqxalil",
+      "bmqxalil"
+    ]
+  },
+  {
+    "fileName": "tlc_switch-1.1.2-445810f3-forced.zigbee",
+    "fileVersion": 4294967295,
+    "fileSize": 184402,
+    "url": "https://github.com/XaviSentis/tuya-zigbee-switch/raw/refs/heads/fleet/bin/router/SWITCH_HOMEETEC_TOUCH_TS0002/tlc_switch-1.1.2-445810f3-forced.zigbee",
+    "imageType": 43607,
+    "manufacturerCode": 4417,
+    "sha512": "e76cebfcbcf4dbbac9466d08d14e82162136f35d646b92da8800b98770de0dfefb85abac96397738ae103325d72867a27743413d26f21550b6000edaf1cf6422",
+    "otaHeaderString": "Telink OTA Image\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000",
+    "manufacturerName": [
+      "_TZ3000_in5qxhtt",
+      "in5qxhtt"
+    ]
+  },
+  {
+    "fileName": "tlc_switch-1.1.2-445810f3-forced.zigbee",
+    "fileVersion": 4294967295,
+    "fileSize": 184402,
+    "url": "https://github.com/XaviSentis/tuya-zigbee-switch/raw/refs/heads/fleet/bin/router/SWITCH_HOMEETEC_TOUCH_TS0003/tlc_switch-1.1.2-445810f3-forced.zigbee",
+    "imageType": 43606,
+    "manufacturerCode": 4417,
+    "sha512": "425ff8b52e345433012b74186684dc45618bdbed98217c70877378313677c1a9b32e0341611438c4093789e5756bc8bbd450759207d5bbbe323640c016b17944",
+    "otaHeaderString": "Telink OTA Image\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000",
+    "manufacturerName": [
+      "_TZ3000_pv4puuxi",
+      "pv4puuxi"
+    ]
+  },
+  {
+    "fileName": "tlc_switch-1.1.2-445810f3-forced.zigbee",
+    "fileVersion": 4294967295,
+    "fileSize": 184386,
+    "url": "https://github.com/XaviSentis/tuya-zigbee-switch/raw/refs/heads/fleet/bin/router/SWITCH_IHSENO_TS0001/tlc_switch-1.1.2-445810f3-forced.zigbee",
+    "imageType": 43557,
+    "manufacturerCode": 4417,
+    "sha512": "632cc79ea3235ed139aa97664b800e83167d77bdda8a60785c71ceb65606c6a7be9203c76ec21acf9a5526b6774074d5f84089251703291c21e99be1e4fadbb7",
+    "otaHeaderString": "Telink OTA Image\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000",
+    "manufacturerName": [
+      "_TZ3000_qq9ahj6z",
+      "qq9ahj6z"
+    ]
+  },
+  {
+    "fileName": "tlc_switch-1.1.2-445810f3-forced.zigbee",
+    "fileVersion": 4294967295,
+    "fileSize": 184402,
+    "url": "https://github.com/XaviSentis/tuya-zigbee-switch/raw/refs/heads/fleet/bin/router/SWITCH_IHSENO_TS0002/tlc_switch-1.1.2-445810f3-forced.zigbee",
+    "imageType": 43558,
+    "manufacturerCode": 4417,
+    "sha512": "e9950489f54453f3645761008365038ec2f5684338cf8eb9fc338895e97a1e1b557876a7dc45fa60142c2ee07384ace224b137a65e9aedd915adff584dd83e13",
+    "otaHeaderString": "Telink OTA Image\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000",
+    "manufacturerName": [
+      "_TZ3000_zxrfobzw",
+      "zxrfobzw"
+    ]
+  },
+  {
+    "fileName": "tlc_switch-1.1.2-445810f3-forced.zigbee",
+    "fileVersion": 4294967295,
+    "fileSize": 184402,
+    "url": "https://github.com/XaviSentis/tuya-zigbee-switch/raw/refs/heads/fleet/bin/router/SWITCH_IHSENO_TS0003/tlc_switch-1.1.2-445810f3-forced.zigbee",
+    "imageType": 45640,
+    "manufacturerCode": 4417,
+    "sha512": "c1839b5c8a196542957d5eee50a60065156039cf620910ffd378f8f2da2fb19137386c1ab9b892da5f9da2b634021c7eb1b49132bea2cc035b68bd2c71edfb64",
+    "otaHeaderString": "Telink OTA Image\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000",
+    "manufacturerName": [
+      "_TZ3000_ju82pu2b",
+      "ju82pu2b"
+    ]
+  },
+  {
+    "fileName": "tlc_switch-1.1.2-445810f3-forced.zigbee",
+    "fileVersion": 4294967295,
+    "fileSize": 184402,
+    "url": "https://github.com/XaviSentis/tuya-zigbee-switch/raw/refs/heads/fleet/bin/router/SWITCH_LERLINK_TS0012/tlc_switch-1.1.2-445810f3-forced.zigbee",
+    "imageType": 43510,
+    "manufacturerCode": 4417,
+    "sha512": "1db1dc721535bbf5b159b320c0af9f8e39c4cf48a90a1020b7332cb3f23ea020f6d2fe168836b916fa7f48f0972227da866f7717b3285a98a4933b116753cd9b",
+    "otaHeaderString": "Telink OTA Image\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000",
+    "manufacturerName": [
+      "_TZ3000_dlp6yvs8",
+      "dlp6yvs8"
+    ]
+  },
+  {
+    "fileName": "tlc_switch-1.1.2-445810f3-forced.zigbee",
+    "fileVersion": 4294967295,
+    "fileSize": 184418,
+    "url": "https://github.com/XaviSentis/tuya-zigbee-switch/raw/refs/heads/fleet/bin/router/SWITCH_LERLINK_TS0013/tlc_switch-1.1.2-445810f3-forced.zigbee",
+    "imageType": 43533,
+    "manufacturerCode": 4417,
+    "sha512": "fc259567e3cdb24fddc2712549b7c3339d2382a2f706dc0ab0c81ddfe362d188d87c3b7162d4237f6ac2b5a2fc0e35b36cc5f625946f5957882b775c8b26adaf",
+    "otaHeaderString": "Telink OTA Image\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000",
+    "manufacturerName": [
+      "_TZ3000_qp7x8u3a",
+      "qp7x8u3a"
+    ]
+  },
+  {
+    "fileName": "tlc_switch-1.1.2-445810f3-forced.zigbee",
+    "fileVersion": 4294967295,
+    "fileSize": 191378,
+    "url": "https://github.com/XaviSentis/tuya-zigbee-switch/raw/refs/heads/fleet/bin/router/SWITCH_LERLINK_TS0014/tlc_switch-1.1.2-445810f3-forced.zigbee",
+    "imageType": 43643,
+    "manufacturerCode": 4169,
+    "sha512": "099d027d8ff6a86a4add991e13e450f66c24f834cee5d51e6e81585da65f94b834892481923fb93784f3e19c6fb6d4736a74c18f87138d345cb8e13fda2dc665",
+    "otaHeaderString": "Custom zigbee firmware\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000",
+    "manufacturerName": [
+      "_TZ3000_sovlwiix",
+      "sovlwiix"
+    ]
+  },
+  {
+    "fileName": "tlc_switch-1.1.2-445810f3-forced.zigbee",
+    "fileVersion": 4294967295,
+    "fileSize": 184386,
+    "url": "https://github.com/XaviSentis/tuya-zigbee-switch/raw/refs/heads/fleet/bin/router/SWITCH_LORATAP_TS130F/tlc_switch-1.1.2-445810f3-forced.zigbee",
+    "imageType": 43616,
+    "manufacturerCode": 4417,
+    "sha512": "6984ce68eb08986c280e12739a2d1ee4571bac976828f0a5c28d96d6f5e8de886303c35ea598c685a4ae964d016576185cc3f7114dac0e586cef4b50d6aeed03",
+    "otaHeaderString": "Telink OTA Image\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000",
+    "manufacturerName": [
+      "_TZ3000_qa8s8vca",
+      "qa8s8vca"
+    ]
+  },
+  {
+    "fileName": "tlc_switch-1.1.2-445810f3-forced.zigbee",
+    "fileVersion": 4294967295,
+    "fileSize": 184386,
+    "url": "https://github.com/XaviSentis/tuya-zigbee-switch/raw/refs/heads/fleet/bin/router/SWITCH_MANHOT_A_TS0011/tlc_switch-1.1.2-445810f3-forced.zigbee",
+    "imageType": 43599,
+    "manufacturerCode": 4417,
+    "sha512": "d6fdf971752b16976c2e0039ee22a3ff469ac3997b3c96aa841a8f046473bbd407300315bcf9461b1fb358f9f2e8afea460c8c8219932f010ee087dfcf442b71",
+    "otaHeaderString": "Telink OTA Image\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000",
+    "manufacturerName": [
+      "_TZ3000_kea5qgnd",
+      "kea5qgnd"
+    ]
+  },
+  {
+    "fileName": "tlc_switch-1.1.2-445810f3-forced.zigbee",
+    "fileVersion": 4294967295,
+    "fileSize": 184402,
+    "url": "https://github.com/XaviSentis/tuya-zigbee-switch/raw/refs/heads/fleet/bin/router/SWITCH_MANHOT_A_TS0012/tlc_switch-1.1.2-445810f3-forced.zigbee",
+    "imageType": 43600,
+    "manufacturerCode": 4417,
+    "sha512": "46040120e08f0c000afb396bb283075cb94e3fefc36d65a6a109fed39d423c2b145143c81d13ace8d625be80f71c08d74cf1d44222fc357ed97ce6a8579fb2d2",
+    "otaHeaderString": "Telink OTA Image\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000",
+    "manufacturerName": [
+      "_TZ3000_toaaawnr",
+      "toaaawnr"
+    ]
+  },
+  {
+    "fileName": "tlc_switch-1.1.2-445810f3-forced.zigbee",
+    "fileVersion": 4294967295,
+    "fileSize": 184418,
+    "url": "https://github.com/XaviSentis/tuya-zigbee-switch/raw/refs/heads/fleet/bin/router/SWITCH_MANHOT_A_TS0013/tlc_switch-1.1.2-445810f3-forced.zigbee",
+    "imageType": 43550,
+    "manufacturerCode": 4417,
+    "sha512": "f26d31bcf83efdc7411290b95706570e5faac893cd40983c94068b2ca3d69168301c47d428eb1fb6a904601938a2f3b8ecd2e790d5937d2f7ae79276f3593f7c",
+    "otaHeaderString": "Telink OTA Image\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000",
+    "manufacturerName": [
+      "_TZ3000_tqwydnqn",
+      "tqwydnqn"
+    ]
+  },
+  {
+    "fileName": "tlc_switch-1.1.2-445810f3-forced.zigbee",
+    "fileVersion": 4294967295,
+    "fileSize": 191382,
+    "url": "https://github.com/XaviSentis/tuya-zigbee-switch/raw/refs/heads/fleet/bin/router/SWITCH_MANHOT_B_TS0011/tlc_switch-1.1.2-445810f3-forced.zigbee",
+    "imageType": 43586,
+    "manufacturerCode": 4169,
+    "sha512": "41b1794f6abe2ddd4b7b241009ccc1e652995c9977cd75c24d9f554e59ed2880b622da8998eef010281a1c2d6726ac2cfd89e5dc30800b6d242f672437d9563b",
+    "otaHeaderString": "Custom zigbee firmware\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000",
+    "manufacturerName": [
+      "_TZ3000_bmzfjnbp",
+      "bmzfjnbp"
+    ]
+  },
+  {
+    "fileName": "tlc_switch-1.1.2-445810f3-forced.zigbee",
+    "fileVersion": 4294967295,
+    "fileSize": 191370,
+    "url": "https://github.com/XaviSentis/tuya-zigbee-switch/raw/refs/heads/fleet/bin/router/SWITCH_MANHOT_B_TS0012/tlc_switch-1.1.2-445810f3-forced.zigbee",
+    "imageType": 43587,
+    "manufacturerCode": 4169,
+    "sha512": "a47ee6b97723b3dd41ceaeebf2e02aa4bef66f4afe231d18ba02c0e6275c46ec28aea50ff2a238327e7dccc90ba53cc9b069335a251a2df4587bd04cee592995",
+    "otaHeaderString": "Custom zigbee firmware\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000",
+    "manufacturerName": [
+      "_TZ3000_ugaem1nb",
+      "ugaem1nb"
+    ]
+  },
+  {
+    "fileName": "tlc_switch-1.1.2-445810f3-forced.zigbee",
+    "fileVersion": 4294967295,
+    "fileSize": 191378,
+    "url": "https://github.com/XaviSentis/tuya-zigbee-switch/raw/refs/heads/fleet/bin/router/SWITCH_MANHOT_B_TS0013/tlc_switch-1.1.2-445810f3-forced.zigbee",
+    "imageType": 45586,
+    "manufacturerCode": 4169,
+    "sha512": "934411cfcd84d4c2a20cd10d18066abea063bc7a762722488ec11a5511161bcd4560bf1f3d48e27ecf46617aa628227e50264e1e77e889d2d2a6054f2685e4e4",
+    "otaHeaderString": "Custom zigbee firmware\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000",
+    "manufacturerName": [
+      "_TZ3000_snq47izk",
+      "snq47izk"
+    ]
+  },
+  {
+    "fileName": "tlc_switch-1.1.2-445810f3-forced.zigbee",
+    "fileVersion": 4294967295,
+    "fileSize": 184402,
+    "url": "https://github.com/XaviSentis/tuya-zigbee-switch/raw/refs/heads/fleet/bin/router/SWITCH_MILFRA_TS0001/tlc_switch-1.1.2-445810f3-forced.zigbee",
+    "imageType": 47103,
+    "manufacturerCode": 4417,
+    "sha512": "7c2f028507fbee4821d51e23bc1032ac0750d48ff4fc32371fb9b7c4523b73717db1bbabb0ede3cb068c0abd87067527c416e670f7badf144120148910ab79fd",
+    "otaHeaderString": "Telink OTA Image\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000",
+    "manufacturerName": [
+      "_TZ3000_gsqxcwqr",
+      "gsqxcwqr"
+    ]
+  },
+  {
+    "fileName": "tlc_switch-1.1.2-445810f3-forced.zigbee",
+    "fileVersion": 4294967295,
+    "fileSize": 184402,
+    "url": "https://github.com/XaviSentis/tuya-zigbee-switch/raw/refs/heads/fleet/bin/router/SWITCH_MILFRA_TS0002/tlc_switch-1.1.2-445810f3-forced.zigbee",
+    "imageType": 47102,
+    "manufacturerCode": 4417,
+    "sha512": "0f8c53a8c8b9af700fe3c1e5cb995cd1bc128743a8b0bbf64827cb1e136b45ea9af08a4fffb6b278b626c2711f5a6959e0f9b385f09327b2eac79d9eb403a4f1",
+    "otaHeaderString": "Telink OTA Image\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000",
+    "manufacturerName": [
+      "_TZ3210_mrigi9ij",
+      "ybjqjsuz"
+    ]
+  },
+  {
+    "fileName": "tlc_switch-1.1.2-445810f3-forced.zigbee",
+    "fileVersion": 4294967295,
+    "fileSize": 184418,
+    "url": "https://github.com/XaviSentis/tuya-zigbee-switch/raw/refs/heads/fleet/bin/router/SWITCH_MILFRA_TS0003/tlc_switch-1.1.2-445810f3-forced.zigbee",
+    "imageType": 47100,
+    "manufacturerCode": 4417,
+    "sha512": "cdf48292c5cf73e550e5ac3fe44d27e22c80cd94e91cdf792dcbb6feecb7a9fc4cb31b46597f10c14e974265eab703af527b329067a38453150c24c8d22e9824",
+    "otaHeaderString": "Telink OTA Image\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000",
+    "manufacturerName": [
+      "_TZ3000_ybjqjsuz",
+      "ybjqjsuz"
+    ]
+  },
+  {
+    "fileName": "tlc_switch-1.1.2-445810f3-forced.zigbee",
+    "fileVersion": 4294967295,
+    "fileSize": 184418,
+    "url": "https://github.com/XaviSentis/tuya-zigbee-switch/raw/refs/heads/fleet/bin/router/SWITCH_MILFRA_TS0003_1/tlc_switch-1.1.2-445810f3-forced.zigbee",
+    "imageType": 47101,
+    "manufacturerCode": 4417,
+    "sha512": "0bb4fb51057afee0dbc81b72ec4ccef5be6d516ade79cef0bab60028d9d07576d74c4b739386c5ec217bb921a1139cfbfadf0cd82f31859b53dae66483e75049",
+    "otaHeaderString": "Telink OTA Image\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000",
+    "manufacturerName": [
+      "_TZ3210_ybjqjsuz",
+      "ybjqjsuz"
+    ]
+  },
+  {
+    "fileName": "tlc_switch-1.1.2-445810f3-forced.zigbee",
+    "fileVersion": 4294967295,
+    "fileSize": 184434,
+    "url": "https://github.com/XaviSentis/tuya-zigbee-switch/raw/refs/heads/fleet/bin/router/SWITCH_MILFRA_TS0004/tlc_switch-1.1.2-445810f3-forced.zigbee",
+    "imageType": 47104,
+    "manufacturerCode": 4417,
+    "sha512": "e32a6be62622999c22cbe989671939b5ad2e76bacb4de7315f93181a63e226c09c3a5c231409d816f4ce785c207b3f7f2f64f77eb87e1e8a4e4413cbd580eb3e",
+    "otaHeaderString": "Telink OTA Image\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000",
+    "manufacturerName": [
+      "_TZ3210_03vs3ks5",
+      "03vs3ks5"
+    ]
+  },
+  {
+    "fileName": "tlc_switch-1.1.2-445810f3-forced.zigbee",
+    "fileVersion": 4294967295,
+    "fileSize": 184386,
+    "url": "https://github.com/XaviSentis/tuya-zigbee-switch/raw/refs/heads/fleet/bin/router/SWITCH_MOES_ALL_TS0011/tlc_switch-1.1.2-445810f3-forced.zigbee",
+    "imageType": 43532,
+    "manufacturerCode": 4417,
+    "sha512": "a337cc9548fb2989e6164a6c245cb84b5b1fe77781ad768be2ae0df5f3e7cd503d8ac4f4c3f4969b75a97e04933171ba04618937e590b7fe6b71d992bd212dde",
+    "otaHeaderString": "Telink OTA Image\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000",
+    "manufacturerName": [
+      "_TZ3000_hhiodade",
+      "Moes-1-gang",
+      "hhiodade"
+    ]
+  },
+  {
+    "fileName": "tlc_switch-1.1.2-445810f3-forced.zigbee",
+    "fileVersion": 4294967295,
+    "fileSize": 184402,
+    "url": "https://github.com/XaviSentis/tuya-zigbee-switch/raw/refs/heads/fleet/bin/router/SWITCH_MOES_ALL_TS0012/tlc_switch-1.1.2-445810f3-forced.zigbee",
+    "imageType": 43510,
+    "manufacturerCode": 4417,
+    "sha512": "3c03824a049be918ef929a2ecbdb194aa376ecc9530f01004fdbcd0ed6064a27f8362516d1ed6a3bb5ccd061655f2adf8868c4c495ac51d3ed0ef7c7b14eb517",
+    "otaHeaderString": "Telink OTA Image\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000",
+    "manufacturerName": [
+      "_TZ3000_18ejxno0",
+      "Moes-2-gang",
+      "18ejxno0"
+    ]
+  },
+  {
+    "fileName": "tlc_switch-1.1.2-445810f3-forced.zigbee",
+    "fileVersion": 4294967295,
+    "fileSize": 184418,
+    "url": "https://github.com/XaviSentis/tuya-zigbee-switch/raw/refs/heads/fleet/bin/router/SWITCH_MOES_ALL_TS0013/tlc_switch-1.1.2-445810f3-forced.zigbee",
+    "imageType": 43533,
+    "manufacturerCode": 4417,
+    "sha512": "ea298f7b9f5145710d7f56ec03dfea64c51555a1a474aca577173fbc0f41ddcb3befd8d8d26eece308509e8b37002507bba8f1fd4372c826cb09e0e1af137a98",
+    "otaHeaderString": "Telink OTA Image\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000",
+    "manufacturerName": [
+      "_TZ3000_qewo8dlz",
+      "Moes-3-gang",
+      "qewo8dlz"
+    ]
+  },
+  {
+    "fileName": "tlc_switch-1.1.2-445810f3-forced.zigbee",
+    "fileVersion": 4294967295,
+    "fileSize": 191382,
+    "url": "https://github.com/XaviSentis/tuya-zigbee-switch/raw/refs/heads/fleet/bin/router/SWITCH_MOES_ALL_TS0014/tlc_switch-1.1.2-445810f3-forced.zigbee",
+    "imageType": 43566,
+    "manufacturerCode": 4169,
+    "sha512": "6bc79e74eb4cb63bc138c90ae052a15798b08c047ba0c0188b6a355f5777742408704036882e4f8ba8d6b8c763e616546e620f167d3ba35248ccc6d8a3c3c05b",
+    "otaHeaderString": "Custom zigbee firmware\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000",
+    "manufacturerName": [
+      "_TZ3000_mrduubod",
+      "mrduubod"
+    ]
+  },
+  {
+    "fileName": "tlc_switch-1.1.2-445810f3-forced.zigbee",
+    "fileVersion": 4294967295,
+    "fileSize": 184418,
+    "url": "https://github.com/XaviSentis/tuya-zigbee-switch/raw/refs/heads/fleet/bin/router/SWITCH_MOES_SCENE_TS0726_3GANG_3SCENE/tlc_switch-1.1.2-445810f3-forced.zigbee",
+    "imageType": 43625,
+    "manufacturerCode": 4417,
+    "sha512": "41ba19ff64a33d7cf8779f7c55da59e4678354cd692b55035cee05d8abafede569e36683acfc319249882ed55bf4a24fb688b1f435ff1417c511e9534224d2bc",
+    "otaHeaderString": "Telink OTA Image\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000",
+    "manufacturerName": [
+      "_TZ3002_vaq2bfcu",
+      "vaq2bfcu"
+    ]
+  },
+  {
+    "fileName": "tlc_switch-1.1.2-445810f3-forced.zigbee",
+    "fileVersion": 4294967295,
+    "fileSize": 184418,
+    "url": "https://github.com/XaviSentis/tuya-zigbee-switch/raw/refs/heads/fleet/bin/router/SWITCH_NOVADIGITAL_TS0003/tlc_switch-1.1.2-445810f3-forced.zigbee",
+    "imageType": 43614,
+    "manufacturerCode": 4417,
+    "sha512": "2a9452b358e9461f4bc80f558244e8c3ccbd6091e373484bc25d51622ada892ed25f68cedd3a87222922f4a9d84b8d4865834ab655344cc5842d89fbf64ded28",
+    "otaHeaderString": "Telink OTA Image\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000",
+    "manufacturerName": [
+      "_TZ3000_785olaiq",
+      "785olaiq"
+    ]
+  },
+  {
+    "fileName": "tlc_switch-1.1.2-445810f3-forced.zigbee",
+    "fileVersion": 4294967295,
+    "fileSize": 191354,
+    "url": "https://github.com/XaviSentis/tuya-zigbee-switch/raw/refs/heads/fleet/bin/router/SWITCH_PSMART_SL_TS0001/tlc_switch-1.1.2-445810f3-forced.zigbee",
+    "imageType": 43588,
+    "manufacturerCode": 4169,
+    "sha512": "a2a3b449a40bd919d6cc3ba6a3abc051e7b970f5d61345eea42fbb33135a99de3017d7425ccaf1539324432a6932eb392c4f3468f02daaf78c23410f4155bbcc",
+    "otaHeaderString": "Custom zigbee firmware\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000",
+    "manufacturerName": [
+      "_TZ3000_myaaknbq",
+      "myaaknbq"
+    ]
+  },
+  {
+    "fileName": "tlc_switch-1.1.2-445810f3-forced.zigbee",
+    "fileVersion": 4294967295,
+    "fileSize": 191418,
+    "url": "https://github.com/XaviSentis/tuya-zigbee-switch/raw/refs/heads/fleet/bin/router/SWITCH_PSMART_SL_TS0002/tlc_switch-1.1.2-445810f3-forced.zigbee",
+    "imageType": 43589,
+    "manufacturerCode": 4169,
+    "sha512": "b56d20ad374e8badeb40abc5b9270398d2b1d923a387fb4abe4a8fd5c54c63dff7cc7172afe7347d3ee9ed843dc3cf21ad3f3e0cb40d406facb7123d49159058",
+    "otaHeaderString": "Custom zigbee firmware\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000",
+    "manufacturerName": [
+      "_TZ3000_mufwv0ry",
+      "mufwv0ry"
+    ]
+  },
+  {
+    "fileName": "tlc_switch-1.1.2-445810f3-forced.zigbee",
+    "fileVersion": 4294967295,
+    "fileSize": 191386,
+    "url": "https://github.com/XaviSentis/tuya-zigbee-switch/raw/refs/heads/fleet/bin/router/SWITCH_PSMART_SL_TS0003/tlc_switch-1.1.2-445810f3-forced.zigbee",
+    "imageType": 43592,
+    "manufacturerCode": 4169,
+    "sha512": "a80460e20cbe26e5c028443f024274bebf0be78e5cc655bd630b658a920624b1b3700a2c033ff2c39ed906cf578e8a2e7a1a9f3cd0f9ce8d1b80bedbb9b07218",
+    "otaHeaderString": "Custom zigbee firmware\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000",
+    "manufacturerName": [
+      "_TZ3000_lsunm46z",
+      "lsunm46z"
+    ]
+  },
+  {
+    "fileName": "tlc_switch-1.1.2-445810f3-forced.zigbee",
+    "fileVersion": 4294967295,
+    "fileSize": 184386,
+    "url": "https://github.com/XaviSentis/tuya-zigbee-switch/raw/refs/heads/fleet/bin/router/SWITCH_PSMART_TL_TS0001/tlc_switch-1.1.2-445810f3-forced.zigbee",
+    "imageType": 43636,
+    "manufacturerCode": 4417,
+    "sha512": "6df2a8aa526c1dc8acef864cc4656c565c8347c81ff8963a8690b206a83dbd6c27bab6be8f89fb07ab8ff7a73d3e50432b51b6e2dacccfe81d9e4b4b948fc105",
+    "otaHeaderString": "Telink OTA Image\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000",
+    "manufacturerName": [
+      "_TZ3000_l67wb0p1",
+      "l67wb0p1"
+    ]
+  },
+  {
+    "fileName": "tlc_switch-1.1.2-445810f3-forced.zigbee",
+    "fileVersion": 4294967295,
+    "fileSize": 184402,
+    "url": "https://github.com/XaviSentis/tuya-zigbee-switch/raw/refs/heads/fleet/bin/router/SWITCH_PSMART_TL_TS0002/tlc_switch-1.1.2-445810f3-forced.zigbee",
+    "imageType": 43637,
+    "manufacturerCode": 4417,
+    "sha512": "af5ebd602aa21e0eb7ab2bc8b81a932c11e97a076d42c0120423033076a2c61eb034d50ffbae00845af1011501367310858e55ccc8a97337a4e7fe253d5df4f4",
+    "otaHeaderString": "Telink OTA Image\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000",
+    "manufacturerName": [
+      "_TZ3000_cmgs1zkr",
+      "cmgs1zkr"
+    ]
+  },
+  {
+    "fileName": "tlc_switch-1.1.2-445810f3-forced.zigbee",
+    "fileVersion": 4294967295,
+    "fileSize": 184386,
+    "url": "https://github.com/XaviSentis/tuya-zigbee-switch/raw/refs/heads/fleet/bin/router/SWITCH_TUYA_A_TS0001/tlc_switch-1.1.2-445810f3-forced.zigbee",
+    "imageType": 47005,
+    "manufacturerCode": 4417,
+    "sha512": "b9a34041256667f8b661bdb429dc8fb01534aec93b2c2b052ae84958a19fde124d9e4afbde0a0c23d2641a326f98e81a392fdfa6ff4a8f392d390ef7d52e3caa",
+    "otaHeaderString": "Telink OTA Image\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000",
+    "manufacturerName": [
+      "_TZ3000_b7s7xsow",
+      "b7s7xsow"
+    ]
+  },
+  {
+    "fileName": "tlc_switch-1.1.2-445810f3-forced.zigbee",
+    "fileVersion": 4294967295,
+    "fileSize": 184386,
+    "url": "https://github.com/XaviSentis/tuya-zigbee-switch/raw/refs/heads/fleet/bin/router/SWITCH_TUYA_A_TS0001_1/tlc_switch-1.1.2-445810f3-forced.zigbee",
+    "imageType": 47009,
+    "manufacturerCode": 4417,
+    "sha512": "a779f165eb24acb534d6971019c2bb7e3c8b927138feae5d34b60cb27317849a78e506a63da3e90ffd7ca121d14323f187293c1e2d21fbe23815f285f6b865b8",
+    "otaHeaderString": "Telink OTA Image\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000",
+    "manufacturerName": [
+      "_TZ3000_ehgouyvu",
+      "ehgouyvu"
+    ]
+  },
+  {
+    "fileName": "tlc_switch-1.1.2-445810f3-forced.zigbee",
+    "fileVersion": 4294967295,
+    "fileSize": 184402,
+    "url": "https://github.com/XaviSentis/tuya-zigbee-switch/raw/refs/heads/fleet/bin/router/SWITCH_TUYA_A_TS0002/tlc_switch-1.1.2-445810f3-forced.zigbee",
+    "imageType": 47010,
+    "manufacturerCode": 4417,
+    "sha512": "09f585bd60794976f1141d69d145668db80d5a884df42307995a6acd2fb12162e564c8969df80e7098b96bbd7544bcdfbc8217a15df29f96a8faec126c484a86",
+    "otaHeaderString": "Telink OTA Image\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000",
+    "manufacturerName": [
+      "_TZ3000_aa5t61rh",
+      "aa5t61rh"
+    ]
+  },
+  {
+    "fileName": "tlc_switch-1.1.2-445810f3-forced.zigbee",
+    "fileVersion": 4294967295,
+    "fileSize": 184418,
+    "url": "https://github.com/XaviSentis/tuya-zigbee-switch/raw/refs/heads/fleet/bin/router/SWITCH_TUYA_A_TS0003/tlc_switch-1.1.2-445810f3-forced.zigbee",
+    "imageType": 47011,
+    "manufacturerCode": 4417,
+    "sha512": "9cfd79ffd9926ee6cc6d1c4f3812697212437bea1df63b2d4df92fc0f6b334069b718a2d5af70098ddc083365c757b39a1d9345b989d3d5d5f3768f7590523eb",
+    "otaHeaderString": "Telink OTA Image\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000",
+    "manufacturerName": [
+      "_TZ3000_aa5t61rh",
+      "rhkfbfcv"
+    ]
+  },
+  {
+    "fileName": "tlc_switch-1.1.2-445810f3-forced.zigbee",
+    "fileVersion": 4294967295,
+    "fileSize": 184418,
+    "url": "https://github.com/XaviSentis/tuya-zigbee-switch/raw/refs/heads/fleet/bin/router/SWITCH_TUYA_A_TS0003_1/tlc_switch-1.1.2-445810f3-forced.zigbee",
+    "imageType": 47012,
+    "manufacturerCode": 4417,
+    "sha512": "b7403f3a6381a3093861772fff20689f9e7920119a936842091dd57787db6e4ebad99e36ff210350793ad1373400e0683fbaf226c1775c3afd5a30713114d184",
+    "otaHeaderString": "Telink OTA Image\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000",
+    "manufacturerName": [
+      "_TZ3000_zcbpj2t6",
+      "zcbpj2t6"
+    ]
+  },
+  {
+    "fileName": "tlc_switch-1.1.2-445810f3-forced.zigbee",
+    "fileVersion": 4294967295,
+    "fileSize": 184418,
+    "url": "https://github.com/XaviSentis/tuya-zigbee-switch/raw/refs/heads/fleet/bin/router/SWITCH_TUYA_A_TS0004/tlc_switch-1.1.2-445810f3-forced.zigbee",
+    "imageType": 47013,
+    "manufacturerCode": 4417,
+    "sha512": "26596c208ce797dc593dbfafc74a977f0851946cc0e99feeab9ff3ef28a78d7ed2632df7d962a4c6b37bca42b3a9503c409873e58fea936fea82933bc3d6df66",
+    "otaHeaderString": "Telink OTA Image\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000",
+    "manufacturerName": [
+      "_TZ3000_vit9k2nb",
+      "vit9k2nb"
+    ]
+  },
+  {
+    "fileName": "tlc_switch-1.1.2-445810f3-forced.zigbee",
+    "fileVersion": 4294967295,
+    "fileSize": 184386,
+    "url": "https://github.com/XaviSentis/tuya-zigbee-switch/raw/refs/heads/fleet/bin/router/SWITCH_TUYA_CN_TS0001/tlc_switch-1.1.2-445810f3-forced.zigbee",
+    "imageType": 45568,
+    "manufacturerCode": 4417,
+    "sha512": "64442f64b712257729f49f009c3afeeabb7a185cc6b47403feaa9051eb033030f112f92e21fd4b0442240b66f4dd8a2400cd21a51671d68bfda57727b2495d6c",
+    "otaHeaderString": "Telink OTA Image\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000",
+    "manufacturerName": [
+      "_TZ3000_u6ocpapf",
+      "u6ocpapf"
+    ]
+  },
+  {
+    "fileName": "tlc_switch-1.1.2-445810f3-forced.zigbee",
+    "fileVersion": 4294967295,
+    "fileSize": 184418,
+    "url": "https://github.com/XaviSentis/tuya-zigbee-switch/raw/refs/heads/fleet/bin/router/SWITCH_TUYA_CN_TS0004/tlc_switch-1.1.2-445810f3-forced.zigbee",
+    "imageType": 45567,
+    "manufacturerCode": 4417,
+    "sha512": "e1bf671504a18a3e973a7063a02f3826636639aad6f9754ea562270eaa1c8397b68592d436ff1fe1aa6f583416b51596a7e50f6cde915e92eefd86393f3d0855",
+    "otaHeaderString": "Telink OTA Image\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000",
+    "manufacturerName": [
+      "_TZ3000_gbdxbmwz",
+      "gbdxbmwz"
+    ]
+  },
+  {
+    "fileName": "tlc_switch-1.1.2-445810f3-forced.zigbee",
+    "fileVersion": 4294967295,
+    "fileSize": 184386,
+    "url": "https://github.com/XaviSentis/tuya-zigbee-switch/raw/refs/heads/fleet/bin/router/SWITCH_TUYA_TS0001/tlc_switch-1.1.2-445810f3-forced.zigbee",
+    "imageType": 47005,
+    "manufacturerCode": 4417,
+    "sha512": "da5830adf67c868e8d96f5b03cbd354105194ce79bb0c448052c2ba9632fbe2a5e7601e7246d0cbe334383ee0c8a22b510901938c3cf867e0e7b065aa5cbd269",
+    "otaHeaderString": "Telink OTA Image\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000",
+    "manufacturerName": [
+      "_TZ3000_ehgouyvu",
+      "ehgouyvu"
+    ]
+  },
+  {
+    "fileName": "tlc_switch-1.1.2-445810f3-forced.zigbee",
+    "fileVersion": 4294967295,
+    "fileSize": 184402,
+    "url": "https://github.com/XaviSentis/tuya-zigbee-switch/raw/refs/heads/fleet/bin/router/SWITCH_ZEMISMART_1_TS0012/tlc_switch-1.1.2-445810f3-forced.zigbee",
+    "imageType": 43536,
+    "manufacturerCode": 4417,
+    "sha512": "1b01bbad1d0a130b960b2357a7b108b221a12ad2ce7e4928521eec7ab6453ae068fa2d7c62700553d9f1b4baacfddab57b4bf5924c2d510083a2ea86e7f6c10f",
+    "otaHeaderString": "Telink OTA Image\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000",
+    "manufacturerName": [
+      "_TZ3000_zmlunnhy",
+      "Zemi-2-gang",
+      "zmlunnhy"
+    ]
+  },
+  {
+    "fileName": "tlc_switch-1.1.2-445810f3-forced.zigbee",
+    "fileVersion": 4294967295,
+    "fileSize": 191346,
+    "url": "https://github.com/XaviSentis/tuya-zigbee-switch/raw/refs/heads/fleet/bin/router/SWITCH_ZEMISMART_2_TS0011/tlc_switch-1.1.2-445810f3-forced.zigbee",
+    "imageType": 45589,
+    "manufacturerCode": 4169,
+    "sha512": "5884d1a6685fe17b66c5cd41dbdf0971f82b03a4c9288b8a3d22ca7d12f88c69dab7bb614ab19fe17a4de3216a27159973afbdd6e8f8d11272d3ad52619afa35",
+    "otaHeaderString": "Custom zigbee firmware\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000",
+    "manufacturerName": [
+      "_TZ3000_ilauzyjm",
+      "ilauzyjm"
+    ]
+  },
+  {
+    "fileName": "tlc_switch-1.1.2-445810f3-forced.zigbee",
+    "fileVersion": 4294967295,
+    "fileSize": 191406,
+    "url": "https://github.com/XaviSentis/tuya-zigbee-switch/raw/refs/heads/fleet/bin/router/SWITCH_ZEMISMART_2_TS0012/tlc_switch-1.1.2-445810f3-forced.zigbee",
+    "imageType": 45589,
+    "manufacturerCode": 4169,
+    "sha512": "2d8333cdbbcac3828c36e2ad88761dc8ef1d1b63c707c5eaf3836f66e81ed0ffd6304f98365247a91a075df6185c1bd96c8d822dfae9473a1d3553249d96a3b1",
+    "otaHeaderString": "Custom zigbee firmware\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000",
+    "manufacturerName": [
+      "_TZ3000_rbl8c85w",
+      "rbl8c85w"
     ]
   }
 ]
