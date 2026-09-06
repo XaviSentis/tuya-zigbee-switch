@@ -439,7 +439,7 @@ MODULE_AVATTO_A_TS0002:
   stock_manufacturer_id: 4417
   stock_image_type: 54179
   firmware_image_type: 43528
-  build: yes
+  build: no  # FLEET brand-veto AVATTO (DECISIONES #21): conversion OTA vetada; ver riesgo-avatto-flota.md
   status: fully_supported
   info: Supported
   threads: 
@@ -475,7 +475,7 @@ MODULE_AVATTO_A_TS0003:
   stock_manufacturer_id: 4417
   stock_image_type: 54179
   firmware_image_type: 43543
-  build: yes
+  build: no  # FLEET brand-veto AVATTO (DECISIONES #21): conversion OTA vetada; ver riesgo-avatto-flota.md
   status: fully_supported
   info: Supported
   threads: https://github.com/romasku/tuya-zigbee-switch/issues/56
@@ -508,7 +508,7 @@ MODULE_AVATTO_A_TS0004:
   stock_manufacturer_id: 4417
   stock_image_type: 54179
   firmware_image_type: 43529
-  build: yes
+  build: no  # FLEET brand-veto AVATTO (DECISIONES #21): conversion OTA vetada; ver riesgo-avatto-flota.md
   status: fully_supported
   info: Supported
   threads: https://github.com/romasku/tuya-zigbee-switch/issues/9
@@ -535,7 +535,7 @@ MODULE_AVATTO_B_TS0003:
   stock_manufacturer_id: 4417
   stock_image_type: 54179
   firmware_image_type: 43603
-  build: yes
+  build: no  # FLEET brand-veto AVATTO (DECISIONES #21): conversion OTA vetada; ver riesgo-avatto-flota.md
   status: fully_supported
   info: Supported
   threads: 
@@ -564,7 +564,7 @@ MODULE_AVATTO_B_TS0004:
   stock_manufacturer_id: 4417
   stock_image_type: 54179
   firmware_image_type: 43602
-  build: yes
+  build: no  # FLEET brand-veto AVATTO (DECISIONES #21): conversion OTA vetada; ver riesgo-avatto-flota.md
   status: fully_supported
   info: Supported
   threads: https://github.com/romasku/tuya-zigbee-switch/issues/275
@@ -591,7 +591,7 @@ MODULE_AVATTO_DRY_TS0001:
   stock_manufacturer_id: 4417
   stock_image_type: 54179
   firmware_image_type: 43527
-  build: yes
+  build: no  # FLEET brand-veto AVATTO (DECISIONES #21): conversion OTA vetada; ver riesgo-avatto-flota.md
   status: mostly_supported
   info: Reversed state?
   threads: https://github.com/romasku/tuya-zigbee-switch/issues/138
@@ -620,7 +620,7 @@ MODULE_AVATTO_TS0011:
   stock_manufacturer_id: 4417
   stock_image_type: 54179
   firmware_image_type: 43537
-  build: yes
+  build: no  # FLEET brand-veto AVATTO (DECISIONES #21): conversion OTA vetada; ver riesgo-avatto-flota.md
   status: fully_supported
   info: Supported
   threads: https://github.com/romasku/tuya-zigbee-switch/issues/9
@@ -649,7 +649,7 @@ MODULE_AVATTO_TS0012:
   stock_manufacturer_id: 4417
   stock_image_type: 54179
   firmware_image_type: 43530
-  build: yes
+  build: no  # FLEET brand-veto AVATTO (DECISIONES #21): conversion OTA vetada; ver riesgo-avatto-flota.md
   status: fully_supported
   info: Supported
   threads: https://github.com/romasku/tuya-zigbee-switch/issues/16
@@ -676,7 +676,7 @@ MODULE_AVATTO_TS0012_1:
   stock_manufacturer_id: 4417
   stock_image_type: 54179
   firmware_image_type: 43613
-  build: yes
+  build: no  # FLEET brand-veto AVATTO (DECISIONES #21): conversion OTA vetada; ver riesgo-avatto-flota.md
   status: fully_supported
   info: Supported
   threads: https://github.com/romasku/tuya-zigbee-switch/issues/299
@@ -703,7 +703,7 @@ MODULE_AVATTO_TS0013:
   stock_manufacturer_id: 4417
   stock_image_type: 54179
   firmware_image_type: 43552
-  build: yes
+  build: no  # FLEET brand-veto AVATTO (DECISIONES #21): conversion OTA vetada; ver riesgo-avatto-flota.md
   status: fully_supported
   info: Supported
   threads: https://github.com/romasku/tuya-zigbee-switch/issues/135
@@ -3935,7 +3935,7 @@ SWITCH_AVATTO_TOUCH_TS0001:
   stock_manufacturer_id: 4417
   stock_image_type: 54179
   firmware_image_type: 45583
-  build: yes
+  build: no  # FLEET brand-veto AVATTO (DECISIONES #21): conversion OTA vetada; ver riesgo-avatto-flota.md
   status: mostly_supported
   info: Backlight on C4
   threads: https://github.com/romasku/tuya-zigbee-switch/issues/41
@@ -3962,7 +3962,7 @@ SWITCH_AVATTO_TOUCH_TS0002:
   stock_manufacturer_id: 4417
   stock_image_type: 54179
   firmware_image_type: 45584
-  build: yes
+  build: no  # FLEET brand-veto AVATTO (DECISIONES #21): conversion OTA vetada; ver riesgo-avatto-flota.md
   status: mostly_supported
   info: Backlight on C4
   threads: https://github.com/romasku/tuya-zigbee-switch/issues/41
@@ -3991,7 +3991,7 @@ SWITCH_AVATTO_TOUCH_TS0003:
   stock_manufacturer_id: 4417
   stock_image_type: 54179
   firmware_image_type: 43542
-  build: yes
+  build: no  # FLEET brand-veto AVATTO (DECISIONES #21): conversion OTA vetada; ver riesgo-avatto-flota.md
   status: mostly_supported
   info: Backlight on C4
   threads: https://github.com/romasku/tuya-zigbee-switch/issues/41
@@ -4018,7 +4018,7 @@ SWITCH_AVATTO_TOUCH_TS0004:
   stock_manufacturer_id: 4417
   stock_image_type: 54179
   firmware_image_type: 43611
-  build: yes
+  build: no  # FLEET brand-veto AVATTO (DECISIONES #21): conversion OTA vetada; ver riesgo-avatto-flota.md
   status: mostly_supported
   info: Backlight on C4
   threads: https://github.com/romasku/tuya-zigbee-switch/issues/41

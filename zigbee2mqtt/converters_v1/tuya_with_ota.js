@@ -110,7 +110,6 @@ for (let definition of moesDefinitions) {
 }
 
 const avattoModels = [
-    "LZWSM16-1",
 ];
 
 for (let definition of avattoDefinitions) {
