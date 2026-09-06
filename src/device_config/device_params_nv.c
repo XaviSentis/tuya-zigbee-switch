@@ -2,8 +2,12 @@
 #include "hal/nvm.h"
 #include "nvm_items.h"
 
+// Overcurrent soft limit hard ceiling: physical device rating 16 A @ 230 V.
+// 0 = disabled; values above this are clamped (see device_params_set_overcurrent_limit).
+#define OVERCURRENT_LIMIT_MAX_W 3680
+
 uint8_t  g_multi_press_reset_count = 10;
-uint16_t g_overcurrent_limit_w     = 3680; // 16 A @ 230 V (device rating)
+uint16_t g_overcurrent_limit_w     = OVERCURRENT_LIMIT_MAX_W; // 16 A @ 230 V (device rating)
 uint8_t  g_overcurrent_tripped     = 0;
 
 void device_params_load_from_nv(void) {
@@ -31,6 +35,11 @@ void device_params_set_multi_press_reset_count(uint8_t value) {
 }
 
 void device_params_set_overcurrent_limit(uint16_t value) {
+    // Clamp to the physical rating: 0 = disabled, max OVERCURRENT_LIMIT_MAX_W (3680 W).
+    // Prevents setting a "soft" limit above what the plug can carry (it would never trip in time).
+    if (value > OVERCURRENT_LIMIT_MAX_W) {
+        value = OVERCURRENT_LIMIT_MAX_W;
+    }
     g_overcurrent_limit_w = value;
     hal_nvm_write(NV_ITEM_OVERCURRENT_LIMIT, sizeof(value),
                   (uint8_t *)&value);
