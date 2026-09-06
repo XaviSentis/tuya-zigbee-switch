@@ -93,6 +93,7 @@ const romasku = {
             description: "What duration is considerd to be long press",
             valueMin: 0,
             valueMax: 5000,
+            unit: "ms",
             entityCategory: "config",
         }),
     levelMoveRate: (name, endpointName) =>
@@ -104,6 +105,7 @@ const romasku = {
             description: "Level (dim) move rate in steps per ms",
             valueMin: 1,
             valueMax: 255,
+            unit: "steps/ms",
             entityCategory: "config",
         }),
     pressAction: (name, endpointName) =>
