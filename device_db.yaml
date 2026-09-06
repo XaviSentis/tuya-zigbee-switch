@@ -396,10 +396,17 @@ MODULE_AVATTO_A_TS0001:
   stock_manufacturer_id: 4417
   stock_image_type: 54179
   firmware_image_type: 43527
-  build: yes
+  # FLEET-BLOCKED 2026-09-06: build:no bloquea permanentemente este board.
+  # La conversión OTA -from_tuya transfiere al 100% pero el bootloader stock NO
+  # conmuta la imagen custom (arranca STOCK) y la unidad queda incomunicada a nivel
+  # de red (brick de red; sobrevive a power-cycle y arranque en frío). Singleton de
+  # la flota (_TZ3000_4rbqgcuv, appVersion 74). build:no => sin firmware, sin entrada
+  # en el índice OTA (para _TZ3000_4rbqgcuv) y fuera de los generadores de converter.
+  # NO reactivar (build:yes) sin re-flasheo físico validado. Caso: auditoria/incompatibilidad-avatto-ts0001.md
+  build: no
   status: fully_supported
-  info: Supported
-  threads: 
+  info: "FLEET-BLOCKED (build:no): la conversión OTA brickea esta unidad a nivel de red; ver incompatibilidad-avatto-ts0001.md. Soportado upstream, bloqueado en fleet."
+  threads:
   - https://github.com/romasku/tuya-zigbee-switch/issues/9
   - https://github.com/romasku/tuya-zigbee-switch/issues/350
   store: 

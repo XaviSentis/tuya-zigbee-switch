@@ -355,40 +355,6 @@
   {
     "fileName": "tlc_switch-1.1.2-445810f3.zigbee",
     "fileVersion": 285356070,
-    "fileSize": 184386,
-    "url": "https://github.com/XaviSentis/tuya-zigbee-switch/raw/f4bcd08efb85c1e564455d659d45f80700f9a733/bin/router/MODULE_AVATTO_A_TS0001/tlc_switch-1.1.2-445810f3.zigbee",
-    "imageType": 43527,
-    "manufacturerCode": 4417,
-    "sha512": "3b0a981c16c417fc9eafd08d72121c312973985243a9904ef75c0124d7e58f2eb48c6c1ec1dd0ad2b942a62b15fa9d4538569073ca1364a25d4c995143fa98cb",
-    "otaHeaderString": "Telink OTA Image\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000",
-    "manufacturerName": [
-      "_TZ3000_4rbqgcuv",
-      "Tuya-TS0001-Avatto-custom",
-      "TS0001-AV-CUS",
-      "TS0001-AVB",
-      "4rbqgcuv"
-    ]
-  },
-  {
-    "fileName": "tlc_switch-1.1.2-445810f3-from_tuya.zigbee",
-    "fileVersion": 4294967295,
-    "fileSize": 184386,
-    "url": "https://github.com/XaviSentis/tuya-zigbee-switch/raw/f4bcd08efb85c1e564455d659d45f80700f9a733/bin/router/MODULE_AVATTO_A_TS0001/tlc_switch-1.1.2-445810f3-from_tuya.zigbee",
-    "imageType": 54179,
-    "manufacturerCode": 4417,
-    "sha512": "e938763422a5e5155e21a5ded2a6a04a24e6815b653bc4eda672334b302376686fa0e11174f1acc9d1b0db3ea9ed158c448d7f601e4d0fc2ca918efe51636f8c",
-    "otaHeaderString": "Telink OTA Image\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000",
-    "manufacturerName": [
-      "_TZ3000_4rbqgcuv",
-      "Tuya-TS0001-Avatto-custom",
-      "TS0001-AV-CUS",
-      "TS0001-AVB",
-      "4rbqgcuv"
-    ]
-  },
-  {
-    "fileName": "tlc_switch-1.1.2-445810f3.zigbee",
-    "fileVersion": 285356070,
     "fileSize": 184402,
     "url": "https://github.com/XaviSentis/tuya-zigbee-switch/raw/f4bcd08efb85c1e564455d659d45f80700f9a733/bin/router/MODULE_AVATTO_A_TS0002/tlc_switch-1.1.2-445810f3.zigbee",
     "imageType": 43528,
